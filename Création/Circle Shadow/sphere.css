@@ -1,0 +1,64 @@
+.circle{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+
+.circle-outer{
+    width: 100px;
+    height: 100px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.shpere2{
+    width: 100px;
+    height: 100px;
+    grid-column: 3;
+    grid-row: 3;
+}
+.sphere3{
+    width: 100px;
+    height: 100px;
+    grid-column: 3;
+    grid-row: 5;
+}
+.sphere4{
+    width: 100px;
+    height: 100px;
+    grid-column: 3;
+    grid-row: 5;
+}
+.circle{
+    background: linear-gradient(#0097d1 0%, #00a2b3 10%, #00536c 50%, #004040 100%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;}
+
+.circle::before{
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: linear-gradient(#67d1e9 10%, #006a7b 50%, #00404e 100%);
+    transform: rotateZ(45deg);
+    filter: blur(20px);
+}
+
+.circle::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 65px;
+    background: rgba(0, 0, 0, .450);
+    border-radius: 50%;
+    bottom: -50%;
+    filter: blur(20px);
+}

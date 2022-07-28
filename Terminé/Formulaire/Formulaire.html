@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+        <fieldset>
+            <legend>Formulaire D'Inscription</legend>
+                <form method="post" action="#">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nom">Nom</label>
+                            </td>
+                            <td>
+                                <input id="nom" placeholder="Saisissez votre Nom" ></td><p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p></p><label for="nom">Prénom</label>
+                            </td>
+                            <td>
+                                <p></p><input id="nom" placeholder="Saisissez votre Prénom" ></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p></p><label >Email</label>
+                            </td>
+                            <td>
+                                <p></p><input  placeholder="Saisissez votre Mail" ></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p></p><label for="sexe">Sexe</label>
+                            </td>
+                            <td>
+                                <p></p><label>Masculin</label><input type="radio" value="male" checked />
+                                <label>Féminin</label><input type="radio" value="female"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Photo</label>
+                            </td>
+                            <td>
+                                <br><input type="hidden" name="MAX_FILE_SIZE" value="100" /> <input name="file" type="file" /> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Pays</label>
+                            </td>
+                            <td>
+                                <p></p><select id="sexe">
+                                    <option value="F" name="sexe">France</option>
+                                    <option value="H" name="sexe">...</option>
+                                </select><br><br>      
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Les Langages Préferés</label>
+                            </td>
+                            <td>
+                                <p></p><select multiple name="musique" size="4">
+                                    <option value="emo" selected>C++</option> 
+                                    <option value="metal/rock" >JAVA</option> 
+                                    <option value="hiphop">C</option> 
+                                    <option value="ska">PHP</option>
+                                </select>(Pour faire plusieurs choix maintenir la touche CTRL enfoncée)<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Domaine D'Activités</label>
+                            </td>
+                            <td>
+                                <label><input  type="checkbox" name="binet" value="chat" checked>Informatique</label>
+                                <label><input  type="checkbox" name="binet" value="chat">Gestion</label>
+                                <label><input  type="checkbox" name="binet" value="chat">Pédagogie</label>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    <input type="submit" value="Envoyer"/>
+                                    <input type="reset" value="Annuler"/>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+        </fieldset>
+        <video src="https://www.youtube.com/watch?v=NS3OgXaHoyc"></video>
+
+</body>

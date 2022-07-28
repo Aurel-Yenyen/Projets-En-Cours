@@ -1,0 +1,220 @@
+@font-face {
+    font-family: ballpark;
+    src: url(Police/ballpark.ttf);}
+
+@font-face {
+    font-family: dayrom;
+    src: url(Police/dayrom.ttf);}
+
+@media screen and (min-width: 900px){
+    body{
+        margin: 0;
+        padding: 20px 50px;
+        background: #fff7da;
+        text-shadow: 1px 2px 3px rgb(44, 42, 42);}
+    
+    .content{
+        background: #fff7da;
+        height: 150px;
+        display: grid;
+        grid-template-columns: 20% 79%;
+        grid-template-areas: 
+            "logo nav"}
+    
+    .logo{
+        background: url(image/zozor_logo.png);
+        width: 60px;
+        height: 60px;
+        grid-area: logo;}
+    
+    .title{
+        font-family: ballpark;
+        font-size: 40px;
+        grid-area: logo;
+        margin: 50px;}
+        
+    .subtitle{
+        font-family: dayrom;
+        font-weight: bold;
+        grid-area: logo;
+        margin-top: 80px;
+        margin-left: 10px;}
+    
+    .navbar ul li{
+        font-family: dayrom;
+        font-size: 20px;
+        list-style-type: none;}
+    
+    ul{
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;}
+
+    li{ 
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+    .modal_close{
+        visibility: hidden;}
+    a{
+        text-decoration: none;
+        color: black;}
+    
+    .navbar ul a:hover{
+        color: #8f463d;
+        text-shadow: 1px 2px 3px #6e342d;
+        border-bottom: 3px solid #8f463d;}
+    
+    .accueil{
+        grid-area: acc;}
+    
+    .blog{
+        grid-area: blo;}
+    
+    .cv {
+        grid-area: cv;}
+    
+    .contact{
+        grid-area: cont;}
+    
+    .slide{
+        background: url(image/separateur.png);
+        width: 90vw;
+        height: 4px;}
+        /* Main */
+    #ane{
+        width: 300px;
+        height: 470px;
+        background: #6f6a64;
+        font-family: dayrom;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;}
+    
+    
+    .propos{
+        font-size: 20px;
+        text-align: center;}
+    
+    .ane{
+        background: url(image/zozor_classe.png);
+        width: 100px;
+        height: 115px;
+        align-self: center;}
+    
+    p{
+        padding: 10px;}
+    
+    .reseaux{
+        display: flex;
+        justify-content: space-around;}
+    
+    .facebook, .v, .twitter, .fick, .net{
+        width: 40px;
+        height: 40px;
+        box-shadow: 1px 2px 3px rgb(44, 42, 42)}
+    
+    .facebook{
+        background: url(image/facebook.png);}
+    
+    .twitter{
+        background: url(image/twitter.png);}
+    
+    .v{
+        background: url(image/vimeo.png);}
+    
+    .fick{
+        background: url(image/flickr.png);}
+    
+    .net{
+        background: url(image/rss.png);}
+        /* Footer */
+    .bulle{
+        background: url(image/bulle.png);
+        width: 10px;
+        height: 15px;
+        margin-top: -90%;
+        margin-left: -3%;}
+    
+    footer{
+        
+        font-family: dayrom;}
+    
+    #FIN{
+        display: flex;}
+    
+    .footer{
+        box-shadow: 1px 2px 3px rgb(44, 42, 42)}
+    
+    .fleche{
+        margin-left: 50%;
+        margin-top: -4px;}
+    
+    .hii, .le{
+        margin-top: -20px;}
+    
+    .mon{
+        font-size: 25px;}
+    
+    #partie2{
+        margin-left: 300px;}
+    
+    .photos{
+        font-size: 25px;}
+    
+    .images{
+        display: flex;
+        margin-right: 10px;}
+    
+    .un{
+        background-image: url(image/photo1.jpg);
+        background-size: cover;
+        height: 75px;
+        width: 65px;
+        border: solid 1px black;}
+    
+    .deux{
+        background-image: url(image/photo2.jpg);
+        background-size: cover;
+        height: 75px;
+        width: 75px;
+        border: solid 1px black;
+        margin-left: 5px;}
+    
+    .trois{
+        background-image: url(image/photo3.jpg);
+        background-size: cover;
+        height: 75px;
+        width: 75px;
+        border: solid 1px black;
+        margin-left: 5px;}
+    
+    .quatre{
+        background-image: url(image/photo4.jpg);
+        background-size: cover;
+        height: 75px;
+        width: 75px;
+        border: solid 1px black;
+        margin-left: 5px;}
+    
+    #partie3{
+        margin-left: 20px;
+        height: 210px;
+        width: 500px;}
+    
+    .amis{
+        font-size: 25px;
+        margin-bottom: 0.1px;}
+    
+    .liste{
+        height: 100px;
+        color: #8f463d;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 25% 25% 25% 25%;
+        font-size: 16px;
+        margin-top: -15px;}
+}
+

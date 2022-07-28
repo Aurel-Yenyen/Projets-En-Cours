@@ -1,0 +1,23 @@
+div{
+    border: 2px solid black;
+    padding: 25px;
+    margin: 25px;
+}
+@media (max-width: 600px){
+    .rose{
+        background-color: pink;
+    }
+}
+
+@media (min-width: 900px){
+    .orange{
+        background-color: orange;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .bleu{
+        background-color: lightblue;
+    }
+}
+    

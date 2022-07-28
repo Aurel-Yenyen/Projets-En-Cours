@@ -1,0 +1,46 @@
+body{
+    padding: 20px;
+    margin: 0;
+    height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: repeat(7, 10%) 60px;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "logo header header header"
+        "main main main navbar"
+        "main main main navbar"
+        "main main main navbar"
+        "main main main navbar"
+        "main main main navbar"
+        "main main main navbar"
+        "footer footer footer footer"
+}
+
+.logo{
+    background: brown;
+    grid-area: logo;
+}
+header{
+    background: blue;
+    grid-area: header;
+}
+main{
+    background: grey;
+    grid-area: main;
+}
+.navbar{
+    background: aqua;
+    grid-area: navbar;
+}
+footer{
+    background: black;
+    grid-area: footer;
+}
+
+
+
+
+
+

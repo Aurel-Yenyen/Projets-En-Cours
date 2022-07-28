@@ -1,0 +1,127 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;}
+
+#content{
+    width: 635px;
+    height: 475px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 1px solid black;
+    font-family: 'Karla', sans-serif;}
+
+.cadre1{
+    width: 100%;
+    height: 45%;
+    background-color: white;}
+
+.cadre2{
+    width: 49%;
+    height: 55%;
+    background: #2AB3B1;}
+
+.cadre3{
+    width: 51%;
+    height: 55%;
+    background: #4BBFBD;}
+    /* Cadre 1 */
+.title{
+    color: #2AB3B1;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;}
+
+.cadre1 .title{
+    margin-top: 30px;}
+
+.subtitle{
+    color: #C0DF33;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 50px;}
+
+.subtitle2{
+    color: #9AA7BE;
+    font-size: 16px;
+    line-height: 26px;
+    width: 555px;
+    height: 52px;
+    margin-left: 50px;}
+    /* Cadre 2 */
+.cadre2{
+    display: flex;
+    flex-direction: column;}
+
+.button, .price, .sub{
+    margin-left: 30px;}
+
+.sub{
+    margin-top: 20px;}
+
+.month{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;}
+
+.number{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;}
+
+.price, .one{
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 10px;
+    color: white;}
+
+.price{
+    display: flex;
+    width: 170px;
+    align-items: center;
+    height: 37px;}
+
+.price, .number, .one{
+    margin-left: 15px;}
+
+.one{
+    opacity: 0.5;}
+
+.condition{
+    font-size: 16px;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 30px;}
+
+button{
+    background-color: #C0DF33;
+    width: 237px;
+    height: 48px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);}
+    /* Cadre 3  */
+.cadre3{
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.why{
+    margin-right: 65px;
+    font-size: 18px;
+    font-weight: bold;}
+
+

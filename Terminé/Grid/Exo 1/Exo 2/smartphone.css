@@ -1,0 +1,39 @@
+@media screen and (min-width: 300px) and (max-width: 420px){
+    body{
+        padding: 20px;
+        margin: 0;
+        height: 100vh;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 70% 25%;
+        grid-template-rows: 10% 10% 30% 30% 10%;
+        grid-gap: 20px;
+        grid-template-areas:
+            "header header"
+            "section section"
+            "nav aside"
+            "nav aside"
+            "footer footer"
+    }
+    
+    header{
+        background: green;
+        grid-area: header;
+    }
+    section{
+        background: purple;
+        grid-area: section;
+    }
+    main{
+        background: aqua;
+        grid-area: nav;
+    }
+    .aside{
+        background: orange;
+        grid-area: aside;
+    }
+    footer{
+        background: red;
+        grid-area: footer;
+    }
+}
