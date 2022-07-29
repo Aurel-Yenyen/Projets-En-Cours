@@ -1,8 +1,13 @@
-@media screen and (min-width: 900px) and (max-width: 2000px){
+@media screen and (min-width: 600px){
+    body{
+        font-family: 'Segoe UI';
+        padding-left: 7%;
+        padding-right: 7%;
+        background-color: black;}
     header{
         background: url(img/font.png);
         background-size: cover;
-        width: 100vw;
+        width: 85vw;
         height: 100vh;
         filter:sepia(20px);
         font-family: 'Segoe UI', sans-serif;
@@ -43,15 +48,268 @@
         margin-top: 250px;
         font-size: 40px;
     }
-    p{
+    .para1, .para2{
         background-color: rgb(7, 7, 7, .7);
     }
     .burger{
         display: none;
     }
+    /* --------------------------------------SERVICES---------------------------------------------------- */
+
+#services{
+    margin-top: 340px;
+    background-color: #4bcaff;
+    border: solid 1px transparent;
+    color: white;}
+
+.firstlign{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    font-size: 20px;}
+
+.titles{
+    font-size: 18px;
+    font-weight: 700;}
+
+.secondlign{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    line-height: 1px;
+    justify-content: space-between;}
+
+.texts{
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom:50px;
+    width: 200px;}
+
+.coffeelogo{
+    background-image: url(img/coffeelogo.png);
+    width: 25px;
+    height: 37px;}
+
+.instantlogo{
+    background-image: url(img/instantlogo.png);
+    width: 35px;
+    height: 36px;}
+
+.seriouslogo{
+    background-image: url(img/seriouslogo.png);
+    width: 35px;
+    height: 33px;}
+
+.framelogo{
+    background-image: url(imgframelogo.png);
+    width: 40px;
+    height: 35px;}
+
+/* --------------------------------------PORTFOLIO---------------------------------------------------- */
+
+#portfolio{
+    border: solid 1px transparent;
+    background-color: white;}
+
+                             /* -------------------MENU----------------------- */
+
+#content1{
+    width: 62%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;}
+    
+.titre{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 50px ;
+    color: #889298;}
+
+.souligne{
+    text-decoration: underline;}
+
+.menu{
+    display: flex;
+    font-weight: 700;
+    font-size: 11px;
+    color: #6F7A80;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 50px ;
+    align-items: center;}
+
+.all:hover, .por:hover, .pano:hover, .mac:hover, .jour:hover{
+    color: #4bcaff;
+    cursor: pointer;
+    border: solid 2px #4bcaff;
+    text-align: center;
+    transition: 0.3s;
+    width: 100px;}
+
+                             /* ---------------------IMAGES------------------ */
+
+#content2{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: -7px;
+    margin-bottom: 50px;
+    width: 60.5%;}
+
+#content2 div{
+    margin-top: 20px;
+    height:200px;
+    width: 200px;}
+
+.photo1{
+    background-image: url(img/portfolio1.png);}
+.photo1:hover{
+    background-image: url(img/OPAC1.png);
+    transition: 0.5s;
+    cursor: pointer;}
+
+.photo2{
+    background-image: url(img/portfolio2.png);}
+.photo2:hover{
+    background-image: url(img/OPAC2.png);
+    transition: 0.5s;
+    cursor: pointer;}
+
+.photo3{
+    background-image: url(img/portfolio3.png);}
+.photo3:hover{
+    background-image: url(img/OPAC3.png);
+    transition: 0.5s;
+    cursor: pointer;}
+
+.photo4{
+    background-image: url(img/portfolio4.png);}
+.photo4:hover{
+    background-image: url(img/OPAC4.png);
+    transition: 0.5s;
+    cursor: pointer;}
+
+.photo5{
+    background-image: url(img/portfolio5.png);}
+.photo5:hover{
+    background-image: url(img/OPAC5.png);
+    transition: 0.5s;
+    cursor: pointer;}
+
+.photo6{
+    background-image: url(img/portfolio6.png);}
+.photo6:hover{
+    background-image: url(img/OPAC6.png);
+    transition: 0.5s;
+    cursor: pointer;}
+
+.photo7{
+    background-image: url(img/portfolio7.png);}
+.photo7:hover{
+    background-image: url(img/OPAC7.png);
+    transition: 0.5s;
+    cursor: pointer;}
+
+.photo8{
+    background-image: url(img/portfolio8.png);}
+.photo8:hover{
+    background-image: url(img/OPAC8.png);
+    cursor: pointer;
+    transition: 0.5s;}
+
+/* ---------------------------------JUST DEFAULT SECTION---------------------------------------- */
+
+#justdefault{
+    display: flex;
+    background-color: #515f67}
+
+                             /* ---------------------PARTIE GAUCHE------------------ */
+
+.gauche{
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 50px;
+    margin-top: 20px;}
+
+.just{
+    margin-top: 50px ;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;}
+
+.p1, .p2{
+    font-weight: 400;
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 30px;
+    width: 400px;}
+
+button{
+    color:black;
+    background-color: transparent;
+    border: solid 1px black;
+    width: 105px;
+    height: 33px;}
+
+button:hover{
+    cursor: pointer;}
+
+                             /* ---------------------PARTIE DROITE------------------ */
+
+.droite{
+    margin-right: 20%;
+    margin-top: 20px;}
+
+.video{
+    background-image: url(img/video.png);
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 22vw;
+    float: right;
+    height: 233px;}
+
+/* ---------------------------------TWITTER---------------------------------------- */
+
+#TWITT{
+    background-color: #4bcaff;
+    border: solid 1px transparent;
+    color: white;}
+
+.ligne1{
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 20%;}
+    
+.twit{
+    margin-top: 50px;;
+    font-size: 20px;}
+
+.logotwitter{
+    background-image: url(img/twitter.png);
+    width: 21px;
+    height: 21px;
+    margin-top: 50px ;
+    margin-left: 89.3%;}
+
+.arobase{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+    margin-bottom: 50px;}
+
+.gras{
+    font-weight: bold;}
 }
 
-@media screen and (min-width:300px) and (max-width:800px){
+@media screen and (min-width:300px) and (max-width:600px){
     .burger {
         display:block;
         position:relative;
@@ -134,8 +392,64 @@
         margin-top: 150px;
         font-size: 20px;
     }
-    p{
+    .para1, .para2{
         background-color: rgb(7, 7, 7, .7);
     }
+    .texts{
+        display: none;}
+
+.secondlign{
+        align-items: center;
+        height: 400px;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;}
+
+#content1{
+    flex-direction: column;}
+
+.menu{
+    flex-direction: column;
+    margin-left: 60px;}
+
+#justdefault{
+    flex-direction: column;}
+
+.p1{
+    width: 130%;
+    height: 0px;
+    margin-bottom: auto;}
+
+.p2{
+    visibility: hidden;}
+
+button{
+    margin-bottom: 10px;}
+
+.droite{
+    width: 300px;
+    margin-left: 180px;
+    margin-top: -100px;}
+
+.video{
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    margin-left:100px;
+    margin-right: 100px;}
+
+.logotwitter{
+    margin-left: 130px;}
+
+
+    
+#content2 div{
+    width: 100px;
+    height: 100px;}    
+
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8{
+    background-size: cover};}
+
+
 
 }
