@@ -1,455 +1,296 @@
-@media screen and (min-width: 600px){
-    body{
-        font-family: 'Segoe UI';
-        padding-left: 7%;
-        padding-right: 7%;
-        background-color: black;}
-    header{
-        background: url(img/font.png);
-        background-size: cover;
-        width: 85vw;
-        height: 100vh;
-        filter:sepia(20px);
-        font-family: 'Segoe UI', sans-serif;
-        color: white;
-    }
-    .navbar{
-        width: 100vw;
-        height: 150px;
-        background-color: rgb(7, 7, 7, .7);
-    }
-    .logo{
-        background: url(img/logo.png);
-        background-size: cover;
-        width: 160px;
-        height: 28px;
-        margin-top: -90px;
-        margin-left: 90px;
-    }
-    ul{
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    ul li{
-        margin-right: 50px;
-        margin-top: -40px;
-        list-style-type: none;
-    }
-    a:hover{
-        color: #48BAE9;
-        border: 3px solid #48BAE9;
-        padding: 5px;
-    }
-    .texte{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 250px;
-        font-size: 40px;
-    }
-    .para1, .para2{
-        background-color: rgb(7, 7, 7, .7);
-    }
-    .burger{
-        display: none;
-    }
-    /* --------------------------------------SERVICES---------------------------------------------------- */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-#services{
-    margin-top: 340px;
-    background-color: #4bcaff;
-    border: solid 1px transparent;
-    color: white;}
+header{
+    background: url(img/font.png);
+    background-size: cover;
+    width: 99vw;
+    height: 100vh;
+    filter:sepia(20px);
 
-.firstlign{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 50px;
-    font-size: 20px;}
-
-.titles{
-    font-size: 18px;
-    font-weight: 700;}
-
-.secondlign{
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    display: flex;
-    line-height: 1px;
-    justify-content: space-between;}
-
-.texts{
-    font-size: 9px;
-    line-height: 12px;
-    margin-bottom:50px;
-    width: 200px;}
-
-.coffeelogo{
-    background-image: url(img/coffeelogo.png);
-    width: 25px;
-    height: 37px;}
-
-.instantlogo{
-    background-image: url(img/instantlogo.png);
-    width: 35px;
-    height: 36px;}
-
-.seriouslogo{
-    background-image: url(img/seriouslogo.png);
-    width: 35px;
-    height: 33px;}
-
-.framelogo{
-    background-image: url(imgframelogo.png);
-    width: 40px;
-    height: 35px;}
-
-/* --------------------------------------PORTFOLIO---------------------------------------------------- */
-
-#portfolio{
-    border: solid 1px transparent;
-    background-color: white;}
-
-                             /* -------------------MENU----------------------- */
-
-#content1{
-    width: 62%;
-    margin-left: 20%;
-    margin-right: 20%;
-    display: flex;}
-    
-.titre{
     color: white;
-    font-weight: 400;
-    font-size: 20px;
-    margin-top: 50px ;
-    color: #889298;}
+}
 
-.souligne{
-    text-decoration: underline;}
+.head{
+    width: 99vw;
+    height: 150px;
+    background-color: rgb(7, 7, 7, .7);
+}
 
-.menu{
+.blueasy{
+    background: url(img/logo.png);
+    background-size: cover;
+    width: 160px;
+    height: 28px;
+    margin-top: -90px;
+    margin-left: 90px;
+}
+
+ul{
     display: flex;
-    font-weight: 700;
-    font-size: 11px;
-    color: #6F7A80;
+    justify-content: flex-end;
+}
+    
+ul li{
+    margin-right: 50px;
+    margin-top: -40px;
+    list-style-type: none;
+}
+
+.link a:hover{
+    color: #48BAE9;
+    border: 3px solid #48BAE9;
+    padding: 5px;
+}
+
+.navbar a:hover{
+    color: #48BAE9;
+    border: 3px solid #48BAE9;
+    padding: 5px;
+}
+
+.texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    font-size: 40px;
+}
+
+.para1, .para2{
+    background-color: rgb(7, 7, 7, .7);
+}
+
+.burger{
+    display: none;
+}
+
+.service{
+    background: #4BCAFF;
+    height: 400px;
+    margin-top: -5%;
+}
+
+h1{
+    font-weight: lighter;
+    color: white;
+    margin-left: 5%;
+    padding-top: 40px;
+}
+
+.grey{
+    color: #90989D;
+}
+
+.text{
+    display: flex;
     justify-content: space-around;
-    width: 50%;
+    color: white;
+}
+
+.coffee{
+    background: url(img/coffee.png);
+    background-size: cover;
+    width: 40px;
+    height: 57px;
+    margin-left: 43%;
+}
+
+.polaroid{
+    background: url(img/polaroid.png);
+    background-size: cover;
+    width: 60px;
+    height: 57px;
+    margin-left: 43%;
+}
+
+.cadre{
+    background: url(img/cadre.png);
+    background-size: cover;
+    width: 64px;
+    height: 57px;
     margin-left: 40%;
-    margin-top: 50px ;
-    align-items: center;}
+}
 
-.all:hover, .por:hover, .pano:hover, .mac:hover, .jour:hover{
-    color: #4bcaff;
-    cursor: pointer;
-    border: solid 2px #4bcaff;
-    text-align: center;
-    transition: 0.3s;
-    width: 100px;}
+.robot{
+    background: url(img/seriouslogo.png);
+    background-size: cover;
+    width: 63px;
+    height: 57px;
+    margin-left: 42%;
+}
 
-                             /* ---------------------IMAGES------------------ */
+.subtitle{
+    margin-left: 40%;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-#content2{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: -7px;
-    margin-bottom: 50px;
-    width: 60.5%;}
+.comment{
+    width: 15vw;
+}
 
-#content2 div{
-    margin-top: 20px;
-    height:200px;
-    width: 200px;}
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 5% );
+}
+
+.link{
+    grid-column: 8 / 11;
+    grid-row: 3;
+    margin-top: -3%;
+    margin-left: 40px;  
+}
+
+.link a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.grey{
+    margin-left: 50%;
+}
+
+.photos{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 30%);
+    grid-template-rows: repeat(2, 60%);
+    width: 1400px;
+    height: 750px;
+}
 
 .photo1{
-    background-image: url(img/portfolio1.png);}
-.photo1:hover{
-    background-image: url(img/OPAC1.png);
-    transition: 0.5s;
-    cursor: pointer;}
+    background: url(img/portfolio1.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
 .photo2{
-    background-image: url(img/portfolio2.png);}
-.photo2:hover{
-    background-image: url(img/OPAC2.png);
-    transition: 0.5s;
-    cursor: pointer;}
+    background: url(img/portfolio2.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
 .photo3{
-    background-image: url(img/portfolio3.png);}
-.photo3:hover{
-    background-image: url(img/OPAC3.png);
-    transition: 0.5s;
-    cursor: pointer;}
+    background: url(img/portfolio3.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
 .photo4{
-    background-image: url(img/portfolio4.png);}
-.photo4:hover{
-    background-image: url(img/OPAC4.png);
-    transition: 0.5s;
-    cursor: pointer;}
+    background: url(img/portfolio4.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
 .photo5{
-    background-image: url(img/portfolio5.png);}
-.photo5:hover{
-    background-image: url(img/OPAC5.png);
-    transition: 0.5s;
-    cursor: pointer;}
+    background: url(img/portfolio5.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
 .photo6{
-    background-image: url(img/portfolio6.png);}
-.photo6:hover{
-    background-image: url(img/OPAC6.png);
-    transition: 0.5s;
-    cursor: pointer;}
+    background: url(img/portfolio6.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
 .photo7{
-    background-image: url(img/portfolio7.png);}
-.photo7:hover{
-    background-image: url(img/OPAC7.png);
-    transition: 0.5s;
-    cursor: pointer;}
+    background: url(img/portfolio7.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
 .photo8{
-    background-image: url(img/portfolio8.png);}
-.photo8:hover{
-    background-image: url(img/OPAC8.png);
-    cursor: pointer;
-    transition: 0.5s;}
+    background: url(img/portfolio8.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
-/* ---------------------------------JUST DEFAULT SECTION---------------------------------------- */
-
-#justdefault{
-    display: flex;
-    background-color: #515f67}
-
-                             /* ---------------------PARTIE GAUCHE------------------ */
-
-.gauche{
-    width: 50%;
-    margin-left: 20%;
-    margin-bottom: 50px;
-    margin-top: 20px;}
+.photo1:hover, .photo2:hover, .photo3:hover, .photo4:hover, .photo5:hover, .photo6:hover, .photo7:hover, .photo8:hover{
+    background: url(img/+.png);
+    background-size: cover;
+}
 
 .just{
-    margin-top: 50px ;
-    margin-bottom: 30px;
+    background: #515F67;
+    height: 500px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 25% 45% 30%;
+}
+.just h1{
+    margin-left: 12%;
+}
+.text2{
     color: white;
-    font-size: 20px;}
+    width: 540px;
+    margin-left: 12%;
+    grid-column: 1;
+    grid-row: 2;
+}
 
-.p1, .p2{
-    font-weight: 400;
-    color: white;
-    font-size: 11px;
-    line-height: 15px;
-    margin-bottom: 30px;
-    width: 400px;}
+.visit{
+    grid-column: 1;
+    grid-row: 3;
+    width: 230px;
+    height: 75px;
+    margin-left: 10vw;
+    background: none;
+    border: 4px solid #3D484F;
+    color: #3D484F;
+    cursor: pointer;
+}
 
-button{
-    color:black;
-    background-color: transparent;
-    border: solid 1px black;
-    width: 105px;
-    height: 33px;}
-
-button:hover{
-    cursor: pointer;}
-
-                             /* ---------------------PARTIE DROITE------------------ */
-
-.droite{
-    margin-right: 20%;
-    margin-top: 20px;}
-
-.video{
-    background-image: url(img/video.png);
+.movie{
+    background: url(img/video.png);
     background-size: cover;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 22vw;
-    float: right;
-    height: 233px;}
+    width: 500px;
+    height: 300px;
+    grid-column: 3;
+    grid-row: 2;
+}
 
-/* ---------------------------------TWITTER---------------------------------------- */
+.twitter{
+    background: #4BCAFF;
+    margin-top: -2%;
+    height: 300px;
+}
 
-#TWITT{
-    background-color: #4bcaff;
-    border: solid 1px transparent;
-    color: white;}
-
-.ligne1{
+.para3, .para4, .para5{
+    color: white;
+    padding-left: 5%;
+    padding-top: 20px;
+}
+.paragraphe{
     display: flex;
-    margin-bottom: 30px;
-    margin-left: 20%;
-    margin-right: 20%;}
-    
-.twit{
-    margin-top: 50px;;
-    font-size: 20px;}
-
-.logotwitter{
-    background-image: url(img/twitter.png);
-    width: 21px;
-    height: 21px;
-    margin-top: 50px ;
-    margin-left: 89.3%;}
-
-.arobase{
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 20px;
-    margin-bottom: 50px;}
-
-.gras{
-    font-weight: bold;}
+}
+.para5{
+    margin-left: -93px;
+}
+.para4{
+    font-weight: bold;
 }
 
-@media screen and (min-width:300px) and (max-width:600px){
-    .burger {
-        display:block;
-        position:relative;
-        padding:0;
-        width:45px;
-        height:45px;
-        border:none;
-        background:transparent;
-        cursor:pointer;
-        margin-left: 280px;
-        margin-top: -30px;
-      }
-      .bar {
-        display:block;    
-        width:45px;
-        height:4px;  
-        border-radius:3px;
-        background: white; 
- 
-      }
-      .bar::before, .bar::after {
-        content:"";
-        width:45px;
-        height:4px;
-        position:absolute; 
-        left:0;  
-        background: white; 
-        border-radius:3px;    
-        transition: all .5s ease-in-out;
-      }
-      .bar::before {
-        transform:translateY(-12px)
-      }
-      .bar::after {
-        transform:translateY(12px)
-      }
-      header{
-        background: url(img/font.png);
-        background-size: cover;
-        width: 99.5%;
-        height: 100vh;
-        filter:sepia(20px);
-        font-family: 'Segoe UI', sans-serif;
-        color: white;
-    }
-    .navbar{
-        width: 100%;
-        height: 100px;
-        background-color: rgb(7, 7, 7, .7);
-    }
-    .logo{
-        background: url(img/logo.png);
-        background-size: cover;
-        width: 89px;
-        height: 16px;
-        margin-top: -50px;
-        margin-left: 40px;
-    }
-    ul{
-        display: none;
-    }
-    
-    ul li{
-        margin-right: 50px;
-        margin-top: -40px;
-        list-style-type: none;
-    }
-    a:hover{
-        color: #48BAE9;
-        border: 3px solid #48BAE9;
-        padding: 5px;
-    }
-    .texte{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-left: 10%;
-        width: 300px;
-        margin-top: 150px;
-        font-size: 20px;
-    }
-    .para1, .para2{
-        background-color: rgb(7, 7, 7, .7);
-    }
-    .texts{
-        display: none;}
-
-.secondlign{
-        align-items: center;
-        height: 400px;
-        flex-direction: column;
-        margin-top: 50px;
-        margin-bottom: 50px;}
-
-#content1{
-    flex-direction: column;}
-
-.menu{
-    flex-direction: column;
-    margin-left: 60px;}
-
-#justdefault{
-    flex-direction: column;}
-
-.p1{
-    width: 130%;
-    height: 0px;
-    margin-bottom: auto;}
-
-.p2{
-    visibility: hidden;}
-
-button{
-    margin-bottom: 10px;}
-
-.droite{
-    width: 300px;
-    margin-left: 180px;
-    margin-top: -100px;}
-
-.video{
+.who{
+    background: url(img/fondwho.png);
     background-size: cover;
-    width: 360px;
-    height: 200px;
-    margin-left:100px;
-    margin-right: 100px;}
-
-.logotwitter{
-    margin-left: 130px;}
-
-
-    
-#content2 div{
-    width: 100px;
-    height: 100px;}    
-
-.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8{
-    background-size: cover};}
-
-
-
+    margin-top: -22px;
+    height: 800px;
 }
+
+
