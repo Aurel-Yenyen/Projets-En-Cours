@@ -1,0 +1,93 @@
+:root{
+    --un: #E142DC;
+    --cinq: #E5E5E5;
+    --deux: #6751E7;
+}
+
+body{
+    background-color: var(--cinq);
+}
+
+.text-center{
+    width: 600px;
+
+}
+
+.col{
+    width: 250px;
+    height: 450px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 1px grey;
+    text-align: center;
+}
+
+.bande1{
+    width: 290px;
+    height: 20px;
+    margin-left: -12px;
+    background: var(--un);
+}
+.bande2{
+    width: 290px;
+    height: 20px;
+    margin-left: -12px;
+    background: #2CBECC;
+}
+.bande3{
+    width: 290px;
+    height: 20px;
+    margin-left: -12px;
+    background: var(--deux);
+}
+.bande4{
+    width: 290px;
+    height: 20px;
+    margin-left: -12px;
+    background: #F1C50E;
+}
+.title{
+    margin-top: 10%;
+    width: 200px;
+    margin-left: 35px;
+    font-size: 30px;
+    line-height: 30px;
+}
+.subtitle{
+    width: 200px;
+    margin-left: 35px;
+    margin-top: 10%;
+    font-size: 20px;
+    line-height: 35px;
+}
+.logo1{
+    background: url(img/logo1.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    margin: 10% 0% 0% 40%;
+}
+.logo2{
+    background: url(img/logo2.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    margin: 10% 0% 0% 40%;
+}
+.logo3{
+    background: url(img/logo3.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    margin: 10% 0% 0% 40%;
+}
+.logo4{
+    background: url(img/logo4.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    margin: 10% 0% 0% 40%;
+}
