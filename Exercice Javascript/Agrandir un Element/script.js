@@ -1,37 +1,30 @@
 let titre = document.getElementById("titre");
 
-
-titre.addEventListener("click", changetext,)
+const taille = ["18px", "40px", "60px"];
+titre.addEventListener("click", changetext)
 
 
 function changetext(){
-    let clique = 0;
-    while (clique == 0){
-            this.style.color = 'blue';
-            this.style.fontSize = ''; 
-        if (clique += 1){
-            this.style.color = 'red';
-            this.style.fontSize = '';
+    const number = Math.floor(Math.random()*taille.length);
+    if (number == 0){
+        this.style.fontSize = taille[0]
+        console.log(number)
+    }else{
+        this.style.fontSize = taille[1]
+        console.log(number)
     }
-    }
+ }
 
+let number = 20;
+let compte = document.getElementById("compte");
 
-    
-    console.log(clique)
+const body = document.querySelector('body')
+
+for (let number = 20; number >= 0; number-=2){
+    let para = document.createElement('p')
+    para.innerHTML = number
+    body.append (para)
+    compte.innerHTML += number + " ";
 }
 
-// let number = 20;
-// let compte = document.getElementById("compte");
-
-// const body = document.querySelector('body')
-
-// for (let number = 20; number >= 0; number-=2){
-//     let para = document.createElement('p')
-//     para.innerHTML = number
-//     body.append (para)
-//     compte.innerHTML += number + " ";
-// }
-
-
-// para.innerHTML = "Bonjour"
 
