@@ -1,7 +1,7 @@
 let titre = document.getElementById("titre");
 
-titre.addEventListener("click", changetext)
-titre.addEventListener("mousedown", reset)
+titre.addEventListener("click", changetext,)
+titre.removeEventListener("click" , reset,)
 
 
 function changetext(){
