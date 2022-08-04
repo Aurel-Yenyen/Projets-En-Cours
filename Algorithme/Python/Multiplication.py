@@ -5,5 +5,6 @@ multiple = 0
 while not multiple == 10:
     multiple = multiple + 1
     egal = int(chiffre)*multiple
-    print(egal)
+    print(str(chiffre) + " x " + str(multiple) + " = " + str(egal))
+
 
