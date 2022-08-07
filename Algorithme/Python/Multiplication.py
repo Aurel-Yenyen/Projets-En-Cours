@@ -1,10 +1,36 @@
-chiffre: str = input("Veuillez rentrer un chiffre! ")
-multiple = 0
+# Algorithme
 
+# Crée une variable et Concatainer des Chaînes de Caractères: {
 
-while not multiple == 10:
-    multiple = multiple + 1
-    egal = int(chiffre)*multiple
-    print(str(chiffre) + " x " + str(multiple) + " = " + str(egal))
+# nom = "Toto "
+# age = "ans"
+# print(nom + age) #ou
+# print("Je m'appelle Toto," + " j'ai 13 ans") #ou
+# print("Je m'appelle " + nom + ",j'ai " + age) }
+
+# Demander une donnée à l'utilisateur: {
+
+# nom = input("Quel est ton nom? ") # <-- Demander une donnée
+# age = input("Quel est votre age? ")
+# print("Je m'appelle," + nom + ", j'ai " + age + " ans")  # <-- Ecrire notre donnée }
+
+# Les types: {
+
+# nom = "Aurélien"
+# age = 32
+# taille = 1,70
+# profession = True
+#
+# print(type(nom))  # <-- Chaîne de Caractère ou String
+# print(type(age)) # <-- Numérique ou Integer
+# print(type(taille)) # <-- Nombre à virgule ou Float
+# print(type(profession)) # <-- Vrai ou Fuax ou Booléen }
+
+# Associé une chaîne de caractère et un numérique: {
+
+# nom = "Aurélien"
+# age = 32
+#
+# print("Je m'appelle " + nom + " j'ai " + str(age) + " ans") }
 
 
