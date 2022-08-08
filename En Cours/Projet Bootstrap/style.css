@@ -14,7 +14,8 @@ body{
 }
 
 .col{
-    width: 250px;
+    width: 18pc;
+
     height: 450px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
@@ -26,25 +27,25 @@ body{
 }
 
 .bande1{
-    width: 290px;
+    width: 18rem;
     height: 20px;
-    margin-left: -12px;
+    margin-left: -11px;
     background: var(--un);
 }
 .bande2{
-    width: 290px;
+    width: 18rem;
     height: 20px;
     margin-left: -12px;
     background: #2CBECC;
 }
 .bande3{
-    width: 290px;
+    width: 18rem;
     height: 20px;
     margin-left: -12px;
     background: var(--deux);
 }
 .bande4{
-    width: 290px;
+    width: 18rem;
     height: 20px;
     margin-left: -12px;
     background: #F1C50E;
