@@ -33,4 +33,15 @@
 #
 # print("Je m'appelle " + nom + " j'ai " + str(age) + " ans") }
 
+# Afficher des Erreurs
+
+age = input("Quel est votre age? ")
+
+try:  # On essaie 
+    age = int(age)
+except:  # Si ça ne marche pas on affiche une exception
+    print("Vous devez rentrer un chiffre ou un nombre! ")
+else:  # Sinon on continue.
+    print("Vous avez " + str(1) + " ans.")
+
 
