@@ -8,6 +8,12 @@
 # print("Je m'appelle Toto," + " j'ai 13 ans") #ou
 # print("Je m'appelle " + nom + ",j'ai " + age) }
 
+# Créer une variable et la réaffecter:
+
+# n = 0 # <-- On créer une variable et on lui affecte la valeur 0
+# n = 1 # <-- On réaffecte une nouvelle valeur à la variable.
+# n = n + 1 # On incrémente (+1) la variable.
+
 # Demander une donnée à l'utilisateur: {
 
 # nom = input("Quel est ton nom? ") # <-- Demander une donnée
@@ -37,11 +43,23 @@
 
 age = input("Quel est votre age? ")
 
-try:  # On essaie 
+try:  # On essaie
     age = int(age)
 except:  # Si ça ne marche pas on affiche une exception
     print("Vous devez rentrer un chiffre ou un nombre! ")
 else:  # Sinon on continue.
     print("Vous avez " + str(1) + " ans.")
+
+# Les Boucles While, "tant que " l'utilisateur n'aura pas rentrer d'age valide il recommence.
+
+n = 0 # On affecte la valeur 0 à n.
+
+while n < 1O:  # Entrée de la boucle. On donne une condition. "Tant que" n est inférieur à 10.
+    print("Valeur de n: " + str(n))
+    n = n + 1  # On ajoute 1 à n.
+
+#On sort ensuite de la boucle.
+
+
 
 
