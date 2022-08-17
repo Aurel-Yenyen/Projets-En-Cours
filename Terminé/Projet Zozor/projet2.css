@@ -1,0 +1,153 @@
+@font-face {
+    font-family: a;
+    src: url(police/ballpark.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(police/dayrom.ttf);
+}
+
+
+body{
+    padding: 50px 50px 50px 50px;
+}
+
+main{
+    display: flex;
+    margin-top: 50px;
+}
+
+#san{
+
+    background-image: url(images/sanfrancisco.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    
+}
+
+
+
+
+.banniere{
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    height: 33px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    align-self: flex-end;
+    bottom: 0;
+}    
+    
+    
+.retour{
+    margin-left: 10px;
+}
+
+.boutton{
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color:#830B0E ;
+    float: right;
+    margin-top: -38px;
+    margin-right: 20px;
+    font-family: 'b';
+    background: linear-gradient(0deg, #821A19 ,#A66662 );
+}
+
+#par{
+    font-family: 'b';
+    margin-left: 25px;
+
+
+}
+
+span{
+    color: #A05955;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+#ane{
+    height: 525px;
+    width: 100Vw;
+    background: #6f6a64;
+    font-family: dayrom;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+
+.propos{
+    font-size: 20px;
+    text-align: center;}
+
+.ane{
+    background: url(images/zozor_classe.png);
+    width: 100px;
+    height: 115px;
+    align-self: center;}
+
+p{
+    padding-left: 10px;
+    padding-right: 10px;}
+
+.reseaux{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;}
+
+.facebook, .v, .twitter, .fick, .net{
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 2px 3px rgb(44, 42, 42)}
+
+.facebook{
+    background: url(images/facebook.png);}
+
+.twitter{
+    background: url(images/twitter.png);}
+
+.v{
+    background: url(images/vimeo.png);}
+
+.fick{
+    background: url(images/flickr.png);}
+
+.net{
+    background: url(images/rss.png);}
+
+.bulle{
+    background: url(images/bulle.png);
+    width: 10px;
+    height: 15px;
+    margin-top: -50%;
+    margin-left: -8px;}
+
+
+    @media (max-width:600px){
+        main{
+            flex-direction: column;
+        }
+        #ane{
+            margin-right: 20px;
+            width: 100%;
+            height: 450px;
+            margin-top: -470px;
+        }
+        .disparait{
+            visibility: hidden;
+        }
+    }

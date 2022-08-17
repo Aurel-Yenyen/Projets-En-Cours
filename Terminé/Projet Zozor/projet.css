@@ -1,0 +1,183 @@
+                                                        @font-face {
+                                                            font-family: ballpark;
+                                                            src: url(police/ballpark.ttf);
+                                                        }
+
+                                                        @font-face {
+                                                            font-family: dayrom;
+                                                            src: url(police/dayrom.ttf);
+                                                        }
+
+body{
+        padding: 50px 50px 50px 50px;
+}
+
+footer{
+    font-family: dayrom;
+}
+
+#FIN{
+    display: flex;
+    margin-top: -10px;
+}
+
+.separateur{
+    background-image: url(images/separateur.png);
+    height: 3px;
+    width: 100%;
+}
+
+.fleche{
+    margin-left: 50%;
+    margin-top: -4px;
+}
+
+
+#partie1{
+justify-content: space-between;
+}
+
+            .mon{
+                font-size: 150%;
+            }
+
+#partie2{
+    margin-left: 15%;
+}
+            
+            .photos{
+                font-size: 150%;
+            }
+
+            .images{
+                display: flex;   
+                justify-content: space-between;
+                width: 320px;   
+            }
+                    .un{
+                        background-image: url(images/photo1.jpg);
+                        background-size: cover;
+                        height: 75px;
+                        width: 65px;
+                        border: solid 1px black;
+                    }
+                    .deux{
+                        background-image: url(images/photo2.jpg);
+                        background-size: cover;
+                        height: 75px;
+                        width: 75px;
+                        border: solid 1px black;
+                        
+                    }
+                    .trois{
+                        background-image: url(images/photo3.jpg);
+                        background-size: cover;
+                        height: 75px;
+                        width: 75px;
+                        border: solid 1px black;
+                        
+                    }
+                    .quatre{
+                        background-image: url(images/photo4.jpg);
+                        background-size: cover;
+                        height: 75px;
+                        width: 75px;
+                        border: solid 1px black;
+                        
+                    }
+
+#partie3{
+    height: 210px;
+    width: 500px;
+    margin-left: 100px;
+}
+            .amis{
+                font-size: 150%;
+                margin-bottom: 0.1px;
+            }
+
+            .liste{
+                height: 150px;
+                color: #8f463d;
+                font-size: 12px;
+                display: grid;
+                grid-template-columns: 49% 49%;
+                grid-template-rows: 15% 15% 15% 15%;
+                grid-template-areas: 
+                "pu be"
+                "bao le"
+                "ka pti"
+                "per fan"
+             }
+             .pu{
+                grid-area: pu;
+             }
+             .be{
+                grid-area: be;
+             }
+             .bao{
+                grid-area: bao;
+             }
+             .le{
+                grid-area: le;
+             }
+             .ka{
+                grid-area: ka;
+             }
+             .pti{
+                grid-area: pti;
+             }
+             .per{
+                grid-area: per;
+             }
+             .fan{
+                grid-area: fan;
+             }
+
+                        
+
+                                    @media (max-width:600px){
+
+                                        body{
+                                            padding-top: 10PX;
+                                            
+                                    }
+                                    #FIN{
+                                        display: flex;
+                                        margin-top: -5%;
+                                    }
+
+                                    .images{
+                                        display: flex;
+                                        flex-wrap: wrap;   
+                                        height: 130px;
+                                        width: 125px;      
+                                    }
+                                            .un, .deux, .trois, .quatre{
+                                                height: 55px;
+                                                width: 55px;
+                                            }
+
+                                    .liste{
+                                        grid-template-columns: 100%;
+                                        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
+                                        grid-template-areas: 
+                                        "pu"
+                                        "bao"
+                                        "ka"
+                                        "per"
+                                        "be"
+                                        "le"
+                                        "pti"
+                                        "fan";
+                            
+                                    }
+
+                                    .amis{
+                                        margin-right: 10%;
+                                    }
+   
+                                    #partie2, #partie3{
+                                        margin-left: 10%;
+                                    }
+                                    }
