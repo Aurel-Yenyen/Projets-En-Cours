@@ -1,4 +1,4 @@
-@media screen and (min-width:600px) {
+@media screen and (min-width:1200px) {
     
 
     body{
@@ -6,6 +6,7 @@
         margin: 0;
         box-sizing: border-box;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
     }
 
     header{
@@ -148,10 +149,10 @@
     }
 
     .link{
-        grid-column: 8 / 11;
+        grid-column: 6 / 11;
         grid-row: 3;
-        margin-top: -3%;
-        margin-left: 40px; 
+        margin-top: -2%;
+        margin-left: 100px;
         font-size: 18px; 
 
     }
@@ -167,66 +168,66 @@
     .photos{
         margin-top: 150px;
         display: grid;
-        grid-template-columns: repeat(4, 30%);
-        grid-template-rows: repeat(2, 60%);
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 45%);
         width: 1400px;
-        height: 750px;
+        height: 750px;;
     }
 
     .photo1{
         background: url(img/portfolio1.png);
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .photo2{
         background: url(img/portfolio2.png);
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .photo3{
         background: url(img/portfolio3.png);
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .photo4{
         background: url(img/portfolio4.png);
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .photo5{
         background: url(img/portfolio5.png);
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .photo6{
         background: url(img/portfolio6.png);
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .photo7{
         background: url(img/portfolio7.png);
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .photo8{
         background: url(img/portfolio8.png);
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .photo1:hover, .photo2:hover, .photo3:hover, .photo4:hover, .photo5:hover, .photo6:hover, .photo7:hover, .photo8:hover{
