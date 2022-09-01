@@ -12,8 +12,8 @@
     header{
         background: url(img/font.png);
         background-size: cover;
-        width: 99vw;
-        height: 100vh;
+        width: 100vw;
+        height: 110vh;
         filter:sepia(20px);
         color: white;
     }
