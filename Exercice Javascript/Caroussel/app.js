@@ -13,7 +13,8 @@ function choix() {
         img.style.animationPlayState = 'paused'
         console.log(radio1, radio2, radio3, radio4, radio5, radio6);
         if (radio1.checked)
-        img.style.transform = 'translateX: 0px'
+        img.style.transform = 'translateX(0px)'
+        
     }
         
 
