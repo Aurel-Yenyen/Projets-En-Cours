@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    justify-content: center;
+    width: 200px;
+    height: 100vh;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 28px;
+    border: 2px solid cadetblue;
+}
+
+p{
+
+}

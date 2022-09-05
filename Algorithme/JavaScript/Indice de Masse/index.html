@@ -9,14 +9,11 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <div id="rect"></div>
-    <div id="content">
-        <span></span>
-        <button id="taille">+ 10px</button>
-        <button id="vert">Vert</button>
-        <button id="init">Initial</button>
-        <button id="invisible">Invisible</button>
-        <button id="visible">Visible</button>
-    </div>
+    <label for="">Votre Taille</label>
+    <input type="text" id="taille" placeholder="Entrez votre taille ici!">
+    <label for="">Votre Poids</label>
+    <input type="text" id="poids" placeholder="Entrez votre poids Ici! " >
+    <button type="button" onclick="getValue()">Votre I.M.C</button>
+    <p id="total"></p>
 </body>
 </html>

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculette{
+    border: 2px solid;
+    padding: 50px;
+
+}
+.ecran{
+    width: 200px;
+    height: 20px;
+    border: 2px solid;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.calcul{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, 25%);
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-areas: 
+    "sept huit neuf ce c"
+    "quatre cinq six div fois"
+    "un deux trois moins plus"
+    "zero zero point egale plus"
+}
+
+.plus{
+    grid-area: plus;
+}
+.zero{
+    grid-area: zero;
+}
+
+.bouton{
+    border-color: orange;
+    background-color: transparent;
+    font-weight: bold;
+}
