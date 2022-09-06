@@ -6,6 +6,12 @@ let cross3 = document.getElementById('radio3')
 let cross4 = document.getElementById('radio4')
 let cross5 = document.getElementById('radio5')
 let cross6 = document.getElementById('radio6')
+let image1 = document.getElementById('img1')
+let image2 = document.getElementById('img2')
+let image3 = document.getElementById('img3')
+let image4 = document.getElementById('img4')
+let image5 = document.getElementById('img5')
+let image6 = document.getElementById('img6')
 
 function reprise(){
     console.log("c'est bon")
@@ -56,12 +62,29 @@ input.addEventListener('click', choix => {
 })
 
 function check(){
-    if (img.style.transform = 'translateX(0px)'){
+    if (image1.style.transform = 'translateX(0px)'){
         cross1.checked = true
-        console.log(radio1);
+        console.log(image1);
     }
-    else if (img.style.transform = 'translateX(-200px)'){
-        cross1.checked = true
+    else if (imag2.style.transform = 'translateX(0)'){
+        cross2.checked = true
+        console.log(image2);
+    }
+    else if (image3.style.transform = 'translateX(0)'){
+        cross3.checked = true
+        console.log(image3);
+    }
+    else if (image4.style.transform = 'translateX(0px)'){
+        cross4.checked = true
+        console.log(image4);
+    }
+    else if (image5.style.transform = 'translateX(0px)'){
+        cross5.checked = true
+        console.log(image5);
+    }
+    else if (image6.style.transform = 'translateX(0px)'){
+        cross6.checked = true
+        console.log(image6);
     }
 }
 

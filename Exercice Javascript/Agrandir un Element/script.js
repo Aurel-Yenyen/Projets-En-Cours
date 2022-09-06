@@ -40,7 +40,7 @@ const body = document.querySelector('body')
 for (let number = 20; number >= 0; number-=2){
     let para = document.createElement('p')
     para.innerHTML = number
-    body.append (para)
+    body.append(para)
     compte.innerHTML += number + " ";
 }
 
