@@ -32,7 +32,7 @@ img{
 }
 
 #image{
-    animation: spin 20s ease-in-out infinite;
+    animation: spin 10s ease-in-out infinite;
 
 
 }
@@ -54,16 +54,16 @@ img{
 0%{
     transform: translateX(var(--image1));
 }
-12.5%{
+20%{
     transform: translateX(var(--image2));  
 }
-25%{
+40%{
     transform: translateX(var(--image3));     
 }
-50%{
+60%{
     transform: translateX(var(--image4));   
 }
-62.5%{
+80%{
     transform: translateX(var(--image5)); 
 }
 100%{
