@@ -1,4 +1,9 @@
+html{
+    --background : #272626
+}
+
 body{
     margin: 0;
     padding: 0;
 }
+
