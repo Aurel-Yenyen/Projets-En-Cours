@@ -6,10 +6,11 @@ let missile = document.getElementById('missile')
 let missileEnemi = document.getElementById('missileEnemi')
 
 // Alliée
-let vaisseauPosition()
 
+let vaisseauX = 370
+let vaisseauY = 510
    
-    ctx.drawImage(commander, vaisseauX, vaisseauY, 50, 49)
+ctx.drawImage(commander, vaisseauX, vaisseauY, 50, 49)
 
 // Ennemie
 let ennemiX = Math.random() * (700 - 50) + 50
@@ -60,6 +61,7 @@ function fireBallEnnemi() {
 
 setInterval(fireBallEnnemi, 20)
 }
+
 fireEnnemi()
 
 if (fireEnnemi() == commander)
@@ -92,4 +94,36 @@ document.addEventListener('keydown', battle =>{
     }
 })      
 
+// function addition(a, b){
+//     return a + b 
+// }
+// c = addition(1, 2)
+// alert(c)
+
+// function hello(name){
+//     return 'Hello ' + name 
+// }
+// c = hello('Aurel')
+// alert(c)
+
+// let vaisseau = {
+//     x : 570,
+//     y :30,
+//     move : function () {
+//         x = x+1
+//         y = y+1
+//     }
+// }
+
+// let personne = {
+//         name : 'Aurel',
+//         age : 32,
+//         condtionAge : function(ageMin, ageMax){
+//             if (this.age >= ageMin && this.age <= ageMax)
+//             console.log('valide');
+//             else
+//             console.log('invalide');
+//         }
+// }
+// personne.condtionAge(18, 25)
 
