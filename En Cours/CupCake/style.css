@@ -92,7 +92,8 @@ body{
 
 .deux{
     grid-row: 10;
-    grid-column: 4;}
+    grid-column: 4;
+    position: relative;}
 
 .trois{
     grid-row: 1;
@@ -141,5 +142,32 @@ a:hover{
     padding: 5px;
 }
 
+.cake{
+    background: url(image/Cake.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 300px;
+    background-position-y: -60px;
+    margin-top: -270px;
+    margin-left: 995px;
+}
 
+.left{
+    margin-top: -550px;
+    margin-left: 150px;
+}
 
+h1, p{
+    color: white;
+}
+
+.submit{
+    background-color: #BE4F60;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+}
