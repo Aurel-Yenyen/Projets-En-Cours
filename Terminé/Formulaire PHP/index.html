@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="demo.php" method="post">
+
+            <div class="sexe">
+                <label for="masculin">Homme:</label><input type="radio" value="homme" name="sex" id="masculin">
+                <label for="feminin">Femme:</label><input type="radio" value="femme" name="sex" id="feminin">
+            </div>
+            <div class="groupe">
+                <label for="prenom">Prénom:</label>
+                <input type="text" name="prenom" id="prenom" value="" required>
+                <div id="erreur1">Prénom manquant</div>
+            </div>
+            <div class="groupe">
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" id="nom" value="" required>
+                <div id="erreur2">Nom manquant</div>
+            </div>
+            <div class="groupe">
+                <label for="mail">E-mail:</label>
+                <input type="mail" name="mail" id="mail" value="" required>
+                <div id="erreur3">E-mail manquant</div>
+            </div>
+            <div class="groupe">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div></div>
+            </div>
+            <div class="bouton">
+                <INPUT type="reset" value="Annuler"><INPUT type="submit" value="Envoyer" id="envoyer">
+            </div>
+    </form>
+
+
+
+</body>
+</html>

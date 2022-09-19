@@ -1,0 +1,59 @@
+form{
+    background-color: rgb(182, 182, 182);
+    width: 750px;
+}
+
+.sexe{
+    text-align: center;
+}
+
+.bouton{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.groupe{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 13% 50% 17%;
+    grid-column-gap: 6%;
+}
+
+#erreur1{
+    display: none;
+    color: #dd1a1a;
+}
+
+#erreur2{
+    display: none;
+    color: #dd1a1a;
+}
+
+#erreur3{
+    display: none;
+    color: #dd1a1a;
+}
+btn=document.getElementById("envoyer");
+btn.addEventListener('click', test);
+
+function test(){
+    var valeur1 = document.querySelector("#prenom").value;
+    var valeur2 = document.querySelector("#nom").value;
+    var valeur3 = document.querySelector("#mail").value;
+    if(valeur1==""){
+        document.getElementById("erreur1").style.display = "block";
+    }
+
+    if(valeur2==""){
+        document.getElementById("erreur2").style.display = "block";
+    }
+
+    if(valeur3==""){
+        document.getElementById("erreur3").style.display = "block";
+    }
+
+
+}
