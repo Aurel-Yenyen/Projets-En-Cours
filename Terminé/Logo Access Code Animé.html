@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="content">
+    <div class="support">
+    <div class="sup_gauche">&#x3C;</div>
+    <div class="gauche">ACCESS</div>
+    <div class="sup_droite">CODE</div>
+    <div class="droite">&#x3E;</div>
+    </div>
+    <div class="trait"><HR ALIGN=left WIDTH="3260"></div>
+    <div class="final">SCHOOL</div>
+</div>
+            
+
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap');
+    
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100vw;}
+        
+    .support{
+    font-family: barlow;
+    font-size: 500px;
+    padding: 100px;
+    display: flex;
+    font-weight: bold;}
+
+    .gauche{
+        margin-left:50px;}
+        
+    .sup_droite{
+        margin-left: 50px;
+        background-color: #d31f43;
+        width: 1400px;
+        color: white;
+        padding-left: 50px;
+        padding-bottom: 50px;}
+
+    .droite{
+        margin-left: 50px;}
+
+    .final{
+        letter-spacing: 430px;
+        padding-left: 350px;
+        font-size: 300px;
+        font-weight: lighter;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 10;}
+
+    .trait{
+        margin-left: 370px;
+        margin-top: -110px;}
+    
+    #content{
+    animation: rotation 5s linear infinite;
+    }
+
+    @keyframes rotation{
+    0%{
+        transform:rotate3d(1,1,1,0deg);
+    }
+    50%{
+        transform:rotate3d(1,1,1,60deg);
+    }
+    100%{
+        transform:rotate3d(1,1,1,360deg);
+    }
+}
+
+
+
+</style>
