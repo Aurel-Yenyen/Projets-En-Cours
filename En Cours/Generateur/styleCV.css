@@ -1,0 +1,77 @@
+
+body{
+    margin: 20px;
+    font-family: 'Caveat', cursive;
+    color: #484545;
+    width: 210mm;
+    height: 297mm;
+    border: 2px solid;
+}
+
+.fond{
+    position: absolute;
+    width: 210mm;
+    height: 297mm;
+}
+
+.nom_age{
+    margin-left: 10px;
+    position: relative;
+    font-size: 20px;
+}
+
+.metier_phrase{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+    margin-left: 40%;
+}
+
+.metier{
+    font-size: 20px;
+}
+
+
+.coordonne{     
+    position: relative;
+    margin-left: 50px;
+    margin-top: 350px;
+}
+
+.metier_phrase{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+}
+
+.metier{
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+.citation{
+    margin-right: 20px;
+    margin-top: -20px;
+    margin-left: -40px;
+}
+
+.gauche{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+.droite{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+.icone{
+    width: 30px;
+    height: 30px;
+    border-radius: #DC5052;
+}
