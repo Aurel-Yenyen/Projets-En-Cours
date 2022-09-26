@@ -9,6 +9,7 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    background-color: #939191;
 }
 
 header{
@@ -16,7 +17,8 @@ header{
     width: 800px;
     color: $colorText;
     height: 200px;
-    box-shadow: 0 0 7px black, 
+    box-shadow: 0 0 7px black;
+    position: fixed;
 
 }
 
@@ -31,7 +33,7 @@ h1, p{
     width: 600px;
     height: 200px;
     margin-top: -50px;
-    box-shadow: 0 0 7px black, 
+    box-shadow: 0 0 7px black;
 
 }
 
@@ -46,6 +48,8 @@ select{
     align-self: center;
     box-shadow: 0 0 7px black;
     margin-top: 20px;
+    border: none;
+    z-index: 0;
 }
 
 button{
@@ -54,5 +58,6 @@ button{
     align-self: flex-end;
     box-shadow: 0 0 7px black;
     background: white;
+    border: none;
 }
 
