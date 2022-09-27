@@ -103,11 +103,6 @@ setInterval(fireBallEnnemi, 20)
 
 fireEnnemi()
 
-
-
-if (fireEnnemi() == commander)
-    alert('vous êtes touché')
-
 function moveRight(){
     ctx.clearRect(vaisseauAlliee.x, vaisseauAlliee.y, 50, 49)
     vaisseauAlliee.x += 10
@@ -135,7 +130,12 @@ document.addEventListener('keydown', battle =>{
     }
 })      
 
+function spinEnnemi(nbr_tir){
+    nbr_tir = fireEnnemi() * Math.random(10 + 1) - 1
 
+}
+
+spinEnnemi(6)
 
 // function addition(a, b){
 //     return a + b 

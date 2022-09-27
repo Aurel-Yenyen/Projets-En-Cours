@@ -15,9 +15,10 @@ body{
 }
 
 .nom_age{
-    margin-left: 10px;
+    margin-left: 50px;
     position: relative;
     font-size: 20px;
+    color: #DC5052;
 }
 
 .metier_phrase{
@@ -36,7 +37,7 @@ body{
 .coordonne{     
     position: relative;
     margin-left: 50px;
-    margin-top: 350px;
+    margin-top: 390px;
 }
 
 .metier_phrase{
@@ -53,9 +54,8 @@ body{
 }
 
 .citation{
-    margin-right: 20px;
     margin-top: -20px;
-    margin-left: -40px;
+    margin-left: -100px;
 }
 
 .gauche{
@@ -74,4 +74,26 @@ body{
     width: 30px;
     height: 30px;
     border-radius: #DC5052;
+}
+.presentation{
+    position: relative;
+    width: 250px;
+    margin-top: -480px;
+    margin-left: 40PX;
+}
+
+.diplome{
+    position: relative;
+    margin-top: 400px;
+    margin-left: 40px;
+}
+.comp{
+    position: relative;
+    margin-top: -750px;
+    margin-left: 400px;
+}
+.loisir{
+    position: relative;
+    margin-left: 400px;
+    margin-top: 100px;
 }

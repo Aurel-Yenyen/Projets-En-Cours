@@ -56,12 +56,12 @@ body{
 }
 
 .title_exp{
-    margin-left: 38%;
+    margin-left: 45%;
     color: white;
 }
 .exp1, .exp2, .exp3, .exp4{
     margin-top: 50px;
-    margin-left: 25%;
+    margin-left: 20%;
     color: white;
 }
 
@@ -110,7 +110,7 @@ label{
 .info{
     margin-top: -400px;
     position: absolute;
-    margin-left: 500px;
+    margin-left: 400px;
     color: white;
 }
 .button{

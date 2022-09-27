@@ -20,7 +20,7 @@
     </header>
     <main>
 
-        <form action="cv.php" method="get">
+        <form action="cv.php" method="post">
 
 
 
@@ -42,8 +42,12 @@
             <input class="pres" type="text" name="work">
             <label for="">Phrase d'Accroche (Citation, Expresssion...)</label>
             <input class="pres" type="text" name="citation">
+            <label for="">Lien Facebook</label>
+            <input class="pres" type="text" name="facebook">
+            <label for="">Lien Linkedin </label>
+            <input class="pres" type="text" name="linkedin">
             <label for="">Brève Présentation</label>
-            <textarea name="" id="present" cols="30" rows="10" name="presentation"></textarea>
+            <textarea name="presentation" id="present" cols="30" rows="10" ></textarea>
         </div>
 
         <div class="fond_exp"></div>
@@ -63,7 +67,7 @@
                     <label for="">Du</label>
                     <input type="text" name="de2">
                     <label for="">Au</label>
-                    <input type="text" name="a2">>
+                    <input type="text" name="a2">
                     <label for="">Diplôme Obtenu</label>
                     <input type="text" name="diplome2">
                     <label for="">Localité</label>
@@ -73,7 +77,7 @@
                     <label for="">Du</label>
                     <input type="text" name="de3">
                     <label for="">Au</label>
-                    <input type="text" name="a3">>
+                    <input type="text" name="a3">
                     <label for="">Diplôme Obtenu</label>
                     <input type="text" name="diplome3">
                     <label for="">Localité</label>
@@ -83,7 +87,7 @@
                     <label for="">Du</label>
                     <input type="text" name="de4">
                     <label for="">Au</label>
-                    <input type="text" name="a4">>
+                    <input type="text" name="a4">
                     <label for="">Diplôme Obtenu</label>
                     <input type="text" name="diplome4">
                     <label for="">Localité</label>
@@ -112,13 +116,16 @@
                 <h1>Information Complémentaire</h1>
             </div>
             <div id="info">
-                <label for="">Vos Loisirs</label>
-                <input type="text" name="loisir">
-                <label for="">Lien Facebook</label>
-                <input type="text" name="facebook">
-                <label for="">Lien Linkedin </label>
-                <input type="text" name="linkedin">
+                <label for="">Loisir 1</label>
+                <input type="text" name="loisir1">
+                <label for="">Loisir 2</label>
+                <input type="text" name="loisir2">
+                <label for="">Loisir 3</label>
+                <input type="text" name="loisir3">
+                <label for="">Loisir 4</label>
+                <input type="text" name="loisir4">
             </div>
+
             <input type="submit" value="Générer le C.V" class="button">
         </div>
         </form>
