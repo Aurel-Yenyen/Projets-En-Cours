@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https : //fonts.googleapis.com/css2?family= famille= Roboto:wght@100;300;400;500;700;900 & display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 <body>
 
@@ -13,17 +17,18 @@
 
     <header>
 
-        <img class="logo" src="img/logo.png" alt="" width="120px" height="50px">
+        <img class="logo" src="img/logo.png" alt="" width="170px" height="50px">
+
             
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="home">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#" class="drop">Dropdown</a>
+                <li><a href="#" class="drop">Drop Down</a>
                     <ul>
                         <li><a></a></li>
                         <li><a></a></li>
@@ -32,7 +37,7 @@
                     </ul>
                 </li>
                 <li><a>Contact</a></li>
-                <li><a>Get Started</a></li>
+                <li><button class="start">Get Started</button></li>
             </ul>
         </nav>
 
@@ -44,10 +49,11 @@
     <section class="header">
 
         <div class="img-head">
-            <img src="img/hero-bg.jpg" alt="">
-            <h1 class="Title">Better digital experience with Presento</h1>
+            <div class="img_head"></div>
+            <div class="blur_img"></div>
+            <h1 class="title">Bettter digital experience with Presento</h1>
             <h3 class="subtitle">We are team of talented designers making websites with bootstrap</h3>
-            <button type="submit">Get Started</button>
+            <button class="submit" type="submit">Get Started</button>
         </div>
 
     </section>
@@ -56,19 +62,28 @@
 
     <section class="marque">
 
-        <div class="caroussel">
-
-            <div class="images">
-                <img src="Img/clients/client-1.png" alt="">
-                <img src="Img/clients/client-2.png" alt="">
-                <img src="Img/clients/client-3.png" alt="">
-                <img src="Img/clients/client-4.png" alt="">
-                <img src="Img/clients/client-5.png" alt="">
-                <img src="Img/clients/client-6.png" alt="">
-                <img src="Img/clients/client-7.png" alt="">
-                <img src="Img/clients/client-8.png" alt="">
+        <div id="caroussel">
+            <div id="change"></div>
+            <div id="images">
+                <img src="Img/clients/client-1.png" alt="" id="img1">
+                <img src="Img/clients/client-2.png" alt="" id="img2">
+                <img src="Img/clients/client-3.png" alt="" id="img3">
+                <img src="Img/clients/client-4.png" alt="" id="img4">
+                <img src="Img/clients/client-5.png" alt="" id="img5">
+                <img src="Img/clients/client-6.png" alt="" id="img6">
+                <img src="Img/clients/client-7.png" alt="" id="img7">
+                <img src="Img/clients/client-8.png" alt="" id="img8">
             </div>
-
+            <div id="input">
+                <input type="radio" name="caroussel-item" value="1" id="radio1">
+                <input type="radio" name="caroussel-item" value="2" id="radio2">
+                <input type="radio" name="caroussel-item" value="3" id="radio3">
+                <input type="radio" name="caroussel-item" value="4" id="radio4">
+                <input type="radio" name="caroussel-item" value="5" id="radio5">
+                <input type="radio" name="caroussel-item" value="6" id="radio6">
+                <input type="radio" name="caroussel-item" value="7" id="radio7">
+                <input type="radio" name="caroussel-item" value="8" id="radio8">
+            </div>
         </div>
 
     </section>
@@ -81,31 +96,32 @@
 
             <div class="left">
 
-                <h3>Voluptatem dignissimos provident quasi</h3>
-                <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
-
+                <h3 class="title2">Voluptatem dignissimos provident quasi</h3>
+                <p class="subtitle2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                <button class="submit2" type="submit">ABOUT US</button>
             </div>
 
             <div class="right">
 
                 <div class="text1">
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <h4 class="title3">Corporis voluptates sit</h4>
+                    <p class="subtitle3">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+
                 </div>
 
                 <div class="text2">
-                    <h4>Ullamco laboris nisi</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h4 class="title4">Ullamco laboris nisi</h4>
+                    <p class="subtitle3">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                 </div>
 
                 <div class="text3">
-                    <h4>Labore consequatur</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <h4 class="title5">Labore consequatur</h4>
+                    <p class="subtitle3">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                 </div>
 
                 <div class="text4">
-                    <h4>Beatae veritatis</h4>
-                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                    <h4 class="title6">Beatae veritatis</h4>
+                    <p class="subtitle3">Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
                 </div>
 
             </div>
@@ -118,27 +134,23 @@
     <section class="count">
 
         <div class="count1">
-            <svg></svg>
-            <p>232</p>
-            <p>Happy Client</p>
+            <p class="conteur">232</p>
+            <p class="rect">Happy Client</p>
         </div>
 
         <div class="count2">
-            <svg></svg>
-            <p>521</p>
-            <p>Projects</p>
+            <p class="conteur">521</p>
+            <p class="rect">Projects</p>
         </div>
 
         <div class="count3">
-            <svg></svg>
-            <p>1463</p>
-            <p>Hours Of Support</p>
+            <p class="conteur">1463</p>
+            <p class="rect">Hours Of Support</p>
         </div>
 
         <div class="count4">
-            <svg></svg>
-            <p>15</p>
-            <p>Hard Workers</p>
+            <p class="conteur">15</p>
+            <p class="rect">Hard Workers</p>
         </div>
 
     </section>
