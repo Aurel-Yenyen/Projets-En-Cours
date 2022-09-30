@@ -18,6 +18,9 @@ body{
     width: 100vw;
     overflow-x: hidden;
 }
+
+/* --------------  HEADER  -------------- */
+
 header{
     display: flex;
     justify-content: space-around;
@@ -28,6 +31,9 @@ header{
     padding: 10px;
     z-index: 1;
 }
+
+/* --------------  NAVBAR  -------------- */
+
 .logo{
     margin-left: 40px;
 }
@@ -72,6 +78,9 @@ nav ul li a:hover{
     background: black;
     transition: 0.5s;
 }
+
+/* --------------  IMAGE  -------------- */
+
 .img_head{
     background: url(Img/hero-bg.jpg);
     width: 100vw;
@@ -111,6 +120,9 @@ nav ul li a:hover{
     font-size: 18px;
     margin-bottom: 550px;
 }
+
+/* --------------  CAROUSSEL  -------------- */
+
 #images{
     animation: spin 20s ease-in infinite;
     filter: grayscale();
@@ -192,6 +204,9 @@ input[type="radio"]:checked::after{
         transform: translateX(var(--image8));    
     }
 }
+
+/* --------------  ABOUT US  -------------- */
+
 .content{
     width: 100vw;
     height: 500px;
@@ -292,11 +307,14 @@ input[type="radio"]:checked::after{
     color: #7C7676;
     width: 350px;
 }
+
+/* --------------  COMPTEUR  -------------- */
+
 .count{
     display: grid;
-    grid-template-columns: repeat(4, 23%);
+    grid-template-columns: repeat(4, 22%);
     margin-top: 150px;
-    margin-left: 15%;
+    margin-left: 18%;
 }
 .count1, .count2, .count3, .count4{
     width: 300px;
@@ -305,10 +323,11 @@ input[type="radio"]:checked::after{
     border-radius: 5px;
     text-align: center;
 }
-.conteur{
+#compteur1, #compteur2, #compteur3, #compteur4{
     margin-top: 15px;
     font-size: 30px;
     font-weight: bold;
+
 }
 .rect{
     font-size: 13px;
@@ -324,6 +343,10 @@ input[type="radio"]:checked::after{
     margin-left: 41%;
     margin-top: -25px;
     color: white;
+    background: url(Img/smile.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 10px;
 }
 .count2::before{
     content: "";
@@ -335,7 +358,12 @@ input[type="radio"]:checked::after{
     margin-left: 41%;
     margin-top: -25px;
     color: white;
+    background: url(Img/book.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 10px;
 }
+
 .count3::before{
     content: "";
     width: 50px;
@@ -346,6 +374,10 @@ input[type="radio"]:checked::after{
     margin-left: 41%;
     margin-top: -25px;
     color: white;
+    background: url(Img/headphone.png);
+    background-repeat: no-repeat;
+    background-position-x: 12px;
+    background-position-y: 12px;
 }
 .count4::before{
     content: "";
@@ -357,4 +389,145 @@ input[type="radio"]:checked::after{
     margin-left: 41%;
     margin-top: -25px;
     color: white;
+    background: url(Img/user.png);
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: 15px;
+}
+
+/* --------------  BTN-TABS  -------------- */
+
+#nav-link-bar{
+    display: grid;
+    grid-template-columns: repeat(4, 21.5%);
+    margin-top: 150px;
+    margin-left: 18%;
+    width: 1600px;
+    height: 110px;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+#nav-link1{
+    border: none;
+    background-color: #D73232;
+    color: white;
+    width: 300px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding: 20px;
+} 
+#nav-link2, #nav-link3, #nav-link4{
+    border: 1px solid black;
+    background-color: transparent;
+    width: 300px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding: 20px;
+}
+#nav-link1::before{
+    background-image: url(Img/radar.png);
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-top: -15px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    margin-left: -10px;
+}
+#nav-link2::before{
+    background-image: url(Img/smoke.png);
+    width: 42px;
+    height: 40px;
+    display: block;
+    margin-top: -15px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+#nav-link3::before{
+    background-image: url(Img/sun.png);
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-top: -15px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    margin-right: 20px;
+}
+#nav-link4::before{
+    background-image: url(Img/store.png);
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-top: -15px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
+
+/* --------------  CONTENT-TABS  -------------- */
+
+#content-text1{
+    display: flex;
+    position: absolute;
+    width: 1340px;
+    height: 500px;
+    margin-left: 18%;
+}
+
+#content-text2{
+    position: relative;
+    display: flex;
+    width: 1340px;
+    height: 500px;
+    margin-left: 18%;
+    visibility: hidden;
+}
+#content-text3{
+    position: relative;
+    display: flex;
+    margin-top: -500px;
+    width: 1340px;
+    height: 500px;
+    margin-left: 18%;
+    visibility: hidden;
+}
+#content-text4{
+    position: relative;
+    display: flex;
+    margin-top: -500px;
+    width: 1340px;
+    height: 500px;
+    margin-left: 18%;
+    visibility: hidden;
+}
+
+/* --------------  TEXT-TABS  -------------- */
+
+#text-title{
+    font-size: 28px;
+    margin-bottom: 3%;
+}
+#text-subtitle{
+    width: 650px;
+    font-style: italic;
+    margin-bottom: 5%;
+}
+#coche{
+    margin-bottom: 5%;
+    width: 610px;
+}
+#img-text2, #img-text3, #img-text4{
+    margin-right: 3px;
 }
