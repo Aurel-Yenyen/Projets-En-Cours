@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.calculatrice{
+    display: flex;
+    flex-direction: column;
+    background: #242424;
+    width: 300px;
+    height: 490px;
+    border-radius: 10px;
+    box-shadow: 0 10px black;
+}
+.ecran{
+    width: 250px;
+    height: 120px;
+    background: #C5BCBC;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.touches{
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: repeat(5, 30%);
+    grid-template-areas: 
+    "c par1 par2 div"
+    "sept huit neuf fois"
+    "quatre cinq six moins"
+    "un deux trois plus"
+    "zero point egale egale";
+    grid-gap: 10px;
+    margin: 20px;
+
+}
+
+.bouton:active{
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+
+.egale{
+    grid-area: egale;
+    background: #7DFD41;
+    color: whitesmoke;
+}
+.c{
+    background: #B87A3D;
+    color: whitesmoke;
+}
+.bouton{
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 3px #a8a8a8;
+}
