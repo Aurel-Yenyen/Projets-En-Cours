@@ -15,7 +15,7 @@ let image6 = document.getElementById('img6')
 
 function reprise(){
     console.log("c'est bon")
-    img.style.animation = "spin 20s ease-in-out infinite";
+    img.style.animation = "spin 10s ease-in-out infinite";
 }
 
 input.addEventListener('click', choix => {
@@ -66,11 +66,11 @@ function check(){
         cross1.checked = true
         console.log(image1);
     }
-    else if (imag2.style.transform = 'translateX(0)'){
+    else if (image2.style.transform = 'translateX(0px)'){
         cross2.checked = true
         console.log(image2);
     }
-    else if (image3.style.transform = 'translateX(0)'){
+    else if (image3.style.transform = 'translateX(0px)'){
         cross3.checked = true
         console.log(image3);
     }

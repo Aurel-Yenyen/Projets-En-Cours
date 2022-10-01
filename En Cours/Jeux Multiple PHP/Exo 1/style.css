@@ -6,9 +6,10 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background: #939191;
 }
 
-header {
+.exo1 {
   background-color: #272626;
   width: 800px;
   color: white;
@@ -26,8 +27,10 @@ h1, p {
   background: #F63F3F;
   width: 600px;
   height: 200px;
-  margin-top: -50px;
+  margin-top: 50px;
+  margin-left: 100px;
   box-shadow: 0 0 7px black;
+  border: none;
 }
 
 label {
@@ -41,6 +44,7 @@ select {
   align-self: center;
   box-shadow: 0 0 7px black;
   margin-top: 20px;
+  border: none;
 }
 
 button {
@@ -49,4 +53,5 @@ button {
   align-self: flex-end;
   box-shadow: 0 0 7px black;
   background: white;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
