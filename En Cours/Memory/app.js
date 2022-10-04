@@ -16,7 +16,26 @@ let attente = setTimeout(function(){
 })
 
 function generation(){
-   
+   let nb_alea;
+   let nb_img = ""
+   let test = true
+   let chaine = ""
+
+   for(let i = 0; i < 16; i++){
+      while (test == true){
+         nb_alea = Math.floor(Math.random()* 16) + 1;
+         if(chaine.indexOf("-" + nb_alea + "-")> -1)
+            nb_alea = Math.floor(Math.random() * 16) + 1
+         else{
+            nb_img = Math.floor((nb_alea+1)/2)
+            document.getElementById("card" + i).innerHTML = "<img style='cursor:pointer;' id= img" 
+            chaine += "-" + nb_alea + "-"
+            document.getElementById("card" + i).innerHTML = "<img style='cursor:pointer;' id= img" 
+            chaine += "-" + nb_alea + "-"
+
+         }
+      }
+   }
 }
 
 
