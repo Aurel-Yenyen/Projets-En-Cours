@@ -1,0 +1,63 @@
+@media screen and (min-width: 768px) {
+	.navbar-link > a::after{
+		display: block;
+		content: "";
+		width: 0;
+		height: 1px;
+		background:white;
+		transition:width .7s;}}
+
+ /*Gif*/
+.gif {
+	display: block;
+	margin: 0px auto;
+	width: 100%;}
+
+	html, body {
+		background: transparent;
+		text-align: center;
+		height: 100%;
+		overflow: hidden;
+		margin: 0;
+	  }
+	  ::selection {
+		background: grey;
+	  }
+	  .svg-wrapper {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0 auto;
+		width: 500px;
+	  }
+	  .shape1,
+	  .shape2 {
+		stroke-dasharray: 1120;
+		stroke-width: 5px;
+		fill: transparent;
+		stroke: grey;
+		border-bottom: 5px solid black;
+		transition-timing-function: linear;
+		transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+	  }
+	  .shape1 {
+		stroke-dashoffset: 1120;
+	  }
+	  .shape2 {
+		stroke-dashoffset: -1120;
+	  }
+	  .text {
+		font-family: 'Roboto Condensed';
+		font-size: 22px;
+		line-height: 32px;
+		letter-spacing: 8px;
+		color: #640303;
+		top: -48px;
+		position: relative;
+		text-decoration: none;
+	  }
+	  .svg-wrapper:hover .shape1,
+	  .svg-wrapper:hover .shape2 {
+		stroke-dashoffset: 0;
+		stroke-dasharray: 100;
+	  }
