@@ -1,0 +1,254 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    z-index: 0;
+
+}
+
+.nav-bar{
+    display: flex;
+    margin-top: 20px;
+    height: 60px;
+}
+.img-navbar{
+    background: url(img/logo_jadoo_1.svg);
+    width: 34px;
+    height: 35px;
+    background-size: cover;
+    margin-left: 170px;
+}
+.logo-navbar{
+    background: url(img/logo_jadoo_2.svg);
+    width: 120px;
+    height: 36px;
+    background-size: cover;  
+    margin-left: 20px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    margin-left: 30px;
+    margin-top: -12px;
+    font-size: 20px;
+}
+.first{
+    margin-left: 790px;
+}
+.img-head{
+    background: url(img/illustration_principale.jpg);
+    width: 100%;
+    height: 800px;
+    background-position-y: -200px;
+    background-position-x: -450px;
+
+}
+.text-head{
+    padding: 100px;
+}
+.present{
+    color: #df6951;
+    font-weight: bold;
+    font-size: 20px;
+}
+.title{
+    font-size: 40px;
+    width: 700px;
+    color: white;
+}
+.o, .ja{
+    margin-top: -50px;
+}
+.trait{
+    background: url(img/souligne_rose.svg);
+    width: 500px;
+    height: 20px;
+    background-size: cover;
+    margin-top: -70px;
+}
+.subtitle{
+    color: #bfc0cd;;
+    width: 500px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.submit{
+    background-color: #f1a501;
+    box-shadow: 0px 20px 35px 5px rgb(241 165 1 / 15%);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.submit:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    transition: 0.2s ease-in;
+}
+.text-main{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.up{
+    font-size: 20px;
+    color: #5e6282;
+}
+.title-main{
+    font-size: 50px;
+    margin-top: -20px;
+    color: #14183e;
+}
+.cards{
+    display: flex
+}
+.card1, .card2, .card3{
+    width: 300px;
+    height: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+.text-card{
+    color: #5e6282;
+    font-size: 25px;
+    font-family: "poppins-regular";
+    line-height: 28px;
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+}
+.img-card1{
+    background: url(img/plat_1.png);
+    width: 300px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+}
+.img-card2{
+    background: url(img/plat_2.png);
+    width: 300px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+}
+.img-card3{
+    background: url(img/plat_3.png);
+    width: 300px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+}
+.cards-hover{
+    display: flex;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 1200px;
+    height: 350px;
+    margin-top: 100px;
+}
+.title-card-hover{
+    color: #14183e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.subtitle-card-hover{
+    color: #5e6282;
+    font-family: "poppins-regular";
+    font-size: 20px;
+    padding: 20px 0px 30px 80px;
+    width: 150px;
+}
+.img-card-hover1{
+    background: url(img/maki_1.png);
+    background-size: cover;
+    transform: scale(0.5);
+    width: 300px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -50px;
+}
+.img-card-hover2{
+    background: url(img/maki_2.png);
+    background-size: cover;
+    transform: scale(0.5);
+    width: 300px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -50px;
+}
+.img-card-hover3{
+    background: url(img/maki_3.png);
+    background-size: cover;
+    transform: scale(0.5);
+    width: 300px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -50px;
+}
+.img-card-hover4{
+    background: url(img/maki_4.png);
+    background-size: cover;
+    transform: scale(0.5);
+    width: 300px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -50px;
+}
+.card-hover1, .card-hover2, .card-hover3, .card-hover4{
+    margin-left: 30px;
+    z-index: 1;
+}
+.card-hover1:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    overflow-block: 10px
+}
+.card-hover2:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+}
+.card-hover3:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+}
+.card-hover4:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+}
+.card-hover1:hover::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #df6951;
+    border-radius: 0px 20px 0px 0px;
+    z-index: -1;
+}
+.card-hover2:hover::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #df6951;
+    border-radius: 0px 20px 0px 0px;
+}
+.card-hover3:hover::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #df6951;
+    border-radius: 0px 20px 0px 0px;
+}
+.card-hover4:hover::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #df6951;
+    border-radius: 0px 20px 0px 0px;
+}
