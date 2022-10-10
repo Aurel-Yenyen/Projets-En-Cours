@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <form action="" autocomplete="off" onsubmit="onFormSubmit()">
+            <div id="content">
+                <label for="name">Nom Du Film</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div id="content">
+                <label for="genre">Genre</label>
+                <input type="text" name="genre" id="genre">
+            </div>
+            <div id="content">
+                <label for="year">Année de Sortie</label>
+                <input type="text" name="year" id="year">
+            </div>
+            <div id="content">
+                <label for="nombre">Nombre d'Episode</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div id="sumbit_reset">
+                <input type="submit" value="Enregistrer" id="submit">
+                <input type="reset" value="Reset" id="reset">
+            </div>
+        </form>
+        <table class="list" id="movieList">
+            <thead>
+                <tr>
+                    <th>Nom du film</th>
+                    <th>Genre</th>
+                    <th>Année de Sortie</th>
+                    <th>Nombre d'Episode</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
