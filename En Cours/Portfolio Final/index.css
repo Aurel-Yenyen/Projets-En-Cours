@@ -596,7 +596,7 @@ input[type="radio"]:checked::after{
 
 .services{
     width: 100vw;
-    height: 800px;
+    height: 1000px;
     background: #1D1D1D;
     transform: skewY(-3deg);
     margin-top: 100px;
@@ -627,123 +627,10 @@ input[type="radio"]:checked::after{
     text-align: center;
     margin-bottom: 35px;
 }
-.cadres{
-    color: white;
-    transform: skewY(3deg);   
-    display: grid;
-    grid-template-columns: repeat(2, 48.5%);
-    grid-template-rows: repeat(3, 25%);
-    grid-gap: 40px;
+.CV{
+    transform: skewY(3deg);
+    margin-left: 37%;
 }
-.cadre1{
-    background: #242424;
-    border-radius: 5px;
-    width: 600px;
-    height: 150px;
-    margin-left: 340px;
-    display: flex;
-}
-.cadre3{
-    background: #242424;
-    border-radius: 5px;
-    width: 600px;
-    height: 150px;
-    margin-left: 340px;
-    display: flex;
-}
-.cadre5{
-    background: #242424;
-    border-radius: 5px;
-    width: 600px;
-    height: 150px;
-    margin-left: 340px;
-    display: flex;
-}
-.cadre2{
-    background: #242424;
-    border-radius: 5px;
-    width: 600px;
-    height: 150px;
-    display: flex;
-}
-.cadre4{
-    background: #242424;
-    border-radius: 5px;
-    width: 600px;
-    height: 150px;
-    display: flex;
-}
-.cadre6{
-    background: #242424;
-    border-radius: 5px;
-    width: 600px;
-    height: 150px;
-    display: flex;
-}
-.cadre-img1{
-    background: url(Img/work.png);  
-    width: 79px;
-    height: 40px;
-    background-size: cover;  
-    margin: 20px;
-    margin-top: 30px;
-}
-.cadre-img2{
-    background: url(Img/Paper_Check.png);  
-    width: 70px;
-    height: 40px;
-    background-size: cover;  
-    margin: 20px;
-    margin-top: 30px;
-}
-.cadre-img3{
-    background: url(Img/graph.png);  
-    width: 60px;
-    height: 40px;
-    background-size: cover;  
-    margin: 20px;
-    margin-top: 30px;
-}
-.cadre-img4{
-    background: url(Img/jumelle.png);  
-    width: 60px;
-    height: 40px;
-    background-size: cover;  
-    margin: 20px;
-    margin-top: 30px;
-}
-.cadre-img5{
-    background: url(Img/work.png);  
-    width: 79px;
-    height: 40px;
-    background-size: cover;  
-    margin: 20px;
-    margin-top: 30px;
-}
-.cadre-img5{
-    background: url(Img/sun-red.png);  
-    width: 65px;
-    height: 40px;
-    background-size: cover;  
-    margin: 20px;
-    margin-top: 30px;
-}
-.cadre-img6{
-    background: url(Img/calendar.png);  
-    width: 62px;
-    height: 40px;
-    background-size: cover;  
-    margin: 20px;
-    margin-top: 30px;
-}
-.cadre-text{
-    margin-top: 30px;
-    margin-left: 10px;
-}
-.cadre-title{
-    margin-bottom: 15px;
-}
-
 /* --------------  PORTFOLIO  -------------- */
 
 .port-text{

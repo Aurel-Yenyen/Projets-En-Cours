@@ -111,8 +111,8 @@ check()
 
 function countTo1(){
     let from = 0;
-    let to = 232;
-    let step = to > from ? 2 : -1
+    let to = 99;
+    let step = to > from ? 3 : -1
     let interval = 1
 
     if (from == to){
@@ -134,7 +134,7 @@ countTo1()
 
 function countTo2(){
     let from = 0;
-    let to = 521;
+    let to = 25;
     let step = to > from ? 1 : -1
     let interval = 1
 
@@ -157,8 +157,8 @@ countTo2()
 
 function countTo3(){
     let from = 0;
-    let to = 1463;
-    let step = to > from ? 7 : -1
+    let to = 8;
+    let step = to > from ? 1 : -1
     let interval = 1
 
     if (from == to){
@@ -180,7 +180,7 @@ countTo3()
 
 function countTo4(){
     let from = 0;
-    let to = 15;
+    let to = 0;
     let step = to > from ? 1 : -1
     let interval = 1
 
