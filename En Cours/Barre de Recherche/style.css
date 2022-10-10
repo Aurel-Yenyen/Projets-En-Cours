@@ -59,7 +59,7 @@ svg {
 @keyframes stroke-offset{
   100% {stroke-dashoffset: -35%;}
 }
-.input{
+.frmSearch{
     margin-left: 13vw;
 }
 #search{
@@ -84,5 +84,17 @@ svg {
 button{
   width: 100px;
   height: 50px;
-}
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid #AFAFAF;
+  color: #AFAFAF;
+  box-shadow: 0 5px #A1A1A1A1;
 
+}
+#chance{
+  margin-left: 10vw;
+}
+button:active{
+  box-shadow: 0 1px #a8a8a8;
+  transform: translateY(2px);
+}
