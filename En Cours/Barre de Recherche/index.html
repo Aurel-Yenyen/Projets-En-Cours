@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
     <div class="content">
         <div class="title">
+
             <svg viewBox="0 0 960 300">
                 <symbol id="s-text">
                   <text text-anchor="middle" x="50%" y="80%">Google</text>
@@ -23,10 +25,12 @@
                   <use xlink:href="#s-text" class="text-copy"></use>
                   <use xlink:href="#s-text" class="text-copy"></use>
                 </g>
-              </svg>
+            </svg>
+
         </div>
-        <div class="input">
+        <div class="frmSearch">
             <input type="text" name="search" placeholder="" id="search">
+            <div id="suggesstion"></div>
         </div>
         <div class="btn">
             <button type="submit" id="submit">Rechercher</button>
