@@ -32,6 +32,8 @@ let vaisseauEnnemi = {
 
 vaisseauEnnemi.image = ctx.drawImage(invaders, vaisseauEnnemi.x, vaisseauEnnemi.y, vaisseauEnnemi.width, vaisseauEnnemi.height)
 
+// Missile Allié
+
 let missileAlliee1 = {
     x : null,
     y : null,
@@ -63,7 +65,7 @@ let missileEnemi1 = {
     image : null
 }
 
-
+// Fonction Feu Allié
 
 function fire(x, y){
     x = vaisseauAlliee.x + 30
@@ -77,17 +79,14 @@ function fireBall() {
     ctx.clearRect(x, y-2 + 4, 11, 30);
     missileAlliee2.image = ctx.drawImage(missile, x, y, 15, 40)
     y += dy   
-    if (y > -50)
-    missileAlliee1.image = null
-    missileAlliee1.image = null
-    console.log(missileAlliee1.image);
 }
 
 setInterval(fireBall, 10)
     
 }
 
- // Ennemi Fire
+ // Fonction Feu Ennemi
+
 function fireEnnemi(){
     let dy = 2
 
@@ -103,6 +102,8 @@ setInterval(fireBallEnnemi, 20)
 
 fireEnnemi()
 
+//Fonction Mouvement
+
 function moveRight(){
     ctx.clearRect(vaisseauAlliee.x, vaisseauAlliee.y, 50, 49)
     vaisseauAlliee.x += 10
@@ -113,6 +114,8 @@ function moveLeft(){
     vaisseauAlliee.x -= 10
     ctx.drawImage(commander, vaisseauAlliee.x, vaisseauAlliee.y, 50, 49)
 }
+
+// Fonction Appui Touche
 
 document.addEventListener('keydown', battle =>{
     if (battle.key == ' '){
@@ -130,12 +133,13 @@ document.addEventListener('keydown', battle =>{
     }
 })      
 
-function spinEnnemi(nbr_tir){
-    nbr_tir = fireEnnemi() * Math.random(10 + 1) - 1
+function tireEnnemi(){
+    fireEnnemi()
+
 
 }
 
-spinEnnemi(6)
+tireEnnemi()
 
 // function addition(a, b){
 //     return a + b 

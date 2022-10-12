@@ -82,7 +82,7 @@ nav ul li a:hover{
 /* --------------  IMAGE  -------------- */
 
 .img_head{
-    background: url(img/Divers/Fond.jpg);
+    background: url(Img/Divers/Fond.jpg);
     width: 100vw;
     height: 950px;
     background-size: cover;
@@ -956,7 +956,7 @@ input[type="radio"]:checked::after{
 /* --------------  CONTACT  -------------- */
 
 .contact-text{
-    margin-top: -350px;
+    margin-top: -300px;
     display: flex;
     flex-direction: column;
     align-items: center;
