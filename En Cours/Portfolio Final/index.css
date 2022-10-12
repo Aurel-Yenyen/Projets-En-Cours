@@ -34,7 +34,7 @@ header{
 
 /* --------------  NAVBAR  -------------- */
 
-.logo{
+#logo{
     margin-left: 40px;
 }
 nav{
@@ -594,7 +594,7 @@ input[type="radio"]:checked::after{
 }
 /* --------------  SERVICES  -------------- */
 
-.services{
+#services{
     width: 100vw;
     height: 1000px;
     background: #1D1D1D;
@@ -705,7 +705,7 @@ input[type="radio"]:checked::after{
 
 /* --------------  TESTIMONIALS  -------------- */
 
-.test-text{
+/* .test-text{
     margin-top: 150px;
     display: flex;
     flex-direction: column;
@@ -867,127 +867,11 @@ input[type="radio"]:checked::after{
     content: "❞";
     color: #F6C2C2;
     font-size: 25px;
-}
-
-/* --------------  PRICING  -------------- */
-
-.pricing{
-    width: 100vw;
-    height: 720px;
-    background: #1D1D1D;
-    transform: skewY(-3deg);
-    margin-bottom: 100px;
-    /* display: none; */
-}
-.price-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: skewY(3deg);
-    color: white;
-}
-.title1{
-    margin-top: 50px;
-    font-size: 30px;
-}
-.title1::after{
-    content: "";
-    width: 50px;
-    height: 3px;
-    background-color: #DC5052;
-    display: flex;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-bottom: 35px;
-}
-.subtitle1{
-    width: 1250px;
-    text-align: center;
-    margin-bottom: 35px;
-}
-.subscription{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1900px;
-    transform: skewY(3deg);
-    color: white;
-    text-align: center;
-}
-.card-sub1{
-    width: 400px;
-    background: #2E2E2E;
-    height: 420px;
-    border-radius: 15px;
-}
-.card-sub2{
-    width: 400px;
-    background: #DC5052;
-    height: 420px;
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.card-sub3{
-    width: 400px;
-    background: #2E2E2E;
-    height: 420px;
-    border-radius: 15px;
-}
-.card-title{
-    text-align: center;
-    margin-top: 30px;
-}
-.modal{
-    display: flex;
-    margin-top: 30px;
-    align-items: center;
-    justify-content: center;
-}
-.dollar{
-    margin-top: -20px;
-}
-.price{
-    font-size: 40px;
-}
-.month{
-    margin-top: 20px;
-    margin-left: 5px;
-}
-.para-1{
-    margin-top: 30px;
-}
-.para-2, .para-3, .para-4, .para-5{
-    margin-top: 15px;
-}
-.para-5{
-    margin-bottom: 30px;
-}
-.buy-now{
-    background: transparent;
-    border: 2px solid #878686;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-}
-.card-sub1 .para-4{
-    text-decoration: line-through;
-    color: #959393;
-}
-.card-sub1 .para-5{
-    text-decoration: line-through;
-    color: #959393;
-}
-.card-sub2 .para-5{
-    text-decoration: line-through;
-    color: #959393;   
-}
+} */
 
 /* --------------  QUESTION  -------------- */
 
-.quest-text{
+/* .quest-text{
     margin-top: 150px;
     display: flex;
     flex-direction: column;
@@ -1067,162 +951,12 @@ input[type="radio"]:checked::after{
     margin-left: 23%;
     color: #C1BDBD;
     cursor: pointer;
-}
-
-/* --------------  TEAM  -------------- */
-
-.team{
-    width: 100vw;
-    height: 720px;
-    background: #1D1D1D;
-    transform: skewY(-3deg);
-    margin-bottom: 100px;
-    margin-top: 100px;
-    /* display: none; */
-}
-.team-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: skewY(3deg);
-    color: white;
-}
-.team-title{
-    margin-top: 50px;
-    font-size: 30px;
-}
-.team-title::after{
-    content: "";
-    width: 50px;
-    height: 3px;
-    background-color: #DC5052;
-    display: flex;
-    margin-top: 30px;
-    margin-left: 30%;
-    margin-bottom: 35px;
-}
-.team-subtitle{
-    width: 1250px;
-    text-align: center;
-    margin-bottom: 35px;
-}
-.cards-team{
-    transform: skewY(3deg);
-    display: flex;
-    width: 2000px;
-    height: 430px;
-    margin-left: 15%;
-}
-#card-team1, #card-team2, #card-team3, #card-team4{
-    margin: 20px;
-    border-radius: 10px;
-    background: white;
-}
-.job-team{
-    color: #959393;
-    margin-top: 5px;
-
-}
-.img-team1{
-    background: url(Img/team/team-1.jpg);
-    width: 350px;
-    height: 300px;
-    background-size: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-.img-team2{
-    background: url(Img/team/team-2.jpg);
-    width: 350px;
-    height: 300px;
-    background-size: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-.img-team3{
-    background: url(Img/team/team-3.jpg);
-    width: 350px;
-    height: 300px;
-    background-size: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-.img-team4{
-    background: url(Img/team/team-4.jpg);
-    width: 350px;
-    height: 300px;
-    background-size: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-.img-text{
-    margin: 20px;
-}
-#social1, #social2, #social3, #social4{
-    display: flex;
-    margin-top: -140px;
-    margin-left: 30%;
-    visibility: hidden;
-    transform:translateY(-10px);
-
-}
-#facebook{
-    background: url(Img/facebook-red.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin-left: 10px;
-}
-#twitter{
-    background: url(Img/twitter-red.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-
-}
-#insta{
-    background: url(Img/insta-red.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin-left: 10px;
-}
-#linkedin{
-    background: url(Img/linkedin-red.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin-left: 10px;
-}
-#facebook:hover{
-    background: url(Img/facebook-black.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin-left: 10px;
-}
-#twitter:hover{
-    background: url(Img/twitter-black.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-
-}
-#insta:hover{
-    background: url(Img/insta-black.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin-left: 10px;
-}
-#linkedin:hover{
-    background: url(Img/linkedin-black.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin-left: 10px;
-}
+} */
 
 /* --------------  CONTACT  -------------- */
 
 .contact-text{
-    margin-top: 150px;
+    margin-top: -350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1403,7 +1137,7 @@ footer{
 .point{
     color: #DC5052;
     font-size: 40px;
-    margin-top: -6px;
+    margin-top: -13px;
 }
 .address{
     font-size: 15px;
@@ -1419,6 +1153,7 @@ footer{
 }
 .email-port{
     display: flex;
+    margin-top: 10px;
 }
 .title-mail{
     font-weight: bold;
@@ -1426,7 +1161,9 @@ footer{
 }
 .column2{
     padding-top: 3.1%;
-    margin-left: 7%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
 }
 .useful::after{
     content: "";
