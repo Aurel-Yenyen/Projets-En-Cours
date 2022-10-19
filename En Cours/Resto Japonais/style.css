@@ -90,7 +90,7 @@ li{
     transition: 0.2s ease-in;
 }
 .text-main{
-    margin-top: 150px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +101,7 @@ li{
     color: #5e6282;
 }
 .title-main{
-    font-size: 50px;
+    font-size: 40px;
     margin-top: -20px;
     color: #14183e;
 }
@@ -200,56 +200,364 @@ li{
 }
 .card-hover1, .card-hover2, .card-hover3, .card-hover4{
     margin-left: 30px;
-    z-index: 1;
 }
 .card-hover1:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 20px;
     overflow-block: 10px;
-    z-index: 2;
 }
-.card-hover2:hover{
+.card-hover2:hover, .card-hover3:hover, .card-hover4:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 20px;
 }
-.card-hover3:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 20px;
-}
-.card-hover4:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 20px;
-}
-.card-hover1:hover::after{
+.card-hover1:hover::before, .card-hover2:hover::before, .card-hover3:hover::before{
+    position: absolute;
     content: "";
+    width: 80px;
+    height: 70px;
+    background: white;
     display: block;
-    width: 40px;
-    height: 40px;
-    background: #df6951;
-    border-radius: 0px 20px 0px 0px;
-    z-index: -1;
+    z-index: 1;
+    margin-top: 280px;
+    border-radius: 0px 0px 0px 10px;
 }
-.card-hover2:hover::after{
+.card-hover4:hover::before{
+    position: absolute;
     content: "";
+    width: 80px;
+    height: 70px;
+    background: white;
     display: block;
-    width: 40px;
-    height: 40px;
-    background: #df6951;
-    border-radius: 0px 20px 0px 0px;
-}
-.card-hover3:hover::after{
-    content: "";
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: #df6951;
-    border-radius: 0px 20px 0px 0px;
+    z-index: 1;
+    margin-top: 280px;
+    border-radius: 0px 0px 0px 10px;
 }
 .card-hover4:hover::after{
+    position: relative;
     content: "";
+    width: 100px;
+    height: 100px;
+    background: #df6951;
     display: block;
+    margin-left: -40px;
+    border-radius: 20px 0px 10px 0px;
+    animation: rotation 1s ease-in;
+}
+.card-hover1:hover::after, .card-hover2:hover::after, .card-hover3:hover::after{
+    position: relative;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #df6951;
+    display: block;
+    margin-top: -25px;
+    margin-left: -40px;
+    border-radius: 20px 0px 10px 0px;
+    animation: rotation 1s ease-in;
+}
+@keyframes rotation{
+    0%{
+        transform:rotate(-45deg);
+        opacity:0;
+    }
+    100%{
+        transform:rotate(0deg);
+        opacity: 10;
+    }
+}
+.img-center1{
+    background: url(img/illustration_chef.jpg);
+    background-size: cover;
+    transform: scale(1.6);
+    background-position-y: -200px;
+    height: 100vh;
+    margin-top: 20%;
+}
+.img-center2{
+    background: url(img/illustration_commander.jpg);
+    background-size: cover;
+    transform: scale(1.3);
+    background-position-y: -100px;
+    height: 70vh;
+    margin-top: 10%;
+    z-index: 1;
+    margin-top: -200px;
+}
+.box-img-center{
+    display: flex;
+}
+.box1{
+    background: url(img/wrapper_illustration_1.jpg);
+    background-size: cover;
+    width: 25%;
+    height: 60vh;
+    z-index: 2;
+    margin-top: -400px;
+    margin-left: -50px;
+    transform: scale(0.8);
+}
+.box2{
+    background: url(img/wrapper_illustration_2.jpg);
+    background-size: cover;
+    width: 25%;
+    height: 60vh;
+    z-index: 2;
+    margin-top: -400px;
+    margin-left: -100px;
+    transform: scale(0.8);
+}
+.img-video{
+    background: url(img/visu_video.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 200px;
+    margin-left: 320px;
+    transform: scale(0.4);
+    border-radius: 20px;
+}
+.img-video::before{
+    content: "";
+    background: url(img/lecture.svg);
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    margin: 50px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+.title-img-center{
+    color: white;
+    margin-left: 22.5%;
+    font-size: 40px;
+    width: 300px;
+    margin-top: -20px;
+    z-index: 3;
+}
+.title-img-center::before{
+    content: "";
+    background: url(img/souligne_rose.svg);
+    background-size: cover;
+    width: 125px;
+    height: 5px;
+    display: block;
+    margin-top: 35px;
+    position: absolute;
+    z-index: -1;
+}
+.text-img-center{
+    font-size: 10px;
+    margin-left: 22.5%;
+    color: white;
+    width: 230px;
+}
+.fast{
+    padding-top: 250px;
+    padding-left: 300px;
+    font-size: 12px;
+    color: #5e6282;
+    font-weight: bold;
+}
+.command{
+    padding-left: 300px; 
+    font-size: 35px;
+    color: #df6951;
+    font-weight: bold;
+}
+.site{
+    padding-left: 300px; 
+    font-weight: bold;
+    font-size: 35px;
+}
+.uber{
+    padding-left: 300px; 
+    display: flex;
+}
+.logo1{
+    background: url(img/logo_uberEats.png);
+    background-size: cover;
     width: 40px;
     height: 40px;
-    background: #df6951;
-    border-radius: 0px 20px 0px 0px;
+    margin-top: 30px;
+}
+.text-logo{
+    margin-left: 20px;
+}
+.name{
+    font-size: 10px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.use{
+    font-size: 10px;  
+    width: 150px;
+    margin-top: -5px;
+}
+.jadoo{
+    padding-left: 300px; 
+    display: flex;
+}
+.logo2{
+    background: url(img/logo_jadoo_1.svg);
+    background-size: cover;
+    width: 40px;
+    height: 42px;
+    margin-top: 30px;
+}
+.livraison{
+    padding-left: 300px; 
+    display: flex;
+}
+.logo3{
+    background: url(img/logo_transport.png);
+    background-size: cover;
+    width: 40px;
+    height: 42px;
+    margin-top: 30px;
+}
+.decouvert{
+    margin-left: 300px; 
+    margin-top: 20px;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.contact{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.up{
+    font-size: 15px;
+    color: #5e6282;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.rese{
+    width: 400px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.formulaire{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 40vw;
+    height: 45vh;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-bottom: 50pxé;
+}
+.img-form{
+    background: url(img/illustration_formulaire.jpg);
+    width: 20vw;
+    height: 45vh;
+    background-size: cover;
+    border-radius: 0px 20px 20px 0px;
+}
+.text-form{
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    margin-top: -10px;
+}
+.title-form{
+    font-weight: bold;
+    font-size: 15px;
+}
+.request-form{
+    font-size: 12px;
+    width: 200px;
+    color: #5e6282;
+    margin-bottom: 20px;
+}
+.nom-prenom{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -15px;
+}
+.nom, .prenom{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border: none;
+    font-size: 10px;
+}
+.trait-form{
+    width: 150px;
+    height: 1px;
+    background: #bfc0cd;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.trait-form2{
+    width: 290px;
+    height: 1px;
+    background: #bfc0cd;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.trait-form3{
+    width: 290px;
+    height: 1px;
+    background: #bfc0cd;
+    margin-top: 5px;
+    margin-bottom: 60px;
+}
+.adress-mail{
+    padding-top: 20px;
+}
+label{
+    font-size: 15px;
+}
+.envoi{
+    width: 100px;
+    height: 40px;
+    margin-left: 100px;
+    background: #0080FF;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.envoi::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(img/bouton_formulaire_coche.svg);
+    background-size: cover;
+    display: block;
+    position: absolute;
+    margin-left: -10px;
+}
+footer{
+    display: flex;
+    margin-top: 100px;
+    background: #F2F2F2;
+}
+.logo-footer{
+    display: flex;
+}
+
+.logo-footer1{
+    background: url(img/logo_jadoo_1.svg);
+    width: 38PX;
+    height: 40px;
+}
+.logo-footer2{
+    background: url(img/logo_jadoo_2.svg);
+    background-size: cover;
+    width: 200px;
+    height: 40px;
 }
