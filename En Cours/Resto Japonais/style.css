@@ -455,7 +455,7 @@ li{
     height: 45vh;
     border-radius: 20px;
     margin-left: 30%;
-    margin-bottom: 50pxé;
+    margin-bottom: 50px;
 }
 .img-form{
     background: url(img/illustration_formulaire.jpg);
@@ -542,22 +542,100 @@ label{
     margin-left: -10px;
 }
 footer{
-    display: flex;
-    margin-top: 100px;
     background: #F2F2F2;
+    display: flex;
+    padding-bottom: 30px;
 }
 .logo-footer{
     display: flex;
 }
-
 .logo-footer1{
     background: url(img/logo_jadoo_1.svg);
-    width: 38PX;
+    width: 38px;
     height: 40px;
 }
 .logo-footer2{
     background: url(img/logo_jadoo_2.svg);
     background-size: cover;
-    width: 200px;
+    width: 133px;
     height: 40px;
+}
+.text-footer{
+    font-size: 15px;
+    color: #5e6282;
+    width: 200px;
+}
+.para-foot{
+    font-size: 15px;
+    color: #5e6282;
+    width: 200px;   
+}
+.left{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.middle{
+    margin-left: 150px;
+    display: flex;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-left: 100px;
+}
+.logo-right{
+    background: url(img/logo_uberEats_2.svg);
+    background-size: cover;
+    width: 125px;
+    height: 20px;
+
+}
+.logo-google{
+    background: url(img/logo_google_play.svg);
+    background-size: cover;
+    width: 16px;
+    height: 15px;
+    margin: -5px;
+    margin-right: 5px;
+}
+.google{
+    display: flex;
+    width: 80px;
+    height: 10px;
+    background: black;
+    color: white;
+    border-radius: 26px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.text-google{
+    font-size: 10px;
+    padding-left: 5px;
+    margin: -2px;
+}
+.logo-apple{
+    background: url(img/logo_apple.svg);
+    background-size: cover;
+    width: 12px;
+    height: 15px;
+    margin: -5px;
+    margin-right: 5px;
+}
+.apple{
+    display: flex;
+    width: 80px;
+    height: 10px;
+    background: black;
+    color: white;
+    border-radius: 26px;
+    padding: 10px;
+}
+.text-apple{
+    font-size: 10px;
+    padding-left: 5px;
+    margin: -2px;
+}
+.logo-uber{
+    display: flex;
 }
