@@ -19,6 +19,14 @@ let image5 = document.getElementById('img5')
 let image6 = document.getElementById('img6')
 let image7 = document.getElementById('img7')
 let image8 = document.getElementById('img8')
+let image9 = document.getElementById('img9')
+let image10 = document.getElementById('img10')
+let image11 = document.getElementById('img11')
+let image12 = document.getElementById('img12')
+let image13 = document.getElementById('img13')
+let image14 = document.getElementById('img14')
+let image15 = document.getElementById('img15')
+let image16 = document.getElementById('img16')
 
 function reprise(){
     console.log("c'est bon")
@@ -39,32 +47,32 @@ input.addEventListener('click', choix => {
     }
     else if (cross3.checked){
         img.style.animation = 'none'
-        img.style.transform = 'translateX(-405px)'    
+        img.style.transform = 'translateX(-400px)'    
         setTimeout(reprise, 5000)
     }
     else if (cross4.checked){
         img.style.animation = 'none'
-        img.style.transform = 'translateX(-610px)' 
+        img.style.transform = 'translateX(-600px)' 
         setTimeout(reprise, 5000)  
     }
     else if (cross5.checked){
         img.style.animation = 'none'
-        img.style.transform = 'translateX(-815px)'  
+        img.style.transform = 'translateX(-800px)'  
         setTimeout(reprise, 5000) 
     }
     else if (cross6.checked){
         img.style.animation = 'none'
-        img.style.transform = 'translateX(-1020px)'
+        img.style.transform = 'translateX(-1000px)'
         setTimeout(reprise, 5000)    
     }
     else if (cross7.checked){
         img.style.animation = 'none'
-        img.style.transform = 'translateX(-1080px)'
+        img.style.transform = 'translateX(-1200px)'
         setTimeout(reprise, 5000)    
     }
     else if (cross8.checked){
         img.style.animation = 'none'
-        img.style.transform = 'translateX(-1120px)'
+        img.style.transform = 'translateX(-1400px)'
         setTimeout(reprise, 5000)    
     }
 
