@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1200px){
 
     /* ----------  HEADER  ------------ */
 
@@ -98,6 +98,15 @@
         margin-top: 5vh;
         grid-gap: 5vh;
         margin-bottom: 100px;
+        animation: run 2s;
+    }
+    @keyframes run{
+        0%{
+            transform: translateX(-100vw);
+        }
+        100%{
+            transform: translateX(0);
+        }
     }
     .image1{
         background: url(img/2k23.jpg);
@@ -155,18 +164,21 @@
         0 0 100px white;
     }
     footer{
-        background: rgb(7, 7, 7,.5);
-        height: 12vh;
+        background: rgb(7, 7, 7);
+        height: 15vh;
         padding: 20px;
     }
     .title-foot{
         color: white;
         text-shadow:  0 0 7px #fff, 
-        0 0 5px #fff, 
-        0 0 15px white,   
-        0 0 37px white, 
-        0 0 60px white;
-        font-size: 16px;
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
+        font-size: 20px;
+    }
+    .mobile{
+        margin-left: -50px;
     }
     .content-footer{
         display: flex;
@@ -181,10 +193,10 @@
         margin-left: -150px;
         margin-top: 0.7%;
         box-shadow:  0 0 7px #fff, 
-        0 0 10px #fff, 
-        0 0 42px white,   
-        0 0 77px white, 
-        0 0 100px white;
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
     }
     .part1::after{
         content: "";
@@ -193,12 +205,12 @@
         height: 10%;
         position: absolute;
         margin-left: 250px;
-        margin-top: -40px;
+        margin-top: -78px;
         box-shadow:  0 0 7px #fff, 
-        0 0 10px #fff, 
-        0 0 42px white,   
-        0 0 77px white, 
-        0 0 100px white;
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
     }
     .part2::after{
         content: "";
@@ -207,12 +219,12 @@
         height: 10%;
         position: absolute;
         margin-left: 350px;
-        margin-top: -40px;
+        margin-top: -80px;
         box-shadow:  0 0 7px #fff, 
-        0 0 10px #fff, 
-        0 0 42px white,   
-        0 0 77px white, 
-        0 0 100px white;
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
     }
     .part3::after{
         content: "";
@@ -221,20 +233,74 @@
         height: 10%;
         position: absolute;
         margin-left: 250px;
-        margin-top: -75px;
+        margin-top: -83px;
         box-shadow:  0 0 7px #fff, 
-        0 0 10px #fff, 
-        0 0 42px white,   
-        0 0 77px white, 
-        0 0 100px white;
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
     }
     .admin{
         color: white;
         text-shadow:  0 0 7px #fff, 
-        0 0 5px #fff, 
-        0 0 15px white,   
-        0 0 37px white, 
-        0 0 60px white;
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
+    }
+    .logo-footer{
+        display: flex;
+    }
+    .facebook{
+        background: url(img/facebook.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+        margin-left: -50px;
+    }
+    .twitter{
+        background: url(img/twitter.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .insta{
+        background: url(img/insta.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .tiktok{
+        background: url(img/tiktok.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .mail{
+        background: url(img/mail.svg);
+        width: 35px;
+        height: 30px;
+        background-size: cover;
+    }
+    .logo-mobile{
+        display: flex;
+    }
+    .apple{
+        background: url(img/apple.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+    }
+    .android{
+        background: url(img/android.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+        margin-left: 50px;
     }
 }
 
@@ -249,7 +315,7 @@
 
 
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 400px){
         body{
             margin: 0;
             padding: 0;
@@ -342,6 +408,7 @@
             0 0 77px white, 
             0 0 100px white;
             margin-top: 5px;
+            margin-left: -20px;
         }
         
         .burger::before, .burger::after{
@@ -419,6 +486,15 @@
             margin-top: 5vh;
             grid-gap: 5vh;
             margin-bottom: 100px;
+            animation: run 2s;
+        }
+        @keyframes run{
+            0%{
+                transform: translateX(-100vw);
+            }
+            100%{
+                transform: translateX(0);
+            }
         }
         .image1{
             background: url(img/2k23.jpg);
@@ -476,17 +552,17 @@
             0 0 100px white;
         }
         footer{
-            background: rgb(7, 7, 7,.5);
+            background: rgb(7, 7, 7);
             height: 12vh;
             padding: 20px;
         }
         .title-foot{
             color: white;
             text-shadow:  0 0 7px #fff, 
-            0 0 5px #fff, 
-            0 0 15px white,   
-            0 0 37px white, 
-            0 0 60px white;
+            0 0 2px #fff, 
+            0 0 5px white,   
+            0 0 10px white, 
+            0 0 20px white;
             font-size: 12px;
         }
         .content-footer{
@@ -518,7 +594,7 @@
             height: 13%;
             position: absolute;
             margin-left: 40%;
-            margin-top: -10%;
+            margin-top: -10.5%;
             box-shadow:  0 0 7px #fff, 
             0 0 10px #fff, 
             0 0 42px white,   
@@ -542,15 +618,15 @@
         .admin{
             color: white;
             text-shadow:  0 0 7px #fff, 
-            0 0 5px #fff, 
-            0 0 15px white,   
-            0 0 37px white, 
-            0 0 60px white;
+            0 0 2px #fff, 
+            0 0 5px white,   
+            0 0 10px white, 
+            0 0 20px white;
             font-size: 10px;
         }
         .part2{
             width: 40vw;
-            margin-left: -15%;
+            margin-left: -20%;
         }
         .part3{
             width: 10vw;
