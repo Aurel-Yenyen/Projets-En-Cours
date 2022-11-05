@@ -1,0 +1,765 @@
+@media screen and (min-width: 1200px){
+
+    /* ----------  HEADER  ------------ */
+
+    body{
+        margin: 0;
+        padding: 0;
+        background: url(img/back.webp);
+        background-size: cover;
+    } 
+    .content{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 20% 79%;
+        grid-template-areas: 
+            "logo nav";  
+        margin-right: 10vw;     
+    }
+    h1{
+        margin-bottom: 100px;
+        font-family: 'Island Moments', cursive;
+        font-size: 60px;
+        height: 50px;
+        color: #fff;
+    }
+    .logo{
+        background: url(img/control.svg);
+        width: 50px;
+        height: 31px;
+        background-size: cover;
+        margin: 50px 5px 5px 5px;
+        animation: rotate 1s infinite;    
+    }
+    @keyframes rotate {
+        0%{
+          transform: rotate(-15deg)
+        }
+        50%{
+          transform: rotate(15deg)     
+        }
+        100%{
+          transform: rotate(-15deg)     
+        }
+    }
+    .title{
+        display: flex;
+        color: white;
+        margin-left: 50px;
+        margin-top: -3vh;
+    }   
+    .subtitle{
+        font-family: dayrom;
+        font-weight: bold;
+        grid-area: logo;
+        margin-top: 80px;
+        margin-left: 10px;
+    }  
+    ul{
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 40vw;
+    }  
+    li{ 
+        margin-left: 10%;
+        list-style-type: none;
+    }
+    li:hover{
+        transform: translateY(3px);
+    }
+    .link:hover{
+        box-shadow: 0 2px white;
+    }
+    .modal_close{
+        visibility: hidden;
+    }
+    .link{
+        text-decoration: none;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        text-shadow:  0 0 7px #fff, 
+        0 0 10px #fff, 
+        0 0 42px rgb(0, 81, 219),   
+        0 0 77px rgb(0, 81, 219), 
+        0 0 100px rgb(0, 81, 219);
+        border: 2px solid white;
+        border-radius: 50px;
+        padding: 8px 15px 8px 15px;
+        box-shadow: 0 5px white;
+    }  
+
+            /* ----------  MAIN  ------------ */
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        margin-left: 5vw;
+        margin-top: 5vh;
+        grid-gap: 5vh;
+        margin-bottom: 100px;
+        animation: run 2s;
+    }
+    @keyframes run{
+        0%{
+            transform: translateX(-100vw);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    .image1{
+        background: url(img/diablo.jpg);
+        background-size: cover;
+        width: 20vw;
+        height: 23vh;
+    }
+    .image2{
+        background: url(img/ff16.jpg);
+        background-size: cover;
+        width: 20vw;
+        height: 23vh;
+    }
+    .image3{
+        background: url(img/forspoken.jpg);
+        background-size: cover;
+        width: 20vw;
+        height: 23vh;
+    }
+    .image4{
+        background: url(img/grandblue.jpg);
+        background-size: cover;
+        width: 20vw;
+        height: 23vh;
+    }
+    .image5{
+        background: url(img/onepiece.jpg);
+        background-size: cover;
+        width: 20vw;
+        height: 23vh;
+    }
+    .image6{
+        background: url(img/star.webp);
+        background-size: cover;
+        width: 20vw;
+        height: 23vh;
+    }
+    .section{
+        border: 2px solid white;
+        width: 20vw;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px white;
+    }
+    .section:hover{
+        transform: translateY(3px);
+        box-shadow: 0 2px white;
+    }
+    .desc{
+        color: white;
+        text-shadow:  0 0 7px #fff, 
+        0 0 10px #fff, 
+        0 0 42px white,   
+        0 0 77px white, 
+        0 0 100px white;
+    }
+    footer{
+        background: rgb(7, 7, 7);
+        height: 15vh;
+        padding: 20px;
+    }
+    .title-foot{
+        color: white;
+        text-shadow:  0 0 7px #fff, 
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
+        font-size: 20px;
+    }
+    .mobile{
+        margin-left: -50px;
+    }
+    .content-footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .part1::before{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 10%;
+        position: absolute;
+        margin-left: -150px;
+        margin-top: 0.7%;
+        box-shadow:  0 0 7px #fff, 
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
+    }
+    .part1::after{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 10%;
+        position: absolute;
+        margin-left: 250px;
+        margin-top: -78px;
+        box-shadow:  0 0 7px #fff, 
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
+    }
+    .part2::after{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 10%;
+        position: absolute;
+        margin-left: 350px;
+        margin-top: -80px;
+        box-shadow:  0 0 7px #fff, 
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
+    }
+    .part3::after{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 10%;
+        position: absolute;
+        margin-left: 250px;
+        margin-top: -83px;
+        box-shadow:  0 0 7px #fff, 
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
+    }
+    .admin{
+        color: white;
+        text-shadow:  0 0 7px #fff, 
+        0 0 2px #fff, 
+        0 0 5px white,   
+        0 0 10px white, 
+        0 0 20px white;
+    }
+    .logo-footer{
+        display: flex;
+    }
+    .facebook{
+        background: url(img/facebook.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+        margin-left: -50px;
+    }
+    .twitter{
+        background: url(img/twitter.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .insta{
+        background: url(img/insta.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .tiktok{
+        background: url(img/tiktok.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .mail{
+        background: url(img/mail.svg);
+        width: 35px;
+        height: 30px;
+        background-size: cover;
+    }
+    .logo-mobile{
+        display: flex;
+    }
+    .apple{
+        background: url(img/apple.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+    }
+    .android{
+        background: url(img/android.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+        margin-left: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 400px){
+        body{
+            margin: 0;
+            padding: 0;
+            background: url(img/back.webp);
+            background-size: cover;
+        }
+
+        .content{
+            height: 150px;
+            display: grid;
+            grid-template-columns: 49% 49%;
+            grid-template-areas: 
+                "logo nav";
+        }
+        
+        .logo{
+            background: url(img/control.svg);
+            width: 40px;
+            height: 25px;
+            background-size: cover;
+            margin: 50px 5px 5px 5px;
+            animation: rotate 1s infinite; 
+            margin-left: 35px;   
+        }
+        h1{
+            margin-bottom: 100px;
+            font-family: 'Island Moments', cursive;
+            font-size: 50px;
+            height: 50px;
+            color: #fff;
+            margin-right: -30px;
+        }
+        @keyframes rotate {
+            0%{
+              transform: rotate(-15deg)
+            }
+            50%{
+              transform: rotate(15deg)     
+            }
+            100%{
+              transform: rotate(-15deg)     
+            }
+        }
+        .title{
+            display: flex;
+            color: white;
+            margin-left: 20px;
+            margin-top: -5vh;
+            grid-area: logo;
+        }   
+            
+        .subtitle{
+            font-family: dayrom;
+            font-weight: bold;
+            grid-area: logo;
+            margin-top: 60px;
+            margin-left: -10px;}
+        
+        .navbar ul li{
+            font-family: dayrom;
+            font-size: 20px;
+            list-style-type: none;}
+        
+        ul{
+            grid-area: nav;
+            display: flex;
+            flex-direction: column;
+            margin-right: 10%;}
+    
+        li{ 
+            margin-left: 10%;
+            margin-top: 20px;
+            }
+            /* Menu Burger */
+        #button{
+            width: 42px;
+            height: 24px;
+            padding-top: 20px;
+            margin-left: 80%;}
+        
+        .burger{
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            box-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+            margin-top: 5px;
+            margin-left: -20px;
+        }
+        
+        .burger::before, .burger::after{
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            align-self: center;
+            box-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+        }
+        
+        .burger::before{
+            transform: translateY(-10px);}
+        
+        .burger::after{
+            transform: translateY(10px);}
+    
+                   /* Fenêtre Modal */
+        .modal{
+            visibility: hidden;
+            opacity: 0;
+            background-color: rgba(7, 7, 7, .7);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;}
+    
+        .modal:target{
+            visibility: visible;
+            animation: anime 3s;
+            opacity: 1;}
+        
+        @keyframes anime{
+            from{
+                transform: translateX(-100%)
+            }
+            to{
+                transform: translateX(0);}}
+    
+        .modal-content{
+            background: rgba(0, 18, 51, 0.7);
+            width: 20vw;
+            height: 100vh;
+            max-width: 25%;
+            display: block;
+            padding: 25px;
+            text-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+        }
+    
+        .modal_close{
+            color: white;
+            font-size: 30px;
+            justify-self: right;
+            text-decoration: none;}
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 90%);
+            margin-left: 5vw;
+            margin-top: 5vh;
+            grid-gap: 5vh;
+            margin-bottom: 100px;
+            animation: run 2s;
+        }
+        @keyframes run{
+            0%{
+                transform: translateX(-100vw);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+        .image1{
+            background: url(img/diablo.jpg);
+            background-size: cover;
+            width: 70vw;
+            height: 23vh;
+        }
+        .image2{
+            background: url(img/ff16.jpg);
+            background-size: cover;
+            width: 70vw;
+            height: 23vh;
+        }
+        .image3{
+            background: url(img/forspoken.jpg);
+            background-size: cover;
+            width: 70vw;
+            height: 23vh;
+        }
+        .image4{
+            background: url(img/grandblue.jpg);
+            background-size: cover;
+            width: 70vw;
+            height: 23vh;
+        }
+        .image5{
+            background: url(img/onepiece.jpg);
+            background-size: cover;
+            width: 70vw;
+            height: 23vh;
+        }
+        .image6{
+            background: url(img/star.webp);
+            background-size: cover;
+            width: 70vw;
+            height: 23vh;
+        }
+        .section{
+            border: 2px solid white;
+            width: 70vw;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px white;
+        }
+        .section:hover{
+            transform: translateY(3px);
+            box-shadow: 0 2px white;
+        }
+        .desc{
+            color: white;
+            text-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+        }
+        footer{
+            background: rgb(7, 7, 7);
+            height: 12vh;
+            padding: 20px;
+        }
+        .title-foot{
+            color: white;
+            text-shadow:  0 0 7px #fff, 
+            0 0 2px #fff, 
+            0 0 5px white,   
+            0 0 10px white, 
+            0 0 20px white;
+            font-size: 12px;
+        }
+        .content-footer{
+            display: flex;
+            justify-content: space-around;
+        }
+        .part1{
+            width: 30vw;
+            margin-left: -5%;
+        }
+        .part1::after{
+            content: "";
+            background: white;
+            width: 2px;
+            height: 13%;
+            position: absolute;
+            margin-left: 20%;
+            margin-top: -40px;
+            box-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+        }
+        .part2::after{
+            content: "";
+            background: white;
+            width: 2px;
+            height: 13%;
+            position: absolute;
+            margin-left: 40%;
+            margin-top: -10.5%;
+            box-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+        }
+        .part3::after{
+            content: "";
+            background: white;
+            width: 2px;
+            height: 10%;
+            position: absolute;
+            margin-left: 250px;
+            margin-top: -75px;
+            box-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+        }
+        .admin{
+            color: white;
+            text-shadow:  0 0 7px #fff, 
+            0 0 2px #fff, 
+            0 0 5px white,   
+            0 0 10px white, 
+            0 0 20px white;
+            font-size: 10px;
+        }
+        .part2{
+            width: 40vw;
+            margin-left: -20%;
+        }
+        .part3{
+            width: 10vw;
+            margin-left: -5%;
+        }
+        footer{
+            background: rgb(7, 7, 7);
+            height: 12vh;
+            padding: 20px;
+        }
+        .title-foot{
+            color: white;
+            text-shadow:  0 0 7px #fff, 
+            0 0 2px #fff, 
+            0 0 5px white,   
+            0 0 10px white, 
+            0 0 20px white;
+            font-size: 12px;
+        }
+        .content-footer{
+            display: flex;
+            justify-content: space-around;
+        }
+        .part1{
+            width: 30vw;
+            margin-left: -5%;
+        }
+        .part1::after{
+            content: "";
+            background: white;
+            width: 2px;
+            height: 13%;
+            position: absolute;
+            margin-left: 20%;
+            margin-top: -90px;
+            box-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+        }
+        .part2::after{
+            content: "";
+            background: white;
+            width: 2px;
+            height: 13%;
+            position: absolute;
+            margin-left: 40%;
+            margin-top: -70px;
+            box-shadow:  0 0 7px #fff, 
+            0 0 10px #fff, 
+            0 0 42px white,   
+            0 0 77px white, 
+            0 0 100px white;
+        }
+        .admin{
+            color: white;
+            text-shadow:  0 0 7px #fff, 
+            0 0 2px #fff, 
+            0 0 5px white,   
+            0 0 10px white, 
+            0 0 20px white;
+            font-size: 10px;
+        }
+        .part2{
+            width: 40vw;
+            margin-left: -20%;
+        }
+        .part3{
+            width: 10vw;
+            margin-left: -5%;
+        }
+        .logo-footer{
+            display: grid;
+            grid-template-columns: repeat(3, 20%);
+            grid-template-rows: repeat(2, 30%);
+        }
+        .facebook{
+            background: url(img/facebook.svg);
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            margin-right: 10px;
+
+        }
+        .twitter{
+            background: url(img/twitter.svg);
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            margin-right: 10px;
+        }
+        .insta{
+            background: url(img/insta.svg);
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            margin-right: 10px;
+        }
+        .tiktok{
+            background: url(img/tiktok.svg);
+            width: 15px;
+            height: 20px;
+            background-size: cover;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .mail{
+            background: url(img/mail.svg);
+            width: 25px;
+            height: 20px;
+            background-size: cover;
+            margin-top: 10px;
+        }
+        .logo-mobile{
+            display: flex;
+        }
+        .apple{
+            background: url(img/apple.svg);
+            width: 25px;
+            height: 30px;
+            background-size: cover;
+            margin-left: 20px;
+        }
+        .android{
+            background: url(img/android.svg);
+            width: 25px;
+            height: 30px;
+            background-size: cover;
+            margin-left: 50px;
+        }
+
+        
+
+
+    }
