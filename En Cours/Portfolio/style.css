@@ -35,15 +35,14 @@ header{
     position: fixed;
     background-color: white;
     width: 100vw;
-    height: 9%;
+    height: 10vh;
     padding: 10px;
     z-index: 1;
 }
 
 /* --------------  NAVBAR  -------------- */
-
-#logo{
-    margin-left: 40px;
+.modal_close{
+    visibility: hidden;
 }
 nav{
     width: 40vw;
@@ -138,7 +137,7 @@ input{
     margin: 15px;
 }
 #input{
-    margin-left: 20%;
+    margin-left: 40vw;
 
 }
 input[type="radio"]::after{
@@ -416,7 +415,7 @@ input[type="radio"]:checked::after{
     grid-template-columns: repeat(4, 21.5%);
     margin-top: 150px;
     margin-left: 18%;
-    width: 1600px;
+    width: 1400px;
     height: 110px;
     margin-top: 7%;
     margin-bottom: 3%;
@@ -425,7 +424,7 @@ input[type="radio"]:checked::after{
     border: none;
     background-color: #DC5052;
     color: white;
-    width: 300px;
+    width: 17vw;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -436,7 +435,7 @@ input[type="radio"]:checked::after{
 #nav-link2, #nav-link3, #nav-link4{
     border: 1px solid black;
     background-color: transparent;
-    width: 300px;
+    width: 17vw;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -640,14 +639,19 @@ input[type="radio"]:checked::after{
     border-radius: 2px;
     color: white;
 }
+
 .btn-app, .btn-card, .btn-web{
-    background: transparent;
+    background: none;
+    border-radius: 2px;
     border: none;
+    height: 30px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 .port-content{
     display: grid;
-    grid-template-columns: repeat(3, 22%);
-    grid-template-rows: repeat(3, 22%);
+    grid-template-columns: repeat(3, 28%);
+    grid-template-rows: repeat(3, 25%);
     justify-content: center;
 }
 .title-web, .title-card, .title-app{
@@ -666,255 +670,7 @@ input[type="radio"]:checked::after{
 }
 
 
-/* --------------  TESTIMONIALS  -------------- */
 
-/* .test-text{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -400px;
-}
-.test-title2{
-    font-size: 30px;
-}
-.test-title2::after{
-    content: "";
-    width: 50px;
-    height: 3px;
-    background-color: #DC5052;
-    display: flex;
-    margin-top: 30px;
-    margin-left: 60px;
-    margin-bottom: 35px;
-}
-.test-subtitle2{
-    width: 1250px;
-    text-align: center;
-    margin-bottom: 35px;
-}
-.cards{
-    display: flex;
-    margin-left: 20%;
-    width: 1240px;
-    height: 400px;
-    overflow: hidden;
-}
-.card1, .card2, .card3, .card4, .card5{
-    width: 370px;
-    height: 300px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 20px;
-    display: flex;
-    margin-left: 50px;
-    animation: card 10s infinite;
-}
-
-@keyframes card{
-    0%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(-1000px);
-    }
-}
-
-.img-test{
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-}
-.card-text{
-    margin-top: 40px;
-    margin-left: -135px;
-}
-.name{
-    padding-left: 130px;
-    width: 250px;
-    height: 50px;
-}
-.job{
-    color: #959393;
-    margin-top: 5px;
-    padding-left: 130px;
-}
-.para1{
-    align-self: center;
-    margin-top: 100px;
-    margin-left: -300px;
-    margin-right: 20px;
-    width: 310px;
-    font-size: 14px;
-    font-style: italic;
-}
-.para1::before{
-    content: "❝";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para1::after{
-    content: "❞";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para2{
-    align-self: center;
-    margin-top: 100px;
-    margin-left: -280px;
-    margin-right: 20px;
-    width: 310px;
-    font-size: 15px;
-    font-style: italic;
-}
-.para2::before{
-    content: "❝";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para2::after{
-    content: "❞";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para3{
-    align-self: center;
-    margin-top: 100px;
-    margin-left: -280px;
-    margin-right: 20px;
-    width: 310px;
-    font-size: 15px;
-    font-style: italic;
-}
-.para3::before{
-    content: "❝";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para3::after{
-    content: "❞";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para4{
-    align-self: center;
-    margin-top: 100px;
-    margin-left: -280px;
-    width: 310px;
-    font-size: 15px;
-    font-style: italic;
-}
-.para4::before{
-    content: "❝";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para4::after{
-    content: "❞";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para5{
-    align-self: center;
-    margin-top: 100px;
-    margin-left: -280px;
-    width: 310px;
-    font-size: 15px;
-    font-style: italic;
-}
-.para5::before{
-    content: "❝";
-    color: #F6C2C2;
-    font-size: 25px;
-}
-.para5::after{
-    content: "❞";
-    color: #F6C2C2;
-    font-size: 25px;
-} */
-
-/* --------------  QUESTION  -------------- */
-
-/* .quest-text{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.quest-title{
-    font-size: 30px;
-}
-.quest-title::after{
-    content: "";
-    width: 50px;
-    height: 3px;
-    background-color: #DC5052;
-    display: flex;
-    margin-top: 30px;
-    margin-left: 45%;
-    margin-bottom: 35px;
-}
-.quest-subtitle{
-    width: 1250px;
-    text-align: center;
-    margin-bottom: 35px;
-}
-.question-content{
-    margin-left: 18%;
-}
-#reponse1, #reponse2, #reponse3, #reponse4, #reponse5, #reponse6{
-    margin-left: 30px;
-    width: 1000px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: none;
-}
-.question{
-    font-size: 20px;
-    margin-bottom: 15px;
-
-}
-.question:hover{
-    color: #DC5052;
-}
-.trait{
-    content: "";
-    display: block;
-    width: 61vw;
-    height: 1px;
-    background: #C1BDBD;
-    margin-left: -2px;
-    margin-bottom: 20px;
-}
-#ferme1{
-    margin-left: 45%;
-    color: #C1BDBD;
-    cursor: pointer;
-}
-#ferme2{
-    margin-left: 33%;
-    color: #C1BDBD;
-    cursor: pointer;
-}
-#ferme3{
-    margin-left: 32.5%;
-    color: #C1BDBD;
-    cursor: pointer;
-}
-#ferme4{
-    margin-left: 39.6%;
-    color: #C1BDBD;
-    cursor: pointer;
-}
-#ferme5{
-    margin-left: 32%;
-    color: #C1BDBD;
-    cursor: pointer;
-}
-#ferme6{
-    margin-left: 23%;
-    color: #C1BDBD;
-    cursor: pointer;
-} */
 
 /* --------------  CONTACT  -------------- */
 
@@ -1059,18 +815,19 @@ input{
     width: 250px;
 }
 .subject{
-    height: 35px;
+    height: 60px;
     width: 515px;
-    margin-top: 30px;
 }
 .message{
     width: 515px;
     height: 120px;  
     border: 1px solid #959393;
     border-radius: 3px;
+    padding-top: 10px;
     padding-left: 10px;
-    margin-left: 5px;
-    margin-top: 30px;
+    margin: 15px;
+    margin-left: 15px;
+
 }
 .submit3{
     background: #DC5052;

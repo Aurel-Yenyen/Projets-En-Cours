@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="smart-style.css">
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -16,16 +17,28 @@
 
         <img id="logo" src="Img/Logo/Logo.png" alt="" width="80px" height="70px">
 
-            
-        <nav>
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#marque">A Propos</a></li>
-                <li><a href="#services">Mon C.V</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="button">
+            <a class="burger" href="#content"></a> 
+
+            <div id="navbar">
+                <nav class="navbar">
+                <div id="content" class="modal">
+                    <div class="modal-content">
+                        <div class="modal_close">
+                            <a href="#" class="modal_close">&times;</a>
+                        </div>
+                        <ul>
+                            <li><a class="link1" href="#header">Home</a></li>
+                            <li><a class="link2" href="#marque">A Propos</a></li>
+                            <li><a class="link3" href="#services">Mon C.V</a></li>
+                            <li><a class="link4" href="#portfolio">Portfolio</a></li>
+                            <li><a class="link5" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </nav>  
+            </div>
+        </div>
 
 
     </header>
@@ -227,7 +240,7 @@
 
 
 
-
+    </section>
     </section>
 
     <!-- Services -->

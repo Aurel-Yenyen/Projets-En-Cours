@@ -358,6 +358,7 @@ let imgCard3 = document.getElementById('image8')
 let imgWeb3 = document.getElementById('image9')
 
 
+
 btnAll.addEventListener('click', function reverse() {
     imgWeb1.style.visibility = 'visible'
     imgWeb2.style.visibility = 'visible'
@@ -370,7 +371,7 @@ btnAll.addEventListener('click', function reverse() {
     imgApp3.style.visibility = 'visible'
 })
 
-btnApp.addEventListener('click', function reverse2() {
+btnApp.addEventListener('click', function reverseApp() {
     imgWeb1.style.visibility = 'hidden'
     imgWeb2.style.visibility = 'hidden'
     imgWeb3.style.visibility = 'hidden'
@@ -388,12 +389,26 @@ btnApp.addEventListener('click', function reverse2() {
     imgWeb2.style.transition = '0s'
     imgWeb3.style.transition = '0s'
 
-    imgApp2.style.transform = 'translateX(-422px)'
+    imgApp2.style.transform = 'translateX(-28vw)'
     imgApp2.style.transition = '0.5s ease-in-out'
-    imgApp3.style.transform = 'translateY(-332px)'
+    imgApp3.style.transform = 'translateY(-46vh)'
     imgApp3.style.transition = '0.5s ease-in-out'
+
+    btnAll.style.background = 'none'
+    btnAll.style.color = 'black'
+
+    btnApp.style.background = '#DC5052'
+    btnApp.style.color = 'white'
+
+    btnCard.style.background = 'none'
+    btnCard.style.color = 'black'
+
+    btnWeb.style.background = 'none'
+    btnWeb.style.color = 'black'
+
+
 })
-btnCard.addEventListener('click', function reverse3() {
+btnCard.addEventListener('click', function reverseCard() {
     imgWeb1.style.visibility = 'hidden'
     imgWeb2.style.visibility = 'hidden'
     imgWeb3.style.visibility = 'hidden'
@@ -411,14 +426,26 @@ btnCard.addEventListener('click', function reverse3() {
     imgWeb2.style.transition = '0s'
     imgWeb3.style.transition = '0s'
 
-    imgCard1.style.transform = 'translateY(-332px)'
+    imgCard1.style.transform = 'translateY(-40vh)'
     imgCard1.style.transition = '0.5s ease-in-out'
-    imgCard2.style.transform = 'translateY(-664px)' + 'translateX(422px)'
+    imgCard2.style.transform = 'translateY(-90vh)' + 'translateX(422px)'
     imgCard2.style.transition = '0.5s ease-in-out'
-    imgCard3.style.transform = 'translateY(-664px)' + 'translateX(422px)'
+    imgCard3.style.transform = 'translateY(-90vh)' + 'translateX(422px)'
     imgCard3.style.transition = '0.5s ease-in-out'
+
+    btnAll.style.background = 'none'
+    btnAll.style.color = 'black'
+
+    btnApp.style.background = 'none'
+    btnApp.style.color = 'black'
+
+    btnCard.style.background = '#DC5052'
+    btnCard.style.color = 'white'
+
+    btnWeb.style.background = 'none'
+    btnWeb.style.color = 'black'
 })
-btnWeb.addEventListener('click', function reverse4() {
+btnWeb.addEventListener('click', function reverseWeb() {
     imgCard1.style.visibility = 'hidden'
     imgCard2.style.visibility = 'hidden'
     imgCard3.style.visibility = 'hidden'
@@ -436,12 +463,24 @@ btnWeb.addEventListener('click', function reverse4() {
     imgCard2.style.transition = '0s'
     imgCard3.style.transition = '0s'
 
-    imgWeb1.style.transform = 'translateX(-422px)'
+    imgWeb1.style.transform = 'translateX(-30vw)'
     imgWeb1.style.transition = '0.5s ease-in-out'
-    imgWeb2.style.transform = 'translateY(-332px)'
+    imgWeb2.style.transform = 'translateY(-46vh)'
     imgWeb2.style.transition = '0.5s ease-in-out'
-    imgWeb3.style.transform = 'translateY(-664px)'
+    imgWeb3.style.transform = 'translateY(-96vh)'
     imgWeb3.style.transition = '0.5s ease-in-out'
+
+    btnAll.style.background = 'none'
+    btnAll.style.color = 'black'
+
+    btnApp.style.background = 'none'
+    btnApp.style.color = 'black'
+
+    btnCard.style.background = 'none'
+    btnCard.style.color = 'black'
+
+    btnWeb.style.background = '#DC5052'
+    btnWeb.style.color = 'white'
 })
 
 btnAll.addEventListener('click', function reverseAll(){
@@ -474,6 +513,18 @@ btnAll.addEventListener('click', function reverseAll(){
     imgApp1.style.transform = 'translateY(0px)'+'translateX(0px)'
     imgApp2.style.transform = 'translateY(0px)'+'translateX(0px)'
     imgApp3.style.transform = 'translateY(0px)'+'translateX(0px)'
+
+    btnAll.style.background = '#DC5052'
+    btnAll.style.color = 'white'
+
+    btnApp.style.background = 'none'
+    btnApp.style.color = 'black'
+
+    btnCard.style.background = 'none'
+    btnCard.style.color = 'black'
+
+    btnWeb.style.background = 'none'
+    btnWeb.style.color = 'black'
 })
 
 // ----------------   QUESTION   -----------------

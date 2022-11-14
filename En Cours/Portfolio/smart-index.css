@@ -58,4 +58,14 @@
       img{
         width: 370px;
       }
+	  .burger{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+    
 }
