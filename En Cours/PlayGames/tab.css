@@ -1,0 +1,430 @@
+
+
+@media screen and (min-width: 400px) and (max-width: 800px){
+    body{
+        margin: 0;
+        padding: 0;
+        background: url(img/back.webp);
+        background-size: cover;
+    }
+
+    .content{
+        height: 150px;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-areas: 
+            "logo nav";
+    }
+    
+    .logo{
+        background: url(img/control.svg);
+        width: 40px;
+        height: 25px;
+        background-size: cover;
+        margin: 50px 5px 5px 5px;
+        animation: rotate 1s infinite; 
+        margin-left: 35px;   
+    }
+    h1{
+        margin-bottom: 100px;
+        font-family: 'Island Moments', cursive;
+        font-size: 50px;
+        height: 50px;
+        color: #fff;
+        margin-right: -30px;
+    }
+    @keyframes rotate {
+        0%{
+          transform: rotate(-15deg)
+        }
+        50%{
+          transform: rotate(15deg)     
+        }
+        100%{
+          transform: rotate(-15deg)     
+        }
+    }
+    .title{
+        display: flex;
+        color: white;
+        margin-left: 20px;
+        margin-top: -3vh;
+        grid-area: logo;
+    }   
+        
+    .subtitle{
+        font-family: dayrom;
+        font-weight: bold;
+        grid-area: logo;
+        margin-top: 60px;
+        margin-left: -10px;}
+    
+    .navbar ul li{
+        font-family: dayrom;
+        font-size: 20px;
+        list-style-type: none;}
+    
+    ul{
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10%;}
+
+    li{ 
+        margin-left: 10%;
+        margin-top: 20px;
+        }
+        /* Menu Burger */
+    #button{
+        width: 42px;
+        height: 24px;
+        padding-top: 20px;
+        margin-left: 80%;
+    }
+    button{
+        border: 2px solid white;
+        border-radius: 50px;
+        box-shadow: 0 5px #DADADA;
+        background: none;
+        width: 100px;
+        height: 40px;
+    }
+    .burger{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+    
+    .burger::before, .burger::after{
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        align-self: center;
+    }
+    
+    .burger::before{
+        transform: translateY(-10px);}
+    
+    .burger::after{
+        transform: translateY(10px);}
+
+               /* Fenêtre Modal */
+    .modal{
+        visibility: hidden;
+        opacity: 0;
+        background-color: rgba(7, 7, 7, .9);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;}
+
+    .modal:target{
+        visibility: visible;
+        animation: anime 3s;
+        opacity: 1;}
+    
+        #bg-modal1{
+            width: 100%;
+            height: 100%;
+            background: rgb(7, 7, 7, .9);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+        }
+        .modal-content1{
+            width: 300px;
+            height: 430px;
+            background: white;
+            opacity: 1;
+        }
+        .modal-close1 h2{
+            float: right;
+            font-size: 40px;
+            cursor: pointer;
+            color: black;
+            font-family: 'Island Moments', cursive;
+            margin-right: 20px;
+            margin-top: 0px;
+        }
+        .synoBa1{
+            padding: 20px;
+        }
+        .syno{
+            color: black;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 30px;
+            margin-top: 0;
+        }
+        .ba{
+            color: black;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 30px; 
+            margin-top: -10px;
+        }
+        .syno-cont{
+            color: black;
+            font-family: 'Island Moments', cursive;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+        .video{
+            margin-left: 25%;
+            margin-top: -20px;
+            width: 200px;
+            height: 130px;
+        }
+    
+    @keyframes anime{
+        from{
+            transform: translateX(-100%)
+        }
+        to{
+            transform: translateX(0);}}
+
+    .modal-content{
+        background: rgba(0, 18, 51, .9);
+        width: 20vw;
+        height: 100vh;
+        max-width: 25%;
+        display: block;
+        padding: 25px;
+    }
+
+    .modal_close{
+        color: white;
+        font-size: 30px;
+        justify-self: right;
+        text-decoration: none;}
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        margin-left: 5vw;
+        margin-top: 5vh;
+        grid-gap: 5vh;
+        margin-bottom: 100px;
+        animation: run 2s;
+        margin-left: 10%;
+    }
+    .search{
+        display: flex;
+        justify-content: end;
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    .loupe{
+        background: url(img/loupe.svg);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-size: cover;
+        margin-top: 7px;
+        margin-right: 280px;
+    }
+    input{
+        background: none;
+        border: 2px solid white;
+        border-radius: 26px;
+        width: 270px;
+        height: 40px;
+        padding-left: 50px;
+        box-shadow: 0 5px #DADADA;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+    input::placeholder{
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border: none;
+    }
+    input:focus{
+        outline: none;
+        color: white;
+    }
+    @keyframes run{
+        0%{
+            transform: translateX(-100vw);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    .image1{
+        background: url(img/cod.jpg);
+        background-size: cover;
+        width: 70vw;
+        height: 23vh;
+    }
+    .image2{
+        background: url(img/rainbow.png);
+        background-size: cover;
+        width: 70vw;
+        height: 23vh;
+    }
+    .image3{
+        background: url(img/horizon.jpg);
+        background-size: cover;
+        width: 70vw;
+        height: 23vh;
+    }
+    .image4{
+        background: url(img/fortnite.jpg);
+        background-size: cover;
+        width: 70vw;
+        height: 23vh;
+    }
+    .image5{
+        background: url(img/gotham.jpg);
+        background-size: cover;
+        width: 70vw;
+        height: 23vh;
+    }
+    .image6{
+        background: url(img/overwatch.jpeg);
+        background-size: cover;
+        width: 70vw;
+        height: 23vh;
+    }
+    .section{
+        border: 2px solid white;
+        width: 70vw;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px white;
+    }
+    .section:hover{
+        transform: translateY(3px);
+        box-shadow: 0 2px white;
+    }
+    .desc{
+        color: white;
+    }
+    footer{
+        background: rgb(7, 7, 7);
+        height: 14vh;
+        padding: 20px;
+    }
+    .title-foot{
+        color: white;
+        font-size: 12px;
+    }
+    .content-footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .part1{
+        width: 35vw;
+
+    }
+    .part1::after{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 13%;
+        position: absolute;
+        margin-left: 25%;
+        margin-top: -90px;
+
+    }
+    .part2::after{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 13%;
+        position: absolute;
+        margin-left: 30%;
+        margin-top: -10.5%;
+    }
+    .admin{
+        color: white;
+        font-size: 10px;
+    }
+    .part2{
+        width: 40vw;
+        margin-left: -10%;
+    }
+    .part3{
+        width: 10vw;
+        margin-left: -5%;
+    }
+    .logo-footer{
+        display: grid;
+        grid-template-columns: repeat(3, 20%);
+        grid-template-rows: repeat(2, 30%);
+    }
+    .facebook{
+        background: url(img/facebook.svg);
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        margin-right: 10px;
+
+    }
+    .twitter{
+        background: url(img/twitter.svg);
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .insta{
+        background: url(img/insta.svg);
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .tiktok{
+        background: url(img/tiktok.svg);
+        width: 15px;
+        height: 20px;
+        background-size: cover;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .mail{
+        background: url(img/mail.svg);
+        width: 25px;
+        height: 20px;
+        background-size: cover;
+        margin-top: 10px;
+    }
+    .logo-mobile{
+        display: flex;
+    }
+    .apple{
+        background: url(img/apple.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+        margin-left: 20px;
+    }
+    .android{
+        background: url(img/android.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+        margin-left: 50px;
+    }
+    
+
+
+}

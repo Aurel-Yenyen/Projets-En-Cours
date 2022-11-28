@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    background: #430658;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik Distressed', cursive;
+    box-shadow:  0 0 1px #fff, 
+    0 0 2px #fff, 
+    0 0 4px white,   
+    0 0 6px white, 
+    0 0 8px white;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+}
+.logo{
+    height: 6vh;
+}
+.fifa{
+    height: 6vh;
+}
+
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 2vw;
+    padding: 20px;
+}
+a:hover{
+    background: white;
+    padding: 20px;
+    color: #430658;
+    transition: background ease-in 0.5s;
+}
+.sous-nav{
+    display: flex;
+    padding-top: 10vh;
+    z-index: -1;
+}
+.chrono{
+    background: #430658;
+    width: 25vw;
+    height: 80vh;
+
+}
+.img-start img{
+    height: 80vh;
+    width: 75vw;
+}

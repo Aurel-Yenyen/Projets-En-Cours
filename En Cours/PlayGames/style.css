@@ -1,0 +1,391 @@
+
+    /* ----------  HEADER  ------------ */
+
+    body{
+        margin: 0;
+        padding: 0;
+        background: #292929;
+        background-size: cover;
+        width: 100%;
+        color: white;
+    } 
+    .content{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 20% 79%;
+        grid-template-areas: 
+            "logo nav";  
+        background-color: black;   
+        width: 100vw;
+        height: 11vh;
+        box-shadow: 0 2px #1E8ECE,
+        0 0 5px #1E8ECE, 
+        0 0 10px #1E8ECE,   
+        0 0 20px #1E8ECE, 
+        0 0 40px #1E8ECE;
+    }
+    h1{
+        margin-bottom: 100px;
+        font-family: 'Island Moments', cursive;
+        font-size: 60px;
+        height: 50px;
+        letter-spacing: 2px;
+        color: white;
+        text-shadow: 0 2px #1E8ECE,
+        0 0 4px #1E8ECE, 
+        0 0 6px #1E8ECE,   
+        0 0 8px #1E8ECE, 
+        0 0 10px #1E8ECE;
+        margin-top: 50px;
+    }
+    .logo{
+        background: url(img/control.svg);
+        width: 50px;
+        height: 31px;
+        background-size: cover;
+        margin: 70px 5px 5px 5px;
+        animation: rotate 1s infinite;    
+    }
+    @keyframes rotate {
+        0%{
+          transform: rotate(-15deg)
+        }
+        50%{
+          transform: rotate(15deg)     
+        }
+        100%{
+          transform: rotate(-15deg)     
+        }
+    }
+    .title{
+        display: flex;
+        color: white;
+        margin-left: 50px;
+        margin-top: -3vh;
+    }   
+    .subtitle{
+        font-family: dayrom;
+        font-weight: bold;
+        grid-area: logo;
+        margin-top: 80px;
+        margin-left: 10px;
+    }  
+    ul{
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 40vw;
+        margin-right: 10vw; 
+        margin-bottom: 2vw;  
+    }  
+    li{ 
+        margin-left: 10%;
+        list-style-type: none;
+        width: 200px;
+    }
+    
+    li:hover{
+        transform: translateY(3px);
+    }
+    button:hover{
+        box-shadow: 0 2px #1E8ECE,
+        0 0 5px #1E8ECE, 
+        0 0 10px #1E8ECE,   
+        0 0 20px #1E8ECE, 
+        0 0 40px #1E8ECE;
+    }
+    button{
+        border: 2px solid #1E8ECE;
+        border-radius: 50px;
+        box-shadow: 0 5px #1E8ECE;
+        background: none;
+        width: 100px;
+        height: 40px;
+        box-shadow:  0 5px #1E8ECE, 
+        0 0 5px #1E8ECE, 
+        0 0 10px #1E8ECE,   
+        0 0 20px #1E8ECE, 
+        0 0 40px #1E8ECE;
+    }
+
+    .link{
+        text-decoration: none;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 18px;
+    }  
+    .recherche{
+        background: none;
+        border: 2px solid #1E8ECE;
+        border-radius: 26px;
+        width: 230px;
+        height: 40px;
+        padding-left: 50px;
+        box-shadow:  0 5px #1E8ECE, 
+        0 0 5px #1E8ECE, 
+        0 0 10px #1E8ECE,   
+        0 0 20px #1E8ECE, 
+        0 0 40px #1E8ECE;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .recherche::placeholder{
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border: none;
+    }
+    .recherche:focus{
+        outline: none;
+        color: white;
+    }
+    .search{
+        display: flex;
+        justify-content: end;
+        margin-right: 10.6%;
+        margin-top: 20px;
+    }
+    .loupe{
+        background: url(img/loupe.svg);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-size: cover;
+        margin-top: 27px;
+        margin-right: 245px;
+    }
+    .modal_close{
+        visibility: hidden;
+    }
+            /* ----------  MAIN  ------------ */
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        margin-left: 20vw;
+        margin-top: 5vh;
+        grid-gap: 5vh;
+        margin-bottom: 100px;
+ 
+    }
+
+
+    @keyframes run{
+        0%{
+            transform: translateX(-100vw);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+
+    .section{
+        border: 2px solid #1E8ECE;
+        width: 16vw;
+        height: 35vh;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow:  0 5px #1E8ECE, 
+        0 0 5px #1E8ECE, 
+        0 0 10px #1E8ECE,   
+        0 0 20px #1E8ECE, 
+        0 0 40px #1E8ECE;
+    }
+    .section:hover{
+        transform: translateY(3px);
+        box-shadow: 0 2px #1E8ECE,
+        0 0 5px #1E8ECE, 
+        0 0 10px #1E8ECE,   
+        0 0 20px #1E8ECE, 
+        0 0 40px #1E8ECE;
+    }
+
+    .desc{
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+    }
+    #bg-modal1{
+
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content1{
+        width: 30vw;
+        height: 35vh;
+        box-shadow: 0 2px #1E8ECE,
+        0 0 5px #1E8ECE, 
+        0 0 10px #1E8ECE,   
+        0 0 20px #1E8ECE, 
+        0 0 40px #1E8ECE;
+        opacity: 1;
+    }
+
+    iframe{
+        width: 15vw;
+        height: 19vh;
+        margin-left: 7vw;
+    }
+    .modal-close1 h2{
+        float: right;
+        font-size: 40px;
+        cursor: pointer;
+        color: white;
+        font-family: 'Island Moments', cursive;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+    .synoBa1{
+        padding: 20px;
+
+    }
+    .syno{
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .ba{
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px; 
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .syno-cont{
+        color: white;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+
+        /* ----------  FOOTER  ------------ */
+
+    footer{
+        background: rgb(7, 7, 7);
+        height: 15vh;
+        padding: 20px;
+    }
+    .title-foot{
+        color: white;
+        font-size: 20px;
+    }
+    .mobile{
+        margin-left: -50px;
+    }
+    .content-footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .part1::before{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 10%;
+        position: absolute;
+        margin-left: -150px;
+        margin-top: 1.3%;
+    }
+    .part1::after{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 10%;
+        position: absolute;
+        margin-left: 250px;
+        margin-top: -78px;
+    }
+    .part2::after{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 10%;
+        position: absolute;
+        margin-left: 350px;
+        margin-top: -80px;
+    }
+    .part3::after{
+        content: "";
+        background: white;
+        width: 2px;
+        height: 10%;
+        position: absolute;
+        margin-left: 250px;
+        margin-top: -3.7%;
+    }
+    .admin{
+        color: white;
+    }
+    .logo-footer{
+        display: flex;
+
+    }
+    .facebook{
+        background: url(img/facebook.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+        margin-left: -50px;
+    }
+    .twitter{
+        background: url(img/twitter.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .insta{
+        background: url(img/insta.svg);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .tiktok{
+        background: url(img/tiktok.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .mail{
+        background: url(img/mail.svg);
+        width: 35px;
+        height: 30px;
+        background-size: cover;
+    }
+    .logo-mobile{
+        display: flex;
+    }
+    .apple{
+        background: url(img/apple.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+    }
+    .android{
+        background: url(img/android.svg);
+        width: 25px;
+        height: 30px;
+        background-size: cover;
+        margin-left: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
