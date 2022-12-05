@@ -79,57 +79,57 @@ cadre3.addEventListener('mouseleave', disapear =>{
     image3.style.transition = ('transform 1s ease-in')  
 })
 
-cadre2.addEventListener('mouseover', window =>{
-    overlay2.style.visibility = 'visible'
-    image2.style.transform = 'scale(1.2)'
-    image2.style.transition = ('transform 1s ease-in')
+cadre4.addEventListener('mouseover', window =>{
+    overlay4.style.visibility = 'visible'
+    image4.style.transform = 'scale(1.2)'
+    image4.style.transition = ('transform 1s ease-in')
 })
-cadre2.addEventListener('mouseleave', disapear =>{
-    overlay2.style.visibility = 'hidden' 
-    image2.style.transform = 'scale(1)'
-    image2.style.transition = ('transform 1s ease-in')  
-})
-
-cadre2.addEventListener('mouseover', window =>{
-    overlay2.style.visibility = 'visible'
-    image2.style.transform = 'scale(1.2)'
-    image2.style.transition = ('transform 1s ease-in')
-})
-cadre2.addEventListener('mouseleave', disapear =>{
-    overlay2.style.visibility = 'hidden' 
-    image2.style.transform = 'scale(1)'
-    image2.style.transition = ('transform 1s ease-in')  
+cadre4.addEventListener('mouseleave', disapear =>{
+    overlay4.style.visibility = 'hidden' 
+    image4.style.transform = 'scale(1)'
+    image4.style.transition = ('transform 1s ease-in')  
 })
 
-cadre2.addEventListener('mouseover', window =>{
-    overlay2.style.visibility = 'visible'
-    image2.style.transform = 'scale(1.2)'
-    image2.style.transition = ('transform 1s ease-in')
+cadre5.addEventListener('mouseover', window =>{
+    overlay5.style.visibility = 'visible'
+    image5.style.transform = 'scale(1.2)'
+    image5.style.transition = ('transform 1s ease-in')
 })
-cadre2.addEventListener('mouseleave', disapear =>{
-    overlay2.style.visibility = 'hidden' 
-    image2.style.transform = 'scale(1)'
-    image2.style.transition = ('transform 1s ease-in')  
-})
-
-cadre2.addEventListener('mouseover', window =>{
-    overlay2.style.visibility = 'visible'
-    image2.style.transform = 'scale(1.2)'
-    image2.style.transition = ('transform 1s ease-in')
-})
-cadre2.addEventListener('mouseleave', disapear =>{
-    overlay2.style.visibility = 'hidden' 
-    image2.style.transform = 'scale(1)'
-    image2.style.transition = ('transform 1s ease-in')  
+cadre5.addEventListener('mouseleave', disapear =>{
+    overlay5.style.visibility = 'hidden' 
+    image5.style.transform = 'scale(1)'
+    image5.style.transition = ('transform 1s ease-in')  
 })
 
-cadre2.addEventListener('mouseover', window =>{
-    overlay2.style.visibility = 'visible'
-    image2.style.transform = 'scale(1.2)'
-    image2.style.transition = ('transform 1s ease-in')
+cadre6.addEventListener('mouseover', window =>{
+    overlay6.style.visibility = 'visible'
+    image6.style.transform = 'scale(1.2)'
+    image6.style.transition = ('transform 1s ease-in')
 })
-cadre2.addEventListener('mouseleave', disapear =>{
-    overlay2.style.visibility = 'hidden' 
-    image2.style.transform = 'scale(1)'
-    image2.style.transition = ('transform 1s ease-in')  
+cadre6.addEventListener('mouseleave', disapear =>{
+    overlay6.style.visibility = 'hidden' 
+    image6.style.transform = 'scale(1)'
+    image6.style.transition = ('transform 1s ease-in')  
+})
+
+cadre7.addEventListener('mouseover', window =>{
+    overlay7.style.visibility = 'visible'
+    image7.style.transform = 'scale(1.2)'
+    image7.style.transition = ('transform 1s ease-in')
+})
+cadre7.addEventListener('mouseleave', disapear =>{
+    overlay7.style.visibility = 'hidden' 
+    image7.style.transform = 'scale(1)'
+    image7.style.transition = ('transform 1s ease-in')  
+})
+
+cadre8.addEventListener('mouseover', window =>{
+    overlay8.style.visibility = 'visible'
+    image8.style.transform = 'scale(1.2)'
+    image8.style.transition = ('transform 1s ease-in')
+})
+cadre8.addEventListener('mouseleave', disapear =>{
+    overlay8.style.visibility = 'hidden' 
+    image8.style.transform = 'scale(1)'
+    image8.style.transition = ('transform 1s ease-in')   
 })

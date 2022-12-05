@@ -51,7 +51,7 @@ body {
 
 /* Medium Device */
 
-@media screen and (min-width: 768px) {
+
 	.navbar-link > a::after{
 		display: block;
 		content: "";
