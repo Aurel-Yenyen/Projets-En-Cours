@@ -65,12 +65,12 @@
         margin-left: 10%;
         list-style-type: none;
     }
-    /* li:hover{
+    li:hover{
         transform: translateY(3px);
     }
     .link:hover{
         box-shadow: 0 2px white;
-    } */
+    }
     .modal_close{
         visibility: hidden;
     }
@@ -78,11 +78,6 @@
         text-decoration: none;
         font-family: 'Bebas Neue', cursive;
         color: white;
-        text-shadow:  0 0 7px #fff, 
-        0 0 10px #fff, 
-        0 0 42px rgb(0, 81, 219),   
-        0 0 77px rgb(0, 81, 219), 
-        0 0 100px rgb(0, 81, 219);
         border: 2px solid white;
         border-radius: 50px;
         padding: 8px 15px 8px 15px;
@@ -108,41 +103,9 @@
             transform: translateX(0);
         }
     }
-    .image1{
-        background: url(img/cod.jpg);
-        background-size: cover;
+    .img{
         width: 20vw;
-        height: 23vh;
-    }
-    .image2{
-        background: url(img/rainbow.png);
-        background-size: cover;
-        width: 20vw;
-        height: 23vh;
-    }
-    .image3{
-        background: url(img/horizon.jpg);
-        background-size: cover;
-        width: 20vw;
-        height: 23vh;
-    }
-    .image4{
-        background: url(img/fortnite.jpg);
-        background-size: cover;
-        width: 20vw;
-        height: 23vh;
-    }
-    .image5{
-        background: url(img/gotham.jpg);
-        background-size: cover;
-        width: 20vw;
-        height: 23vh;
-    }
-    .image6{
-        background: url(img/overwatch.jpeg);
-        background-size: cover;
-        width: 20vw;
-        height: 23vh;
+        height: 23vh; 
     }
     .section{
         border: 2px solid white;
@@ -157,11 +120,6 @@
     }
     .desc{
         color: white;
-        text-shadow:  0 0 7px #fff, 
-        0 0 10px #fff, 
-        0 0 42px white,   
-        0 0 77px white, 
-        0 0 100px white;
     }
     #bg-modal1{
         width: 100%;
@@ -223,11 +181,6 @@
     }
     .title-foot{
         color: white;
-        text-shadow:  0 0 7px #fff, 
-        0 0 2px #fff, 
-        0 0 5px white,   
-        0 0 10px white, 
-        0 0 20px white;
         font-size: 20px;
     }
     .mobile{
@@ -245,11 +198,6 @@
         position: absolute;
         margin-left: -150px;
         margin-top: 0.7%;
-        box-shadow:  0 0 7px #fff, 
-        0 0 2px #fff, 
-        0 0 5px white,   
-        0 0 10px white, 
-        0 0 20px white;
     }
     .part1::after{
         content: "";
@@ -259,11 +207,6 @@
         position: absolute;
         margin-left: 250px;
         margin-top: -78px;
-        box-shadow:  0 0 7px #fff, 
-        0 0 2px #fff, 
-        0 0 5px white,   
-        0 0 10px white, 
-        0 0 20px white;
     }
     .part2::after{
         content: "";
@@ -273,11 +216,6 @@
         position: absolute;
         margin-left: 350px;
         margin-top: -80px;
-        box-shadow:  0 0 7px #fff, 
-        0 0 2px #fff, 
-        0 0 5px white,   
-        0 0 10px white, 
-        0 0 20px white;
     }
     .part3::after{
         content: "";
@@ -287,19 +225,9 @@
         position: absolute;
         margin-left: 250px;
         margin-top: -83px;
-        box-shadow:  0 0 7px #fff, 
-        0 0 2px #fff, 
-        0 0 5px white,   
-        0 0 10px white, 
-        0 0 20px white;
     }
     .admin{
         color: white;
-        text-shadow:  0 0 7px #fff, 
-        0 0 2px #fff, 
-        0 0 5px white,   
-        0 0 10px white, 
-        0 0 20px white;
     }
     .logo-footer{
         display: flex;
@@ -455,11 +383,6 @@
             background-color: white;
             display: flex;
             flex-direction: column;
-            box-shadow:  0 0 7px #fff, 
-            0 0 10px #fff, 
-            0 0 42px white,   
-            0 0 77px white, 
-            0 0 100px white;
             margin-top: 5px;
             margin-left: -20px;
         }
@@ -471,11 +394,6 @@
             height: 3px;
             background-color: white;
             align-self: center;
-            box-shadow:  0 0 7px #fff, 
-            0 0 10px #fff, 
-            0 0 42px white,   
-            0 0 77px white, 
-            0 0 100px white;
         }
         
         .burger::before{
@@ -570,11 +488,6 @@
             max-width: 25%;
             display: block;
             padding: 25px;
-            text-shadow:  0 0 7px #fff, 
-            0 0 10px #fff, 
-            0 0 42px white,   
-            0 0 77px white, 
-            0 0 100px white;
         }
     
         .modal_close{
@@ -605,39 +518,7 @@
                 transform: translateX(0);
             }
         }
-        .image1{
-            background: url(img/cod.jpg);
-            background-size: cover;
-            width: 70vw;
-            height: 23vh;
-        }
-        .image2{
-            background: url(img/rainbow.png);
-            background-size: cover;
-            width: 70vw;
-            height: 23vh;
-        }
-        .image3{
-            background: url(img/horizon.jpg);
-            background-size: cover;
-            width: 70vw;
-            height: 23vh;
-        }
-        .image4{
-            background: url(img/fortnite.jpg);
-            background-size: cover;
-            width: 70vw;
-            height: 23vh;
-        }
-        .image5{
-            background: url(img/gotham.jpg);
-            background-size: cover;
-            width: 70vw;
-            height: 23vh;
-        }
-        .image6{
-            background: url(img/overwatch.jpeg);
-            background-size: cover;
+        .img{
             width: 70vw;
             height: 23vh;
         }
@@ -654,11 +535,6 @@
         }
         .desc{
             color: white;
-            text-shadow:  0 0 7px #fff, 
-            0 0 10px #fff, 
-            0 0 42px white,   
-            0 0 77px white, 
-            0 0 100px white;
 
         }
         footer{
@@ -668,11 +544,6 @@
         }
         .title-foot{
             color: white;
-            text-shadow:  0 0 7px #fff, 
-            0 0 2px #fff, 
-            0 0 5px white,   
-            0 0 10px white, 
-            0 0 20px white;
             font-size: 12px;
         }
         .content-footer{
@@ -691,11 +562,6 @@
             position: absolute;
             margin-left: 20%;
             margin-top: -90px;
-            box-shadow:  0 0 7px #fff, 
-            0 0 10px #fff, 
-            0 0 42px white,   
-            0 0 77px white, 
-            0 0 100px white;
         }
         .part2::after{
             content: "";
@@ -705,19 +571,9 @@
             position: absolute;
             margin-left: 40%;
             margin-top: -70px;
-            box-shadow:  0 0 7px #fff, 
-            0 0 10px #fff, 
-            0 0 42px white,   
-            0 0 77px white, 
-            0 0 100px white;
         }
         .admin{
             color: white;
-            text-shadow:  0 0 7px #fff, 
-            0 0 2px #fff, 
-            0 0 5px white,   
-            0 0 10px white, 
-            0 0 20px white;
             font-size: 10px;
         }
         .part2{
