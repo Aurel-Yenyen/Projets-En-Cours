@@ -133,15 +133,13 @@ a:hover{
     background: #430658;
     margin-top: 20px;
 }
-.cards{
+#cards{
     display: flex;
     font-family: 'Roboto', sans-serif;
     font-family: 'Rubik Distressed', cursive;
-    transform: translateX(-60vw);
-    transition: transform 10s;
 }
 .card-img{
-    margin: 2.5vw;
+    margin: 2.4vw;
     z-index: 10;
 }
 .card-img1{
@@ -213,7 +211,7 @@ a:hover{
     border-radius: 20px;
     box-shadow: 0 3px #713586;
 }
-.card:hover{
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover, #card7:hover, #card8:hover{
     box-shadow: 0 1px #713586;
     transform: translateY(2px);
 }
@@ -224,6 +222,7 @@ a:hover{
     height: 20vh;
     position: absolute;
     border-radius: 20px 0px 0px 20px; 
+    transform: translateX(-6vw);
     visibility: hidden;
 }
 #overlay::after{
@@ -289,8 +288,36 @@ a:hover{
 .btn-slide{
     position: absolute;
     display: flex;
+    margin-top: 12vh;
 }
-#btnrigth{
-    margin-left: 90vw;
-    
+#btnright{
+    margin-left: 95vw;
+    width: 2vw;
+    height: 6vh;
+    z-index: 15;
+    background: #430658;
+    box-shadow: 0 3px #713586;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+#btnleft{
+    width: 2vw;
+    height: 6vh;
+    z-index: 15;
+    background: #430658;
+    box-shadow: 0 3px #713586;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+#btnright:hover{
+    box-shadow: 0 1px #713586;
+    transform: translateY(2px);
+}
+#btnleft:hover{
+    box-shadow: 0 1px #713586;
+    transform: translateY(2px);
 }
