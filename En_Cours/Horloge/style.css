@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.heures{
+    font-family: 'Jura', sans-serif;
+    color: orange;
+    font-size: 50px;
+}
+.date{
+    color: orange;
+}

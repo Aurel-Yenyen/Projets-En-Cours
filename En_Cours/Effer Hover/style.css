@@ -1,0 +1,87 @@
+body{
+font-family: 'Kenia', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(27, 27, 27);
+    text-shadow:  0 0 1px #fff, 
+        0 0 2px rgb(239, 0, 43), 
+        0 0 3px rgb(239, 0, 43),   
+        0 0 4px rgb(239, 0, 43), 
+        0 0 5px rgb(239, 0, 43) 
+}
+.image1, .image2{
+    margin: 30px;
+}
+.pseudo{
+    display: flex;
+}
+.point{
+    margin-left: 3px;
+}
+#img1{
+    background: url(img/City\ Night.jpg);
+    width: 20vw;
+    height: 25vh;
+    background-size: cover;
+}
+#img2{
+    background: url(img/Mountains\ Night.jpg);
+    width: 20vw;
+    height: 25vh;
+    background-size: cover;
+    z-index: -10;
+}
+.link{
+    background: url(img/link.svg);
+    width: 27px;
+    height: 25.5px;
+    background-size: cover;
+    margin-left: 1vw;
+    margin-top: 3vh;
+}
+.facebook{
+    background: url(img/facebook.svg);
+    width: 27px;
+    height: 25.5px;
+    background-size: cover;
+    margin-left: 1vw;
+    margin-top: 3vh;
+}
+.twitter{
+    background: url(img/twitter.svg);
+    width: 27px;
+    height: 25.5px;
+    background-size: cover;
+    margin-left: 1vw;
+    margin-top: 3vh;
+}
+#img1:hover{
+    height: 17vh;
+    transform: translateY(-4vh);
+    transition: height 1s ease-in;
+}
+#text1, #text2{
+    display: flex;
+    visibility: hidden;
+}
+#text2{
+    margin-top: -8vh;
+    margin-left: 0.6vw;
+}
+#img2{
+    margin-top: -8vh; 
+}
+.overlay{
+    position: absolute;
+    width: 20vw;
+    height: 6vh;
+    background-color: black;
+    opacity: 0.7;
+    margin-left: -0.6vw;
+    margin-top: 2vh;
+    z-index: 1;
+}
