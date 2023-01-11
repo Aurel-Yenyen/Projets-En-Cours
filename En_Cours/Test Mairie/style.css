@@ -1,0 +1,762 @@
+@media screen and (min-width: 1200px){
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        transform-style: preserve-3d;
+        overflow-y: scroll;
+    }
+    
+    /* Image de Fond */
+    
+    h1, h2{
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        color: #FCF16E;
+        text-shadow:  0 0 20px black, 
+        0 0 2px black, 
+        0 0 3px black,   
+        0 0 4px black, 
+        0 0 5px black;
+        font-size: 40px;
+        margin: 50px;
+    }
+    h2{
+        margin-top: 100px;
+    }
+    
+    .filtre-img{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background: #000000e8;
+        z-index: 2;
+        opacity: 0.1;
+    }
+    .img-fond{
+        background: url(img/test2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        background-position-y: -50vh;
+    }
+    .logo-lux{
+        background: url(img/LOGO-LUXEUIL-2017_RVB_RESERVE.png);
+        background-size: cover;
+        width: 10vw;
+        height: 23vh;
+        position: absolute;
+        top: 75vh;
+        left: 85vw;
+        z-index: 3;
+    }
+    .logo-pole{
+        background: url(img/logo\ pole\ culturel.png);
+        background-size: cover;
+        width: 10.6vw;
+        height: 19vh;
+        position: absolute;
+        top: 77vh;
+        left: 1vw;
+        z-index: 3;
+    }
+    
+    /* Onglet */
+    
+    nav{
+        display: grid;
+        justify-content: flex-end;
+        align-items: flex-end;
+        grid-gap: 25px;
+        font-family : 'Pacifico', cursive ;
+        z-index: 10;
+        position: absolute;
+        top: 5vh;
+        left: 75vw;
+    }
+    .lien-nav{
+        color: white;
+        text-shadow:  0 0 7px black, 
+        0 0 10px black, 
+        0 0 42px black,   
+        0 0 77px black, 
+        0 0 100px black;
+        padding: 10px;
+        font-size: 3vh;
+    }
+    a{
+        text-decoration: none;
+    }
+    .cross{
+        display: none;
+    }
+    .onglet{
+        width: 28vw;
+        height: 6vh;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+        border-radius: 50px 0px 0px 50px ;
+        display: flex;
+        transform: translateX(80px);
+        transition: transform 1s;
+        z-index: 10;
+    }
+    .onglet:hover{
+        transform: translateX(0px);
+        transition: transform 1s;
+    }
+    .separation{
+        width: 0.2vw;
+        height: 4vh;
+        background: white;
+        margin-top: 1vh;
+        margin-right: 5px;
+        box-shadow:  0 0 7px black, 
+        0 0 10px black, 
+        0 0 42px black,   
+        0 0 77px black, 
+        0 0 100px black;
+    }
+    .logo-spec{
+        background: url(img/icon/spec.svg);
+        background-size: cover;
+        width: 2vw;
+        height: 4vh;
+        margin-left: 1vw;
+        margin-top: 0.5vh;
+        margin-right: 1vw;
+    }
+    .spec{
+        background: #A76682;
+    }
+    .logo-theatre{
+        background: url(img/icon/theatre.svg);
+        background-size: cover;
+        width: 2.5vw;
+        height: 5vh;
+        margin-left: 1vw;
+        margin-top: 0.5vh;
+        margin-right: 0.7vw;
+    }
+    .theat{
+        background: #48869C;
+    }
+    .logo-magie{
+        background: url(img/icon/magie.svg);
+        background-size: cover;
+        width: 2vw;
+        height: 5.1vh;
+        margin-left: 1.2vw;
+        margin-top: 0.5vh;
+        margin-right: 1vw;
+    }
+    .magie{
+        background: #F3706D;
+    }
+    .logo-chorale{
+        background: url(img/icon/chorale.svg);
+        background-size: cover;
+        width: 2.5vw;
+        height: 5vh;
+        margin-left: 1vw;
+        margin-top: 0.5vh;
+        margin-right: 0.7vw;
+    }
+    .chorale{
+        background: #EF4B23;
+    }
+    .logo-cirque{
+        background: url(img/icon/cirque.svg);
+        background-size: cover;
+        width: 2.5vw;
+        height: 5vh;
+        margin-left: 1vw;
+        margin-top: 0.5vh;
+        margin-right: 0.7vw;
+    }
+    .cirque{
+        background: #FCF16E;
+    }
+    .logo-comedie{
+        background: url(img/icon/comedie.svg);
+        background-size: cover;
+        width: 2.5vw;
+        height: 5vh;
+        margin-left: 1vw;
+        margin-top: 0.5vh;
+        margin-right: 0.7vw;
+    }
+    .comedie{
+        background: #418376;
+    }
+    .logo-autre{
+        background: url(img/icon/school.svg);
+        background-size: cover;
+        width: 2.8vw;
+        height: 5.05vh;
+        margin-left: 1vw;
+        margin-top: 0.3vh;
+        margin-right: 0.5vw;
+    }
+    .autre{
+        background: #7c4343;
+    }
+    .logo-contact{
+        background: url(img/icon/contact.svg);
+        background-size: cover;
+        width: 2.5vw;
+        height: 5vh;
+        margin-left: 1vw;
+        margin-top: 0.5vh;
+        margin-right: 0.7vw;
+    }
+    .contact{
+        background: #44498f;
+    }
+    
+    .icon:hover{
+        animation: rotate 2s ease-in ;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(-20deg);
+        }
+        25%{
+            transform: rotate(20deg);
+        }
+        50%{
+            transform: rotate(-20deg);
+        }
+        75%{
+            transform: rotate(20deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+    /************************************************************************/
+
+    /****************** Les Affiches à venir ****************************/
+    
+    
+    
+    .affiche{
+        z-index: 10;
+    }
+    .content-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .affiche .title-section{
+        margin-top: 10vh;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        color: #3a3a3a;
+        font-size: 2.5vw;
+        text-shadow:  0 0 1px black, 
+        0 0 1px black, 
+        0 0 1px black,   
+        0 0 1px black, 
+        0 0 1px black;
+    }
+    .cards{
+        display: flex;
+        width: 300vw; 
+        perspective:1000px;
+        margin-top: 10vh;
+    }
+    .card1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 75vw;
+        height: 30vh;
+        margin-left: 12.5vw;
+        border-radius: 15px;
+        margin-right: 12.5vw;
+    }
+    .languette1{
+        background: #A76682;
+        width: 1vw;
+        height: 30vh;
+        position: absolute;
+        left: 12.50vw;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    @keyframes rotate360{
+        0%{
+            transform:rotateY(0deg) ;
+        }
+        50%{
+          transform:rotateY(180deg);
+        }
+        100%{
+          transform:rotateY(360deg);
+        }
+      }
+
+    .stage1{
+        width: 100%;
+        height:20vh;
+        transform:translate3d(0,0,800px);
+        position: absolute;
+        top: 5vh;
+        left: -120vw;
+
+    }
+    .caroussel{
+        width:auto;
+        height:100%;
+        transform-style:preserve-3d;
+        animation: rotate360 15s infinite linear;
+    }
+    .slide1{
+        position:absolute;
+        width: 15vw;
+        height:25vh;
+        margin:auto;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+
+    .a{
+        transform: rotateY(60deg) translateZ(6vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .a img{
+        width: auto;
+        height: 25vh;
+    }
+    .b{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:translateZ(-6vw);
+    }
+    .b img{
+        width: auto;
+        height: 25vh;
+    }
+    .c{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:rotateY(120deg) translateZ(-6vw);
+    }
+    .c img{
+        width: auto;
+        height: 25vh;
+    }
+
+    .text{
+        margin-left: 30vw;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+    }
+    .title1{
+        font-size: 1.5vw;
+        font-weight: bolder;
+    }
+    .date-lieu-heure{
+        display: flex;
+        font-size: 1.5vw;
+        font-weight: 200;
+    }
+    .date1::after{
+        content: "|";
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .lieu1::after{
+        content: "|";
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .btn-sub1{
+        width: 8vw;
+        height: 5vh;
+        border-radius: 10vw;
+        border: none;
+        box-shadow: 0 4px #68394d;
+        background: #A76682;
+        font-size: 1vw;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        font-weight: 500;
+        margin-left: 5vw;
+    }
+
+
+
+
+    /* ********** Slide 2 ****************** */
+
+
+
+        /****************** Les Affiches à venir ****************************/
+
+    .card2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 75vw;
+        height: 30vh;
+        margin-left: 12.5vw;
+        border-radius: 15px;
+        margin-right: 12.5vw;
+    }
+    .languette2{
+        background: #48869C;
+        width: 1vw;
+        height: 30vh;
+        position: absolute;
+        left: 112.50vw;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    @keyframes rotate360{
+        0%{
+            transform:rotateY(0deg) ;
+        }
+        50%{
+          transform:rotateY(180deg);
+        }
+        100%{
+          transform:rotateY(360deg);
+        }
+      }
+
+    .stage2{
+        width: 100%;
+        height:20vh;
+        transform:translate3d(0,0,800px);
+        position: absolute;
+        left: -20vw;
+
+    }
+    .caroussel{
+        width:auto;
+        height:100%;
+        transform-style:preserve-3d;
+        animation: rotate360 15s infinite linear;
+    }
+    .slide2{
+        position:absolute;
+        width: 15vw;
+        height:25vh;
+        margin:auto;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+
+    .e{
+        transform: rotateY(60deg) translateZ(6vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .e img{
+        width: auto;
+        height: 25vh;
+    }
+    .f{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:translateZ(-6vw);
+    }
+    .f img{
+        width: auto;
+        height: 25vh;
+    }
+    .g{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:rotateY(120deg) translateZ(-6vw);
+    }
+    .g img{
+        width: auto;
+        height: 25vh;
+    }
+    .text{
+        margin-left: 30vw;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+    }
+    .title2{
+        font-size: 1.5vw;
+        font-weight: bolder;
+    }
+    .date-lieu-heure{
+        display: flex;
+        font-size: 1.5vw;
+        font-weight: 200;
+    }
+    .date2::after{
+        content: "|";
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .lieu2::after{
+        content: "|";
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .btn-sub2{
+        width: 8vw;
+        height: 5vh;
+        border-radius: 10vw;
+        border: none;
+        box-shadow: 0 4px #265566;
+        background: #48869C;
+        font-size: 1vw;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        font-weight: 500;
+        margin-left: 5vw;
+    }
+
+
+
+    /* ********** slide 3 ************* */
+
+
+
+    .card3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 75vw;
+        height: 30vh;
+        margin-left: 12.5vw;
+        border-radius: 15px;
+        margin-right: 12.5vw;
+    }
+    .languette3{
+        background: #A76682;
+        width: 1vw;
+        height: 30vh;
+        position: absolute;
+        left: 212.50vw;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    @keyframes rotate360{
+        0%{
+            transform:rotateY(0deg) ;
+        }
+        50%{
+          transform:rotateY(180deg);
+        }
+        100%{
+          transform:rotateY(360deg);
+        }
+      }
+
+    .stage3{
+        width: 100%;
+        height:20vh;
+        transform:translate3d(0,0,800px);
+        position: absolute;
+        left: 80vw;
+    }
+    .caroussel{
+        width:auto;
+        height:100%;
+        transform-style:preserve-3d;
+        animation: rotate360 15s infinite linear;
+    }
+    .slide3{
+        position:absolute;
+        width: 15vw;
+        height:25vh;
+        margin:auto;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+
+    .i{
+        transform: rotateY(60deg) translateZ(11vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .i img{
+        width: auto;
+        height: 25vh;
+    }
+    .j{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:translateZ(-6vw);
+    }
+    .j img{
+        width: auto;
+        height: 25vh;
+    }
+    .k{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:rotateY(120deg) translateZ(-6vw);
+    }
+    .k img{
+        width: auto;
+        height: 25vh;
+    }
+    .text{
+        margin-left: 30vw;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+    }
+    .title3{
+        font-size: 1.5vw;
+        font-weight: bolder;
+    }
+    .date-lieu-heure{
+        display: flex;
+        font-size: 1.5vw;
+        font-weight: 200;
+    }
+    .date3::after{
+        content: "|";
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .lieu3::after{
+        content: "|";
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .btn-sub3{
+        width: 8vw;
+        height: 5vh;
+        border-radius: 10vw;
+        border: none;
+        box-shadow: 0 4px #68394d;
+        background: #A76682;
+        font-size: 1vw;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        font-weight: 500;
+        margin-left: 5vw;
+    }
+
+
+    /* ********** Input ********** */
+
+
+    .input-img{
+        position: absolute;
+        margin-top: 5vh;
+        margin-left: 47.5vw;
+    }
+    .input-img input{
+        margin-right: 1vw;
+    }
+    input{
+        cursor: pointer;
+    }
+    input[type="radio"]::after{
+        width: 16px;
+        height: 16px;
+        border-radius: 15px;
+        top: 0px;
+        left: 0px;
+        margin-top: -2px;
+        margin-left: -2px;
+        background-color: white;
+        content: "";
+        display: inline-block;
+        visibility: visible;
+        border: 1px solid #3a3a3a;
+    }
+    input[type="radio"]:checked::after{
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        margin-top: -2px;
+        margin-left: -2px;
+        top: 0px;
+        left: 0px;
+        background: #3a3a3a;
+        background-size: cover;
+        content: "";
+        display: inline-block;
+        visibility: visible;
+
+    }
+
+    .pass{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-pass{
+        width: 15vw;
+        height: 17vh;
+        border-radius: 1vw;
+        background: url(img/card-pass.svg);
+        background-size: cover;
+        position: absolute;
+        top: 170vh;
+        left: 60vw;
+        transform: rotate(10deg);
+        box-shadow: 0 3px #b1b1b1;
+    }
+/* ***************** Plaquette ************* */
+    .plaquette{
+        background: url(img/fondtest2_1.jpg);
+        margin-top: 15vh;
+        background-attachment: fixed;
+        background-size: cover;
+        margin-left: 25vw;
+        border-radius: 50vw;
+        width: 50vw;
+        height: 100vh;
+        z-index: -1;
+    }
+    .plaquette .content-title .title-section{
+        margin-bottom: 5vh;
+        color: white;
+        font-size: 2.5vw;
+        text-shadow:  0 0 1px black, 
+        0 0 1px black, 
+        0 0 1px black,   
+        0 0 1px black, 
+        0 0 1px black;
+        z-index: 10;
+    }
+    .text-plaque .title-section{
+
+        color: white;
+        font-size: 1.2vw;
+        position: absolute;
+        top: 185vh;
+        left: 30vw;
+        text-shadow:  0 0 1px black, 
+        0 0 1px black, 
+        0 0 1px black,   
+        0 0 1px black, 
+        0 0 1px black;
+        
+    }
+    .formulaire{
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        margin-top: 100vh;
+
+    }
+}
+
+
