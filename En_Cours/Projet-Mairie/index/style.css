@@ -115,7 +115,7 @@
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
         border-radius: 50px 0px 0px 50px ;
         display: flex;
-        transform: translateX(80px);
+        transform: translateX(5vw);
         transition: transform 1s;
         z-index: 10;
     }
@@ -234,19 +234,13 @@
     }
     
     .onglet:hover > .icon{
-        animation: rotate 2s ease-in ;
+        animation: rotate 1s ease-in ;
     }
     @keyframes rotate {
         0%{
             transform: rotate(-20deg);
         }
-        25%{
-            transform: rotate(20deg);
-        }
         50%{
-            transform: rotate(-20deg);
-        }
-        75%{
             transform: rotate(20deg);
         }
         100%{
@@ -274,6 +268,12 @@
         font-family: 'Sofia Sans Condensed', sans-serif;
         color: #3a3a3a;
         font-size: 2.5vw;
+        font-weight: 400;
+        text-shadow:  0 0 1px black, 
+        0 0 2px black, 
+        0 0 2px black,   
+        0 0 2px black, 
+        0 0 2px black;
     }
 
     .cards{
@@ -873,7 +873,7 @@
     
 
     #images-partenaire{
-        animation: spin 60s linear infinite;
+        animation: spin 30s linear infinite;
     }
     #change{
         position: absolute;
@@ -899,7 +899,8 @@
     }
     #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover, #img7:hover, #img8:hover, #img9:hover, #img10:hover, #img11:hover, #img12:hover, #img13:hover, #img14:hover, #img15:hover, #img16:hover, #img17:hover, #img18:hover{
         filter: none;
-        transform: scale(1.5);
+        transform: scale(1.4);
+        transition: transform 1s;
     }
     #input-partenaire{
         margin-left: 25%;
@@ -909,26 +910,21 @@
         0%{
             transform: translateX(0vw);
         }
-        10%{
+        20%{
             transform: translateX(-20vw);  
         }
-        25%{
+        40%{
             transform: translateX(-40vw);  
         }
-        50%{
+        60%{
             transform: translateX(-60vw);     
         }
-        60%{
+        80%{
             transform: translateX(-80vw);   
         }
-        75%{
-            transform: translateX(-100vw);   
-        }
-        90%{
-            transform: translateX(-120vw); 
-        }
+
         100%{
-            transform: translateX(-140vw);   
+            transform: translateX(-100vw);   
         }
 
     }
@@ -942,19 +938,73 @@
         font-family: 'Sofia Sans Condensed', sans-serif;
         color: #3a3a3a;
         font-size: 2.5vw;
+        font-weight: 200;
+        text-shadow:  0 0 1px black, 
+        0 0 2px black, 
+        0 0 2px black,   
+        0 0 2px black, 
+        0 0 2px black;
     }
     footer{
         width: 100vw;
         height: 30vh;
         background: #3a3a3a;
-
+        margin-top: 22vh;
+        font-family: 'Sofia Sans Condensed', sans-serif;
     }
 
 
     /************** Footer ********************/
 
 
-    
+    .schema-footer{
+        background: url(img/footer.png);
+        width: 100vw;
+        height: 25vh;
+        background-size: cover;
+        position: absolute;
+        margin-top: -25vh;
+        z-index: -10;
+    }
+    .content-footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .adresse-footer{
+        display: flex;
+    }
+    .contact-footer{
+        width: 17vw;
+        height: 25vh;
+        border: 2px solid white;
+        border-radius: 15px;
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 7px 29px 0px;
+        margin-top: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: -1;
+    }
+    .logo-footer{
+        width: 5vw;
+        height: 10vh;
+        border-radius: 20vw;
+        border: 2px dashed white;
+        z-index: 10;
+        margin-bottom: 1vh;
+        box-shadow: #3a3a3a93 0px 7px 29px 0px;
+    }
+    .logo1{
+
+    }
+    .text-footer{
+        font-size: 0.9vw;
+        margin-top: 0.1vh;
+        color: white;
+    }
+
+
 }
 
 
