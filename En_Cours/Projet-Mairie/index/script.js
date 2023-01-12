@@ -1,3 +1,5 @@
+// **************** Menu Burger ********************
+
 let burger = document.getElementById('menu')
 let close = document.getElementById('close')
 let overlay = document.getElementById('overlay')
@@ -13,6 +15,10 @@ close.addEventListener('click', closeOverlay =>{
     menuNav.style.visibility = 'hidden'
     close.style.visibility = 'hidden'
 })
+
+
+// **************** Caroussel ********************
+
 
 let cross1 = document.getElementById('radio1')
 let cross2 = document.getElementById('radio2')
@@ -34,5 +40,9 @@ input.addEventListener('click', choix => {
         cards.style.transform = 'translateX(-200vw)'   
         cards.style.transition = 'transform 3s ease-in-out' 
     }
-
 })
+
+
+// **************** Caroussel Partenaire ********************
+
+

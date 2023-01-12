@@ -270,6 +270,7 @@
 
     .title-affiche{
         margin-top: 7vh;
+        margin-left: 4vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
         color: #3a3a3a;
         font-size: 2.5vw;
@@ -753,8 +754,13 @@
         box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
         z-index: -1;
     }
+    .content-plaquette{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .title-plaquette{
-        margin-bottom: 5vh;
         color: white;
         font-size: 2.5vw;
         text-shadow:  0 0 1px black, 
@@ -767,9 +773,6 @@
     .para-plaquette{
         color: white;
         font-size: 1.2vw;
-        position: absolute;
-        top: 183vh;
-        left: 33.5vw;
         text-shadow:  0 0 1px black, 
         0 0 1px black, 
         0 0 1px black,   
@@ -800,17 +803,17 @@
             transform: translateX(0) translateY(0) scale(1);
         }
         20%{
-            transform: translateX(-40vw) translateY(-35vh) scale(0.5);
+            transform: translateX(-40vw) translateY(-40vh) scale(0.5);
 
         }
         40%{
-            transform: translateX(-40vw) translateY(35vh) scale(0.7);
+            transform: translateX(-40vw) translateY(30vh) scale(0.7);
         }
         60%{
-            transform: translateX(40vw) translateY(-35vh) scale(0.5);
+            transform: translateX(40vw) translateY(-30vh) scale(0.5);
         }
         80%{
-            transform: translateX(40vw) translateY(35vh) scale(0.7);
+            transform: translateX(35vw) translateY(30vh) scale(0.7);
         }
         90%{
             transform: translateY(-30vh) scale(0.6);
@@ -822,7 +825,6 @@
     .lien-plaquette{
         margin-top: 15vh;
         margin-left: 2vw;
-        z-index: 20;
     }
     .btn-plaquette{
         width: 22vw;
@@ -835,6 +837,7 @@
         font-size: 3.5vw;
         font-weight: 900;
         animation: changeColor 30s infinite linear;
+        cursor: pointer;
     }
     @keyframes changeColor {
         0%{
@@ -863,6 +866,95 @@
         }
     }
 
+
+
+    /***************** Caroussel *************/
+
+    
+
+    #images-partenaire{
+        animation: spin 60s linear infinite;
+    }
+    #change{
+        position: absolute;
+        height: 150px;
+        left: 200px;
+        top: 0;
+        background: white;
+        z-index: 1;
+    }
+    #caroussel-partenaire{
+        width: 240vw;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 50px;
+        margin-top: 10vh;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13, #img14, #img15, #img16, #img17, #img18{
+        width: auto;
+        height: 10vh; 
+        margin: 20px;
+        margin-left: 100px;
+        filter: grayscale();
+    }
+    #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover, #img7:hover, #img8:hover, #img9:hover, #img10:hover, #img11:hover, #img12:hover, #img13:hover, #img14:hover, #img15:hover, #img16:hover, #img17:hover, #img18:hover{
+        filter: none;
+        transform: scale(1.5);
+    }
+    #input-partenaire{
+        margin-left: 25%;
+    }
+
+    @keyframes spin{
+        0%{
+            transform: translateX(0vw);
+        }
+        10%{
+            transform: translateX(-20vw);  
+        }
+        25%{
+            transform: translateX(-40vw);  
+        }
+        50%{
+            transform: translateX(-60vw);     
+        }
+        60%{
+            transform: translateX(-80vw);   
+        }
+        75%{
+            transform: translateX(-100vw);   
+        }
+        90%{
+            transform: translateX(-120vw); 
+        }
+        100%{
+            transform: translateX(-140vw);   
+        }
+
+    }
+    #input-partenaire{
+        margin-left: 45vw;
+        margin-top: 3vh;
+    }
+    .title-partenaire{
+        margin-top: 10vh;
+        margin-left: 5vw;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        color: #3a3a3a;
+        font-size: 2.5vw;
+    }
+    footer{
+        width: 100vw;
+        height: 30vh;
+        background: #3a3a3a;
+
+    }
+
+
+    /************** Footer ********************/
+
+
+    
 }
 
 
