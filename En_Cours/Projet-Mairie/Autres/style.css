@@ -1,0 +1,296 @@
+:root{
+
+    /* Couleur et Icones des Onglets */
+
+    --colorSpectacle: #A76682;
+    --colorTheatre: #48869C;
+    --colorMagie: #F3706D;
+    --colorChorale: #EF4B23;
+    --colorCirque: #FCF16E;
+    --colorComedie: #418376;
+    --colorAutreRDV: #7c4343;
+    --colorContact: #44498f;
+
+    --colorTextOnglet: white;
+    --colorSeparationOnglet: white;
+    --shadowOnglet: black;
+    --soulignTextOnglet: white;
+
+    --iconeSpectacle: url(img/icon/Spectacle.svg);
+    --iconeTheatre: url(img/icon/Theatre.svg);
+    --iconeMagie: url(img/icon/Magie.svg);
+    --iconeChorale: url(img/icon/Chorale.svg);
+    --iconeCirque: url(img/icon/Cirque.svg);
+    --iconeComedie: url(img/icon/Comedie.svg);
+    --iconeAutre: url(img/icon/Autre.svg);
+    --iconeContact: url(img/icon/Contact.svg);
+
+    /* Ombre des Bouton */
+
+    --shadowBtnSpectacle: #68394d;
+    --shadowBtnTheatre: #265566;
+    --shadowBtnMagie: #af5150;
+    --shadowBtnChorale: #b63a1b;
+    --shadowBtnCirque: #d8ce60;
+    --shadowBtnComedie: #376d62;
+    --shadowBtnAutre: #5a3434;
+    --shadowBtnContact: #353969;
+
+    /* Couleur du Titre */
+
+    --colorTitle: #FCF16E;
+    --shadowTitle: black;
+
+    /* Couleur Primaire du site */
+
+    --colorPrimary: #7c4343;
+    
+    /* Couleur du Texte Footer (Bas de Page) */
+
+    --colorTextFooter: white;
+
+    /* ********************************************* */
+    
+    /* Image Page d'Accueil */
+    
+    --imagePrimary: url(img/fond.jpg);
+    --imageLogoLuxeuil: url(img/logoLuxeuil.png);
+    --imageLogoPole: url(img/logoPole.png);
+
+    /* Image du Site */
+
+    --imageCircle: url(img/fondCircle.jpg);
+
+    /* Image Carte Passe */
+
+    --imageCardPass: url(img/cardPass.svg);
+    /* Image et Icone du Footer */
+
+    --imageFooter: url(img/footerAutre.jpg);
+
+    --iconeAdress: url(img/icon/Adress.svg);
+    --iconePhone: url(img/icon/Phone.svg);
+    --iconeMail: url(img/icon/Mail.svg);
+    --iconeFacebook: url(img/icon/Facebook.svg);
+    --iconeVille: url(img/icon/Ville.svg);
+    --iconeOfficeTourism: url(img/icon/OfficeTourism.svg);
+
+}
+
+
+
+    /****************** Image Footer **************************/
+
+
+
+
+    /**************** Image Footer ****************************/
+@media screen and (min-width: 1200px){
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    footer{
+        width: 100vw;
+        height: 35vh;
+        background: var(--colorPrimary);
+        margin-top: 30vh;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        text-shadow:  0 0 20px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
+    }
+    a{
+        text-decoration: none;
+    }
+    .schema-footer{
+        background: var(--imageFooter);
+        width: 100vw;
+        height: 25vh;
+        background-size: cover;
+        position: absolute;
+        margin-top: -25vh;
+        z-index: -10;
+    }
+    .content-footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .pole-footer{
+        background: var(--imageLogoPole);
+        background-size: cover;
+        width: 300px;
+        height: 280px;
+        margin-top: 3vh;
+    }
+    .pole-footer:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s linear;
+    }
+    .separation-footer1{
+        width: 0.01vw;
+        height:26.5vh;
+        background: var(--colorTextFooter);
+        margin-left: -10vw;
+        margin-top: 4vh;
+        box-shadow:  0 0 1px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
+    }
+    .adresse-footer{
+        display: flex;
+        width: 30vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .contact-footer{
+        width: 15vw;
+        height: 26vh;
+        color: var(--colorTextFooter);
+        font-size: 1vw;
+        border: 2px dashed var(--colorTextFooter);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -12vw;
+        margin-top: 4vh;
+        box-shadow:  0 0 1px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
+    }
+    .logo1{
+        background:var(--iconeAdress);
+        width: 2vw;
+        height: 4vh;
+        background-size: cover;
+        margin-top: 1vh;
+    }
+    .rue-contact, .cp-contact{
+        margin-top: -2.2vh;
+    }
+    .tel-mail{
+        margin-top: 4vh;
+        color: var(--colorTextFooter);
+        font-size: 0.8vw;
+    }
+
+    .tel-footer, .mail-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 12vw;
+        height: 12.1vh;
+        border: 2px dashed var(--colorTextFooter);
+        border-radius: 20px;
+        margin-left: 1vw;
+        box-shadow:  0 0 1px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
+    }
+    .mail-footer{
+        margin-top: 1.3vh;
+    }
+    .logo2{
+        background: var(--iconePhone);
+        width: 1.45vw;
+        height: 3vh;
+        background-size: cover;
+        margin-top: 2vh;
+    }
+    .logo3{
+        background: var(--iconeMail);
+        width: 1.5vw;
+        height: 3vh;
+        background-size: cover;
+    }
+    .separation-footer2{
+        width: 0.01vw;
+        height:26.5vh;
+        background: var(--colorTextFooter);
+        margin-left: -25.5vw;
+        margin-top: 4vh;
+        box-shadow:  0 0 1px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
+    }
+    .genre-footer{
+        margin-top: 1.5vh;
+        margin-left: -5vw;
+    }
+    .add{
+        color: var(--colorTextFooter);
+        font-size: 0.9vw;
+    }
+    .add:hover{
+        color: rgb(163, 84, 84);
+    }
+    .separation-footer3{
+        width: 0.01vw;
+        height:26.5vh;
+        background: var(--colorTextFooter);
+        margin-left: -5vw;
+        margin-top: 4vh;
+        box-shadow:  0 0 1px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
+    }
+    .site-footer{
+        font-size: 1vw;
+    }
+    .text-footer{
+        color: var(--colorTextFooter);
+        margin-top: 5vh;
+    }
+    .text-footer:hover{
+        color: var(--colorMagie);
+    }
+    .facebook-footer{
+        margin-top: 3vh;
+    }
+    .facebook-footer, .ville-footer, .odt-footer{
+        display: flex;
+    }
+    .logo-facebook{
+        background: var(--iconeFacebook);
+        margin-left: -6vw;
+        margin-right: 1vw;
+    }
+    .logo-ville{
+        background: var(--iconeVille);
+        margin-left: -6vw;
+        margin-right: 1vw;
+    }
+    .logo-office{
+        background: var(--iconeOfficeTourism);
+        margin-left: -6vw;
+        margin-right: 1vw;
+    }
+    .img-footer{
+        width: 2vw;
+        height: 4vh;
+        background-size: cover;
+        margin-top: 4vh;
+
+    }
+
+}
+
+
