@@ -2,14 +2,14 @@
 
   /* Couleur et Icones des Onglets */
 
-  --colorSpectacle: #A76682;
-  --colorTheatre: #48869C;
-  --colorMagie: #F3706D;
-  --colorChorale: #EF4B23;
-  --colorCirque: #FCF16E;
-  --colorComedie: #418376;
-  --colorAutreRDV: #7c4343;
-  --colorContact: #44498f;
+  --colorShadowAccueil: #3a3a3ada;
+  --colorShadowSpectacle: #A76682;
+  --colorShadowTheatre: #48869C;
+  --colorShadowMagie: #F3706D;
+  --colorShadowChorale: #EF4B23;
+  --colorShadowCirque: #FCF16E;
+  --colorShadowComedie: #418376;
+  --colorShadowAutreRDV: #7c4343;
 
   --colorTextOnglet: white;
   --colorSeparationOnglet: white;
@@ -44,7 +44,7 @@
   /* Couleur Primaire du site */
 
   --colorPrimary: #44498f;
-  --colorShadowPrimary: #3636366c;
+  --colorShadowPrimary: #4747476c;
   
   /* Couleur du Texte Footer (Bas de Page) */
 
@@ -90,19 +90,15 @@
   }
 
   /***************NavBar *****************/
-  .colorNavbar{
-    background: var(--colorPrimary);
-    width: 100vw;
-    height: 20vh;
-    z-index: -10;
-  }
+
   nav{
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background: var(--colorPrimary);
     margin-bottom: 15vh;
-    
+    font-family : 'Pacifico', cursive ;
+    z-index: -10;
   }
   .logo-navbar{
     margin: 15px;
@@ -112,19 +108,20 @@
     width: 160px;
   }
   .onglet{
-    width: 200px;
-    height: 40px;
+    width: 180px;
+    height: 35px;
     background: var(--colorShadowPrimary);
     text-align: center;
-    align-self: flex-end;
-    margin-left: 0.6vw;
+    align-self: center;
+    padding: 0.2vh;
+    margin-left: 1vw;
     margin-bottom: 2vh;
     font-size: 1vw;
-    z-index: 10;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.7) -3px -3px 6px 1px inset;
+    z-index: 1;
   }
-  .lien-navbar{
-    margin-top: 1vh;
-  }
+
+
 
   /************ Formulaire ***************/
 
