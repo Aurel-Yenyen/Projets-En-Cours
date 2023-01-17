@@ -6,7 +6,7 @@
     --colorTheatre: #48869C;
     --colorMagie: #F3706D;
     --colorChorale: #EF4B23;
-    --colorCirque: #FCF16E;
+    --colorCirque: #fcd66e;
     --colorComedie: #418376;
     --colorAutreRDV: #7c4343;
     --colorContact: #44498f;
@@ -56,6 +56,8 @@
     --imagePrimary: url(img/fond.jpg);
     --imageLogoLuxeuil: url(img/logoLuxeuil.png);
     --imageLogoPole: url(img/logoPole.png);
+    --imageBurger: url(img/icon/Burger.svg);
+    --imageCross: url(img/icon/Cross.svg)
 
     /* Image du Site */
 

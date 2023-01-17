@@ -2,19 +2,22 @@
 
     /* Couleur et Icones des Onglets */
 
-    --colorSpectacle: #A76682;
-    --colorTheatre: #48869C;
-    --colorMagie: #F3706D;
-    --colorChorale: #EF4B23;
-    --colorCirque: #FCF16E;
-    --colorComedie: #418376;
-    --colorAutreRDV: #7c4343;
-    --colorContact: #44498f;
+    --colorShadow-1: #3a3a3a79;
+    --colorShadow-2: #a7668277;
+    --colorShadow-3: #48869c80;
+    --colorShadow-4: #ef4c2386;
+    --colorShadow-5: #fcf06e8c;
+    --colorShadow-6: #41837679;
+    --colorShadow-7: #7c434385;
+    --colorShadow-8: #44498fb0;
 
     --colorTextOnglet: white;
     --colorSeparationOnglet: white;
     --shadowOnglet: black;
     --soulignTextOnglet: white;
+
+    --boxShadow: rgba(255, 247, 247, 0.45);
+    --boxInnerShadow: rgb(204, 219, 232);
 
     --iconeSpectacle: url(img/icon/Spectacle.svg);
     --iconeTheatre: url(img/icon/Theatre.svg);
@@ -90,7 +93,158 @@
     body{
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
+  
+    /***************NavBar *****************/
+  
+    nav{
+      background: var(--colorPrimary);
+      width: 100vw;
+      height: 20vh;
+      display: flex;
+      color: white;
+      padding: 10px;
+    }
+    a{
+      color: white;
+    }
+    .logo-nav{
+      background: var(--imageLogoPole);
+      background-size: cover;
+      width: 170px;
+      height: 160px;
+      margin-top: 1vh;
+    }
+    .facebook-ville{
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 300px;
+      top: 0;
+      left: 83vw;
+    }
+    .lien-facebook{
+      background: var(--iconeFacebook);
+      background-size: cover;
+      width: 40px;
+      height: 40px;
+      margin-top: 5vh;
+      margin-right: 20px;
+    }
+    .lien-facebook::after{
+      content: "";
+      width: 2px;
+      height: 40px;
+      display: block;
+      background: white;
+      position: absolute;
+      left: 3vw;
+    }
+    .lien-odt{
+      background: var(--iconeOfficeTourism);
+      background-size: cover;
+      width: 33px;
+      height: 33px;
+      margin-top: 5.3vh;
+    }
+    .lien-odt::after{
+      content: "";
+      width: 2px;
+      height: 40px;
+      display: block;
+      background: white;
+      position: absolute;
+      left: 8vw;
+      top: 5vh;
+    }
+    .lien-luxeuil{
+      background: var(--imageLogoLuxeuil);
+      width: 120px;
+      height: 140px;
+      background-size: cover;
+  
+      margin-left: 30px;
+    }
+    .onglet{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15vh;
+      width: 90vw;
+    }
+    .onglet-nav{
+      width: 190px;
+      height: 38px;
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      z-index: 10;
+    }
+    .window-onglet{
+      margin-top: 32px;
+      height: 60px;
+      width: 180px;
+      overflow: hidden;
+    }
+    .slide-onglet{
+      width: 50px;
+      height: 28px;
+      transform: skewX(-20deg) translateX(-10px);
+      z-index: -10;
+    }
+    .slide-accueil{
+      background: var(--colorShadow-1);
+      box-shadow: var(--boxShadow) 3px 0px 3px 0px;
+    }
+    .slide-spec{
+      background: var(--colorShadow-2);
+      box-shadow: var(--boxShadow) 3px 0px 3px 0px;
+    }
+    .slide-theatre{
+      background: var(--colorShadow-3);
+      box-shadow: var(--boxShadow) 3px 0px 3px 0px;
+    }
+    .slide-chorale{
+      background: var(--colorShadow-4);
+      box-shadow: var(--boxShadow) 3px 0px 3px 0px;
+    }
+    .slide-cirque{
+      background: var(--colorShadow-5);
+      box-shadow: var(--boxShadow) 3px 0px 3px 0px;
+    }
+    .slide-comedie{
+      background: var(--colorShadow-6);
+      box-shadow: var(--boxShadow) 3px 0px 3px 0px;
+    }
+    .slide-autres{
+      background: var(--colorShadow-7);
+      box-shadow: var(--boxShadow) 3px 0px 3px 0px;
+    }
+    .slide-contact{
+      background: var(--colorShadow-8);
+      box-shadow: var(--boxShadow) 3px 0px 3px 0px;
+    }
+    .onglet-nav:hover > .window-onglet > .slide-onglet{
+      width: 200px;
+      transition: width 1s linear;
+    }
+    .lien-nav{
+      position: absolute;
+      font-family : 'Pacifico', cursive ;
+      font-size: 1vw;
+      text-shadow:  0 0 20px var(--shadowTitle), 
+      0 0 2px var(--shadowTitle), 
+      0 0 3px var(--shadowTitle),   
+      0 0 4px var(--shadowTitle), 
+      0 0 5px var(--shadowTitle);
+    }
+  
+  
+  
+  
+    /************ Formulaire ***************/
 
     
     footer{
@@ -124,9 +278,9 @@
     .pole-footer{
         background: var(--imageLogoPole);
         background-size: cover;
-        width: 300px;
-        height: 280px;
-        margin-top: 3vh;
+        width: 250px;
+        height: 230px;
+        margin-top: 5vh;
     }
     .pole-footer:hover{
         transform: scale(1.1);
@@ -230,7 +384,7 @@
         0 0 5px var(--shadowTitle);
     }
     .genre-footer{
-        margin-top: 1.5vh;
+        margin-top: 4vh;
         margin-left: -5vw;
     }
     .add{
