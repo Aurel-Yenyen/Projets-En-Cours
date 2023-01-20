@@ -1,8 +1,8 @@
-@media screen and (300px <= width <= 600px){
+@media screen and (350px <= width <= 425px){
     body{
         margin: 0;
         padding: 0;
-
+        overflow-x: hidden;
         transform-style: preserve-3d;
     }
     header{
@@ -27,7 +27,7 @@
         0 0 3px black,   
         0 0 4px black, 
         0 0 5px black;
-        font-size: 20px;
+        font-size: 1.2em;
         margin-left: 10px;
     }
     h2{
@@ -56,7 +56,7 @@
         width: 120px;
         height: 140px;
         position: absolute;
-        top: 78vh;
+        top: 75vh;
         left: 65vw;
         z-index: 1;
     }
@@ -66,7 +66,7 @@
         width: 120px;
         height: 110px;
         position: absolute;
-        top: 82vh;
+        top: 78vh;
         left: 1vw;
         z-index: 1;
     }
@@ -75,16 +75,10 @@
     
     nav{
         position: absolute;
-        display: grid;
-        justify-content: flex-end;
-        align-items: flex-end;
-        grid-gap: 30px;
+        top: 0;
         font-family : 'Pacifico', cursive ;
         visibility: hidden;
-        margin-top: -100vh;
-        padding-top: 10vh;
-        padding-left: 29.5vw;
-        z-index: 15;
+        z-index: 5;
     }
     a{
         text-decoration: none;
@@ -96,6 +90,7 @@
         0 0 100px black;
         padding: 12px;
         font-size: 18px;
+
     }
     .lien-nav{
         margin-top: -1vh;
@@ -108,7 +103,7 @@
         height: 70px;
         position: absolute;
         top: 15px;
-        margin-left: 70vw;
+        margin-left: 77vw;
         z-index: 3;
     }
     .overlay{
@@ -141,6 +136,8 @@
         border-radius: 30px 0px 0px 30px ;
         display: flex;
         z-index: 10;
+        margin-top: 5vh;
+        float: right;
     }
 
 
@@ -404,7 +401,7 @@
         font-weight: bolder;
     }
     .date-lieu-heure1{
-        margin-top: -5vh;
+        margin-top: -30px;
         position: absolute;
         font-size: 1em;
         font-weight: 200;
@@ -427,14 +424,14 @@
     .btn-sub1{
         position: absolute;
         top: 38vh;
-        left: 70vw;
-        width: 20vw;
-        height: 5vh;
-        border-radius: 10vw;
+        left: 60vw;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
         border: none;
         box-shadow: 0 4px var(--shadowBtnSpectacle);
         background: var(--colorSpectacle);
-        font-size: 0.8em;
+        font-size: 1em;
         font-family: 'Sofia Sans Condensed', sans-serif;
         font-weight: 500;
     }
@@ -547,7 +544,7 @@
         font-weight: bolder;
     }
     .date-lieu-heure2{
-        margin-top: -5vh;
+        margin-top: -30px;
         position: absolute;
         font-size: 1em;
         font-weight: 200;
@@ -570,14 +567,14 @@
     .btn-sub2{
         position: absolute;
         top: 38vh;
-        left: 170vw;
-        width: 20vw;
-        height: 5vh;
-        border-radius: 10vw;
+        left: 160vw;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
         border: none;
         box-shadow: 0 4px var(--shadowBtnTheatre);
         background: var(--colorTheatre);
-        font-size: 0.8em;
+        font-size: 1em;
         font-family: 'Sofia Sans Condensed', sans-serif;
         font-weight: 500;
     }
@@ -600,6 +597,7 @@
         margin-right: 5vw;
     }
     .languette3{
+        background: var(--colorSpectacle);
         width: 90vw;
         height: 2vh;
         position: absolute;
@@ -686,7 +684,7 @@
         font-weight: bolder;
     }
     .date-lieu-heure3{
-        margin-top: -5vh;
+        margin-top: -30px;
         position: absolute;
         font-size: 1em;
         font-weight: 200;
@@ -709,14 +707,14 @@
     .btn-sub3{
         position: absolute;
         top: 38vh;
-        left: 270vw;
-        width: 20vw;
-        height: 5vh;
-        border-radius: 10vw;
+        left: 260vw;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
         border: none;
-        box-shadow: 0 4px var(--shadowBtnTheatre);
-        background: var(--colorTheatre);
-        font-size: 0.8em;
+        box-shadow: 0 4px var(--shadowBtnSpectacle);
+        background: var(--colorSpectacle);
+        font-size: 1em;
         font-family: 'Sofia Sans Condensed', sans-serif;
         font-weight: 500;
     }
@@ -992,19 +990,17 @@
 
 
     
-    footer{
+    .content-footer{
         width: 100vw;
-        height: 75vh;
+        height: 500px;
         background: var(--colorPrimary);
-        margin-top: 30vh;
+        margin-top: 50px;
         font-family: 'Sofia Sans Condensed', sans-serif;
         text-shadow:  0 0 20px var(--shadowTitle), 
         0 0 2px var(--shadowTitle), 
         0 0 3px var(--shadowTitle),   
         0 0 4px var(--shadowTitle), 
         0 0 5px var(--shadowTitle);
-        overflow-y: hidden;
-
     }
     a{
         text-decoration: none;
@@ -1015,9 +1011,8 @@
         height: 50px;
         background-size: cover;
         position: absolute;
-        margin-top: -7vh;
+        margin-top: 2px;
         z-index: -10;
-        overflow-y: hidden;
     }
     .pole-footer{
         background: var(--imageLogoPole);
@@ -1108,6 +1103,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 1vh;
     }
     .text-footer{
         color: var(--colorTextFooter);
@@ -1153,7 +1149,21 @@
 
 
 
-@media (orientation: landscape) and (max-width: 900px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (425px <= width <= 700px){
     body{
         margin: 0;
         padding: 0;
@@ -1169,7 +1179,7 @@
     footer{
         overflow-x: hidden;
     }
-    
+
     /* Image de Fond */
     
     h1, h2{
@@ -1182,11 +1192,8 @@
         0 0 3px black,   
         0 0 4px black, 
         0 0 5px black;
-        font-size: 20px;
+        font-size: 1.4em;
         margin-left: 10px;
-    }
-    h2{
-        margin-top: 50px;
     }
     
     .filtre-img{
@@ -1201,6 +1208,7 @@
         background: var(--imagePrimary);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position-y: -30vh;
         width: 100vw;
         height: 100vh;
         z-index: -10;
@@ -1211,8 +1219,8 @@
         width: 120px;
         height: 140px;
         position: absolute;
-        top: 78vh;
-        left: 65vw;
+        top: 60vh;
+        left: 80vw;
         z-index: 1;
     }
     .logo-pole{
@@ -1221,7 +1229,7 @@
         width: 120px;
         height: 110px;
         position: absolute;
-        top: 82vh;
+        top: 68vh;
         left: 1vw;
         z-index: 1;
     }
@@ -1233,12 +1241,12 @@
         display: grid;
         justify-content: flex-end;
         align-items: flex-end;
-        grid-gap: 30px;
+        grid-gap: 17px;
         font-family : 'Pacifico', cursive ;
         visibility: hidden;
         margin-top: -100vh;
-        padding-top: 10vh;
-        padding-left: 29.5vw;
+        padding-top: 2vh;
+        padding-left: 64vw;
         z-index: 15;
     }
     a{
@@ -1249,8 +1257,7 @@
         0 0 42px black,   
         0 0 77px black, 
         0 0 100px black;
-        padding: 12px;
-        font-size: 18px;
+        font-size: 1em;
     }
     .lien-nav{
         margin-top: -1vh;
@@ -1262,8 +1269,8 @@
         width: 70px;
         height: 70px;
         position: absolute;
-        top: 15px;
-        margin-left: 70vw;
+        top: 2vh;;
+        margin-left: 87vw;
         z-index: 3;
     }
     .overlay{
@@ -1291,21 +1298,19 @@
     .onglet{
         position: relative;
         width: 240px;
-        height: 15px;
+        height: 30px;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
         border-radius: 30px 0px 0px 30px ;
         display: flex;
         z-index: 10;
     }
-
-
     .separation{
         width: 0.2vw;
         height: 4vh;
         background: var(--colorSeparationOnglet);
-        margin-top: -1vh;
+        margin-top: 2vh;
         margin-right: 5px;
-        box-shadow:  0 0 7px var(--shadowOnglet), 
+        box-shadow:  0 0 20px var(--shadowOnglet), 
         0 0 10px var(--shadowOnglet), 
         0 0 42px var(--shadowOnglet),   
         0 0 77px var(--shadowOnglet), 
@@ -1314,11 +1319,11 @@
     .logo-spec{
         background: var(--iconeSpectacle);
         background-size: cover;
-        width: 7vw;
-        height: 4vh;
+        width: 20px;
+        height: 20px;
         margin-left: 2vw;
-        margin-top: -1vh;
-        margin-right: 2vw;
+        margin-top: 1vh;
+        margin-right: 1vw;
     }
     .spec{
         background: #A76682;
@@ -1326,11 +1331,11 @@
     .logo-theatre{
         background: var(--iconeTheatre);
         background-size: cover;
-        width: 7vw;
-        height: 4vh;
+        width: 20px;
+        height: 20px;
         margin-left: 2vw;
-        margin-top: -1vh;
-        margin-right: 2vw;
+        margin-top: 1vh;
+        margin-right: 1vw;
     }
     .theat{
         background: #48869C;
@@ -1338,11 +1343,11 @@
     .logo-magie{
         background: var(--iconeMagie);
         background-size: cover;
-        width: 5.2vw;
-        height: 4vh;
+        width: 15px;
+        height: 20px;
         margin-left: 2vw;
-        margin-top: -1vh;
-        margin-right: 2vw;
+        margin-top: 1vh;
+        margin-right: 1.8vw;
     }
     .magie{
         background: #F3706D;
@@ -1350,11 +1355,11 @@
     .logo-chorale{
         background: var(--iconeChorale);
         background-size: cover;
-        width: 7vw;
-        height: 4vh;
+        width: 20px;
+        height: 20px;
         margin-left: 2vw;
-        margin-top: -1vh;
-        margin-right: 2vw;
+        margin-top: 1vh;
+        margin-right: 1vw;
     }
     .chorale{
         background: #EF4B23;
@@ -1362,11 +1367,11 @@
     .logo-cirque{
         background: var(--iconeCirque);
         background-size: cover;
-        width: 7vw;
-        height: 4vh;
+        width: 20px;
+        height: 20px;
         margin-left: 2vw;
-        margin-top: -1vh;
-        margin-right: 2vw;
+        margin-top: 1vh;
+        margin-right: 1vw;
     }
     .cirque{
         background: #FCF16E;
@@ -1374,11 +1379,11 @@
     .logo-comedie{
         background: var(--iconeComedie);
         background-size: cover;
-        width: 7vw;
-        height: 4vh;
+        width: 20px;
+        height: 20px;
         margin-left: 2vw;
-        margin-top: -1vh;
-        margin-right: 2vw;
+        margin-top: 1vh;
+        margin-right: 1vw;
     }
     .comedie{
         background: #418376;
@@ -1386,11 +1391,11 @@
     .logo-autre{
         background: var(--iconeAutre);
         background-size: cover;
-        width: 7vw;
-        height: 4vh;
+        width: 20px;
+        height: 20px;
         margin-left: 2vw;
-        margin-top: -1vh;
-        margin-right: 2vw;
+        margin-top: 1vh;
+        margin-right: 1vw;
     }
     .autre{
         background: #7c4343;
@@ -1398,11 +1403,11 @@
     .logo-contact{
         background: var(--iconeContact);
         background-size: cover;
-        width: 7vw;
-        height: 4vh;
+        width: 20px;
+        height: 20px;
         margin-left: 2vw;
-        margin-top: -1vh;
-        margin-right: 2vw;
+        margin-top: 1vh;
+        margin-right: 1vw;
     }
     .contact{
         background: #44498f;
@@ -1464,7 +1469,7 @@
         flex-direction: column;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         width: 90vw;
-        height: 52vh;
+        height: 80vh;
         margin-left: 5vw;
         margin-bottom: 2vh;
         border-radius: 15px;
@@ -1473,7 +1478,7 @@
     .languette1{
         background: var(--colorSpectacle);
         width: 90vw;
-        height: 2vh;
+        height: 4vh;
         position: absolute;
         top: 0;
         border-radius: 15px 15px 0px 0px;
@@ -1496,7 +1501,7 @@
         height:20vh;
         transform:translate3d(0,0,1800px);
         position: absolute;
-        top: 6vh;
+        top: 20vh;
         left: -100vw;
     }
     .caroussel{
@@ -1508,7 +1513,7 @@
     .slide1{
         position:absolute;
         width: 15vw;
-        height:25vh;
+        height: 40vh;
         margin:auto;
         top:0;
         left:0;
@@ -1524,7 +1529,7 @@
     }
     .a img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
     .b{
         display: flex;
@@ -1534,7 +1539,7 @@
     }
     .b img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
     .c{
         display: flex;
@@ -1544,23 +1549,24 @@
     }
     .c img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
 
     .text1{
         font-family: 'Sofia Sans Condensed', sans-serif;
         position: absolute;
         width: 80vw;
-        top: 27vh;
+        top: 50vh;
         left: 20vw;
     }
     .title1{
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: bolder;
     }
     .date-lieu-heure1{
         margin-top: -5vh;
         position: absolute;
+        display: flex;
         font-size: 1em;
         font-weight: 200;
     }
@@ -1581,10 +1587,10 @@
     }
     .btn-sub1{
         position: absolute;
-        top: 38vh;
+        top: 58vh;
         left: 70vw;
         width: 20vw;
-        height: 5vh;
+        height: 8vh;
         border-radius: 10vw;
         border: none;
         box-shadow: 0 4px var(--shadowBtnSpectacle);
@@ -1601,7 +1607,6 @@
 
 
 
-        /****************** Les Affiches à venir ****************************/
 
     .card2{
         display: flex;
@@ -1609,15 +1614,16 @@
         flex-direction: column;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         width: 90vw;
-        height: 52vh;
+        height: 80vh;
         margin-left: 5vw;
+        margin-bottom: 2vh;
         border-radius: 15px;
         margin-right: 5vw;
     }
     .languette2{
         background: var(--colorTheatre);
         width: 90vw;
-        height: 2vh;
+        height: 4vh;
         position: absolute;
         top: 0;
         border-radius: 15px 15px 0px 0px;
@@ -1640,10 +1646,10 @@
         height:20vh;
         transform:translate3d(0,0,1800px);
         position: absolute;
-        top: 6vh;
+        top: 20vh;
         left: 0vw;
     }
-    .caroussel{
+    .carousse2{
         width:auto;
         height:100%;
         transform-style:preserve-3d;
@@ -1652,7 +1658,7 @@
     .slide2{
         position:absolute;
         width: 15vw;
-        height:25vh;
+        height: 40vh;
         margin:auto;
         top:0;
         left:0;
@@ -1668,7 +1674,7 @@
     }
     .e img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
     .f{
         display: flex;
@@ -1678,7 +1684,7 @@
     }
     .f img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
     .g{
         display: flex;
@@ -1688,22 +1694,24 @@
     }
     .g img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
+
     .text2{
         font-family: 'Sofia Sans Condensed', sans-serif;
         position: absolute;
         width: 80vw;
-        top: 27vh;
+        top: 50vh;
         left: 120vw;
     }
     .title2{
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: bolder;
     }
     .date-lieu-heure2{
         margin-top: -5vh;
         position: absolute;
+        display: flex;
         font-size: 1em;
         font-weight: 200;
     }
@@ -1717,17 +1725,12 @@
         margin-left: 0.5vw;
         margin-right: 0.5vw;
     }
-    .heure2::after{
-        content: "|";
-        margin-left: 0.5vw;
-        margin-right: 0.5vw;
-    }
     .btn-sub2{
         position: absolute;
-        top: 38vh;
+        top: 58vh;
         left: 170vw;
         width: 20vw;
-        height: 5vh;
+        height: 8vh;
         border-radius: 10vw;
         border: none;
         box-shadow: 0 4px var(--shadowBtnTheatre);
@@ -1749,14 +1752,16 @@
         flex-direction: column;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         width: 90vw;
-        height: 52vh;
+        height: 80vh;
         margin-left: 5vw;
+        margin-bottom: 2vh;
         border-radius: 15px;
         margin-right: 5vw;
     }
     .languette3{
+        background: var(--colorSpectacle);
         width: 90vw;
-        height: 2vh;
+        height: 4vh;
         position: absolute;
         top: 0;
         border-radius: 15px 15px 0px 0px;
@@ -1779,7 +1784,7 @@
         height:20vh;
         transform:translate3d(0,0,1800px);
         position: absolute;
-        top: 6vh;
+        top: 20vh;
         left: 100vw;
     }
     .caroussel{
@@ -1791,7 +1796,7 @@
     .slide3{
         position:absolute;
         width: 15vw;
-        height:25vh;
+        height: 40vh;
         margin:auto;
         top:0;
         left:0;
@@ -1807,7 +1812,7 @@
     }
     .i img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
     .j{
         display: flex;
@@ -1817,7 +1822,7 @@
     }
     .j img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
     .k{
         display: flex;
@@ -1827,22 +1832,24 @@
     }
     .k img{
         width: auto;
-        height: 25vh;
+        height: 40vh;
     }
+
     .text3{
         font-family: 'Sofia Sans Condensed', sans-serif;
         position: absolute;
         width: 80vw;
-        top: 27vh;
+        top: 50vh;
         left: 220vw;
     }
     .title3{
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: bolder;
     }
     .date-lieu-heure3{
         margin-top: -5vh;
         position: absolute;
+        display: flex;
         font-size: 1em;
         font-weight: 200;
     }
@@ -1856,21 +1863,16 @@
         margin-left: 0.5vw;
         margin-right: 0.5vw;
     }
-    .heure3::after{
-        content: "|";
-        margin-left: 0.5vw;
-        margin-right: 0.5vw;
-    }
     .btn-sub3{
         position: absolute;
-        top: 38vh;
+        top: 58vh;
         left: 270vw;
         width: 20vw;
-        height: 5vh;
+        height: 8vh;
         border-radius: 10vw;
         border: none;
-        box-shadow: 0 4px var(--shadowBtnTheatre);
-        background: var(--colorTheatre);
+        box-shadow: 0 4px var(--shadowBtnSpectacle);
+        background: var(--colorSpectacle);
         font-size: 0.8em;
         font-family: 'Sofia Sans Condensed', sans-serif;
         font-weight: 500;
@@ -1883,7 +1885,7 @@
     .input-img{
         position: absolute;
         margin-top: 5vh;
-        margin-left: 30vw;
+        margin-left: 35vw;
     }
     .input-img input{
         margin-right: 10vw;
@@ -1935,7 +1937,7 @@
         background: var(--imageCardPass);
         background-size: cover;
         position: absolute;
-        top: 205vh;
+        top: 245vh;
         left: 60vw;
         transform: rotate(10deg);
         box-shadow: 0 3px #b1b1b1;
@@ -1951,9 +1953,9 @@
 
     .plaquette{
         background: var(--imageCircle);
-        margin-top: 30vh;
+        margin-top: 40vh;
         background-repeat: no-repeat;
-        margin-left: 10vw;
+        margin-left: 30vw;
         background-size: cover;
         border-radius: 300px;
         width: 300px;
@@ -1991,8 +1993,8 @@
     }
     .circle-plaquette{
         position: absolute;
-        top: 204vh;
-        left: 20vw;
+        top: 260vh;
+        left: 38vw;
         width: 200px;
         height: 200px;
         background-size: cover;
@@ -2006,14 +2008,14 @@
             transform: translateX(0) translateY(0) scale(1);
         }
         20%{
-            transform: translateX(-40vw) translateY(-10vh) scale(0.5);
+            transform: translateX(-40vw) translateY(-30vh) scale(0.5);
 
         }
         40%{
-            transform: translateX(-30vw) translateY(10vh) scale(0.7);
+            transform: translateX(-30vw) translateY(30vh) scale(0.7);
         }
         60%{
-            transform: translateX(30vw) translateY(-10vh) scale(0.5);
+            transform: translateX(30vw) translateY(-30vh) scale(0.5);
         }
         80%{
             transform: translateX(20vw) translateY(20vh) scale(0.7);
@@ -2147,60 +2149,59 @@
 
 
     
-    footer{
-        width: 100vw;
-        height: 75vh;
-        background: var(--colorPrimary);
-        margin-top: 30vh;
-        font-family: 'Sofia Sans Condensed', sans-serif;
-        text-shadow:  0 0 20px var(--shadowTitle), 
-        0 0 2px var(--shadowTitle), 
-        0 0 3px var(--shadowTitle),   
-        0 0 4px var(--shadowTitle), 
-        0 0 5px var(--shadowTitle);
-        overflow-y: hidden;
-
-    }
     a{
         text-decoration: none;
     }
     .schema-footer{
         background: var(--imageFooter);
         width: 100vw;
-        height: 50px;
+        height: 100px;
         background-size: cover;
         position: absolute;
-        margin-top: -7vh;
+        margin-top: -49px;
         z-index: -10;
         overflow-y: hidden;
+    }
+    .content-footer{
+        display: flex;
+        justify-content: space-around;
+        height: 180px;
+        background: var(--colorPrimary);
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        text-shadow:  0 0 20px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
+        margin-top: 50px;
     }
     .pole-footer{
         background: var(--imageLogoPole);
         background-size: cover;
-        width: 170px;
-        height: 150px;
-        margin-top: 3vh;
-        margin-left: 25vw;
+        width: 150px;
+        height: 140px;
+        margin-top: 4vh;
+        margin-left: 2vw;
     }
     .adresse-footer{
         display: flex;
-        width: 330px;
-        height: 230px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 30vw;
+        margin-left: 8vw;
+        margin-right: 2vw;
+        margin-top: 1vh;
     }
     .contact-footer{
-        width: 250px;
-        height: 215px;
+        width: 150px;
+        height: 150px;
         color: var(--colorTextFooter);
-        font-size: 1vw;
+        font-size: 0.7em;
         border: 2px dashed var(--colorTextFooter);
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 4vh;
+        margin-left: -12vw;
         box-shadow:  0 0 1px var(--shadowTitle), 
         0 0 2px var(--shadowTitle), 
         0 0 3px var(--shadowTitle),   
@@ -2214,13 +2215,13 @@
         background-size: cover;
         margin-top: 1vh;
     }
-    .nom-contact, .rue-contact, .cp-contact{
-        font-size: 3.5em;
+    .rue-contact, .cp-contact{
+        margin-top: -2.2vh;
     }
     .tel-mail{
-        margin-top: 4vh;
         color: var(--colorTextFooter);
-        font-size: 0.8em;
+        font-size: 0.7em;
+        margin-left: 2vw;
     }
 
     .tel-footer, .mail-footer{
@@ -2229,10 +2230,9 @@
         justify-content: center;
         align-items: center;
         width: 150px;
-        height: 100px;
+        height: 65px;
         border: 2px dashed var(--colorTextFooter);
         border-radius: 20px;
-        margin-left: 20px;
         box-shadow:  0 0 1px var(--shadowTitle), 
         0 0 2px var(--shadowTitle), 
         0 0 3px var(--shadowTitle),   
@@ -2240,7 +2240,7 @@
         0 0 5px var(--shadowTitle);
     }
     .mail-footer{
-        margin-top: 1.3vh;
+        margin-top: 4vh;
     }
     .logo2{
         background: var(--iconePhone);
@@ -2259,46 +2259,60 @@
         display: none;
     }
     .site-footer{
-        font-size: 0.6em;
+        font-size: 0.8em;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        margin-top: -5vh;
+        margin-left: -10vw;
     }
     .text-footer{
         color: var(--colorTextFooter);
-        margin-top: 4vh;
-        font-size: 1.4em;
+        margin-top: 2vh;
     }
+    .text-footer:hover{
+        color: var(--colorHoverFooter);
 
-    .facebook-footer, .ville-footer, .odt-footer{
+    }
+    .facebook-footer, .ville-footer, .odt-footer, .admin{
         display: flex;
-        
+        margin-top: 4vh;
+    }
+    .facebook-fotter:hover > .logo-facebook{
+        background: var(--iconeFacebookRed); 
+        background-size: cover; 
+        width: 2vw;
+        height: 4.2vh;
+        z-index: 10;
     }
     .img-footer{
-        margin-top: 6vh;
+        width: 30px;
+        height: 30px;
+        margin-right: 1vw;
+        z-index: 1;
     }
     .logo-facebook{
         background: var(--iconeFacebook);
         background-size: cover;
-        width: 30px;
-        height: 23px;
-        margin-left: 5px;
     }
     .logo-ville{
         background: var(--iconeVille);
         background-size: cover;
-        width: 30px;
-        height: 23px;
+    }
+    .logo-admin{
+        background: var(--iconeAdmin);
+        background-size: cover;
+        margin-left: 0.1vw;
     }
     .logo-office{
         background: var(--iconeOfficeTourism);
         background-size: cover;
-        width: 26.5px;
-        height: 21px;
-    }
-    .admin{
-        display: none;
+        width: 25px;
+        height: 25px;
+        margin-top: 0.1vh;
+        margin-left: 0.6vw;
     }
 
 }
+
+
 

@@ -4,16 +4,19 @@ let burger = document.getElementById('menu')
 let close = document.getElementById('close')
 let overlay = document.getElementById('overlay')
 let menuNav = document.getElementById('nav')
+let body = document.getElementById('body')
 
 burger.addEventListener('click', openOverlay =>{
     overlay.style.visibility = 'visible'
     menuNav.style.visibility = 'visible'
     close.style.visibility = 'visible'
+    body.style.overflow = 'hidden'
 });
 close.addEventListener('click', closeOverlay =>{
     overlay.style.visibility = 'hidden'
     menuNav.style.visibility = 'hidden'
     close.style.visibility = 'hidden'
+    body.style.overflow= 'initial'
 })
 
 
