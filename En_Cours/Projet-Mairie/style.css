@@ -256,7 +256,7 @@
         margin-top: 7vh;
         margin-left: 4vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
-        color: var(--colorPrimary);
+        color: var(--colorPrimary-1);
         font-size: 2.5vw;
         font-weight: 400;
 
@@ -358,7 +358,7 @@
     }
 
     .text1{
-        margin-left: 30vw;
+        margin-left: 10vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
         color: var(--colorTitleCard);
     }
@@ -383,6 +383,11 @@
         margin-right: 0.5vw;
     }
     .btn-sub1{
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        margin-top: -2vh;
+        color: white;
         width: 8vw;
         height: 5vh;
         border-radius: 10vw;
@@ -491,7 +496,7 @@
         height: 25vh;
     }
     .text2{
-        margin-left: 30vw;
+        margin-left: 10vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
         color: var(--colorTitleCard);
     }
@@ -516,6 +521,11 @@
         margin-right: 0.5vw;
     }
     .btn-sub2{
+        color: white;
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        margin-top: -2vh;
         width: 8vw;
         height: 5vh;
         border-radius: 10vw;
@@ -620,7 +630,7 @@
         height: 25vh;
     }
     .text3{
-        margin-left: 30vw;
+        margin-left: 10vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
         color: var(--colorTitleCard);
     }
@@ -645,6 +655,11 @@
         margin-right: 0.5vw;
     }
     .btn-sub3{
+        color: white;
+         position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        margin-top: -2vh;
         width: 8vw;
         height: 5vh;
         border-radius: 10vw;
@@ -684,7 +699,7 @@
         content: "";
         display: inline-block;
         visibility: visible;
-        border: 1px solid var(--colorPrimary);
+        border: 1px solid var(--colorPrimary-1);
     }
     input[type="radio"]:checked::after{
         width: 15px;
@@ -694,7 +709,7 @@
         margin-left: -2px;
         top: 0px;
         left: 0px;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-1);
         background-size: cover;
         content: "";
         display: inline-block;
@@ -828,19 +843,19 @@
             color: white;
         }
         20%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         40%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         50%{
             color: white;
         }
         60%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         80%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         90%{
             color: white;
@@ -920,7 +935,7 @@
         margin-top: 10vh;
         margin-left: 5vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
-        color: var(--colorPrimary);
+        color: var(--colorPrimary-1);
         font-size: 2.5vw;
         font-weight: 400;
     }
@@ -936,7 +951,7 @@
     footer{
         width: 100vw;
         height: 35vh;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-1);
         margin-top: 30vh;
         font-family: 'Sofia Sans Condensed', sans-serif;
         text-shadow:  0 0 20px var(--shadowTitle), 
@@ -949,7 +964,7 @@
         text-decoration: none;
     }
     .schema-footer{
-        background: var(--imageFooter);
+        background: var(--imageFooter-1);
         width: 100vw;
         height: 25vh;
         background-size: cover;
@@ -965,7 +980,7 @@
         background: var(--imageLogoPole);
         background-size: cover;
         width: 250px;
-        height: 240px;
+        height: 230px;
         margin-top: 7vh;
     }
     .pole-footer:hover{

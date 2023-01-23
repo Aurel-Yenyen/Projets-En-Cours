@@ -120,9 +120,8 @@
         visibility: hidden;
     }
     .cross{
-        background: url(img/icon/cross.svg);
-        width: 32px;
-        height: 30px;
+        color: white;
+        font-size: 2em;
         background-size: cover;
         margin: 30px;
         position: absolute;
@@ -130,6 +129,11 @@
         z-index: 10;
         visibility: hidden;
         font-family : 'Pacifico', cursive ;
+        text-shadow:  0 0 20px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
     }
     .onglet{
         position: relative;
@@ -290,7 +294,7 @@
         margin-top: 15vh;
         margin-left: 4vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
-        color: var(--colorPrimary);
+        color: var(--colorPrimary-1);
         font-size: 1.5rem;
         font-weight: 400;
 
@@ -425,6 +429,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub1{
+        color: white;
         position: absolute;
         top: 38vh;
         left: 60vw;
@@ -568,6 +573,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub2{
+        color: white;
         position: absolute;
         top: 38vh;
         left: 160vw;
@@ -708,6 +714,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub3{
+        color: white;
         position: absolute;
         top: 38vh;
         left: 260vw;
@@ -749,7 +756,7 @@
         content: "";
         display: inline-block;
         visibility: visible;
-        border: 1px solid var(--colorPrimary);
+        border: 1px solid var(--colorPrimary-1);
     }
     input[type="radio"]:checked::after{
         width: 19px;
@@ -759,7 +766,7 @@
         margin-left: -2px;
         top: 0px;
         left: 0px;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-1);
         background-size: cover;
         content: "";
         display: inline-block;
@@ -893,19 +900,19 @@
             color: white;
         }
         20%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         40%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         50%{
             color: white;
         }
         60%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         80%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         90%{
             color: white;
@@ -969,7 +976,7 @@
         margin-top: 10vh;
         margin-left: 5vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
-        color: var(--colorPrimary);
+        color: var(--colorPrimary-1);
         font-size: 1.5em;
         font-weight: 400;
     }
@@ -985,7 +992,7 @@
     .content-footer{
         width: 100vw;
         height: 500px;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-1);
         margin-top: 100px;
         font-family: 'Sofia Sans Condensed', sans-serif;
         text-shadow:  0 0 20px var(--shadowTitle), 
@@ -998,7 +1005,7 @@
         text-decoration: none;
     }
     .schema-footer{
-        background: var(--imageFooter);
+        background: var(--imageFooter-1);
         width: 100vw;
         height: 50px;
         background-size: cover;
@@ -1138,7 +1145,7 @@
 
 
 
-
+/***************** Responsive Surface Pro */
 
 
 
@@ -1260,16 +1267,19 @@
         overflow-x: hidden;
     }
     .cross{
-        background: url(img/icon/cross.svg);
-        width: 52px;
-        height: 50px;
-        background-size: cover;
+        color: white;
+        font-size: 2em;
         margin: 30px;
         position: absolute;
         top: 0;
         z-index: 10;
         visibility: hidden;
         font-family : 'Pacifico', cursive ;
+        text-shadow:  0 0 20px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
     }
     .onglet{
         position: relative;
@@ -1429,7 +1439,7 @@
         margin-top: 8vh;
         margin-left: 4vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
-        color: var(--colorPrimary);
+        color: var(--colorPrimary-1);
         font-size: 3rem;
         font-weight: 400;
 
@@ -1562,6 +1572,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub1{
+        color: white;
         position: absolute;
         top: 55vh;
         left: 55vw;
@@ -1705,6 +1716,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub2{
+        color: white;
         position: absolute;
         top: 55vh;
         left: 155vw;
@@ -1845,6 +1857,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub3{
+        color: white;
         position: absolute;
         top: 55vh;
         left: 255vw;
@@ -1886,7 +1899,7 @@
         content: "";
         display: inline-block;
         visibility: visible;
-        border: 1px solid var(--colorPrimary);
+        border: 1px solid var(--colorPrimary-1);
     }
     input[type="radio"]:checked::after{
         width: 49px;
@@ -1896,7 +1909,7 @@
         margin-left: -20px;
         top: 0px;
         left: 0px;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-1);
         background-size: cover;
         content: "";
         display: inline-block;
@@ -2031,19 +2044,19 @@
             color: white;
         }
         20%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         40%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         50%{
             color: white;
         }
         60%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         80%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         90%{
             color: white;
@@ -2118,7 +2131,7 @@
         margin-top: 10vh;
         margin-left: 5vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
-        color: var(--colorPrimary);
+        color: var(--colorPrimary-1);
         font-size: 3em;
         font-weight: 400;
     }
@@ -2134,7 +2147,7 @@
     .content-footer{
         width: 100vw;
         height: 750px;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-1);
         margin-top: 250px;
         font-family: 'Sofia Sans Condensed', sans-serif;
         text-shadow:  0 0 20px var(--shadowTitle), 
@@ -2151,7 +2164,7 @@
         text-decoration: none;
     }
     .schema-footer{
-        background: var(--imageFooter);
+        background: var(--imageFooter-1);
         width: 100vw;
         height: 120px;
         background-size: cover;
@@ -2459,16 +2472,19 @@
         overflow-x: hidden;
     }
     .cross{
-        background: url(img/icon/cross.svg);
-        width: 82px;
-        height: 80px;
-        background-size: cover;
+        color: white;
+        font-size: 2em;
         margin: 30px;
         position: absolute;
         top: 0;
         z-index: 10;
         visibility: hidden;
         font-family : 'Pacifico', cursive ;
+        text-shadow:  0 0 20px var(--shadowTitle), 
+        0 0 2px var(--shadowTitle), 
+        0 0 3px var(--shadowTitle),   
+        0 0 4px var(--shadowTitle), 
+        0 0 5px var(--shadowTitle);
     }
     .onglet{
         position: relative;
@@ -2629,7 +2645,7 @@
         margin-top: 8vh;
         margin-left: 4vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
-        color: var(--colorPrimary);
+        color: var(--colorPrimary-1);
         font-size: 4rem;
         font-weight: 400;
 
@@ -2762,6 +2778,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub1{
+        color: white;
         position: absolute;
         top: 38vh;
         left: 60vw;
@@ -2905,6 +2922,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub2{
+        color: white;
         position: absolute;
         top: 38vh;
         left: 160vw;
@@ -3045,6 +3063,7 @@
         margin-right: 0.5vw;
     }
     .btn-sub3{
+        color: white;
         position: absolute;
         top: 38vh;
         left: 260vw;
@@ -3086,7 +3105,7 @@
         content: "";
         display: inline-block;
         visibility: visible;
-        border: 1px solid var(--colorPrimary);
+        border: 1px solid var(--colorPrimary-1);
     }
     input[type="radio"]:checked::after{
         width: 49px;
@@ -3096,7 +3115,7 @@
         margin-left: -20px;
         top: 0px;
         left: 0px;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-1);
         background-size: cover;
         content: "";
         display: inline-block;
@@ -3230,19 +3249,19 @@
             color: white;
         }
         20%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         40%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         50%{
             color: white;
         }
         60%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         80%{
-            color: var(--colorPrimary);
+            color: var(--colorPrimary-1);
         }
         90%{
             color: white;
@@ -3313,7 +3332,7 @@
         margin-top: 10vh;
         margin-left: 5vw;
         font-family: 'Sofia Sans Condensed', sans-serif;
-        color: var(--colorPrimary);
+        color: var(--colorPrimary-1);
         font-size: 4em;
         font-weight: 400;
     }
@@ -3329,7 +3348,7 @@
     .content-footer{
         width: 100vw;
         height: 750px;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-1);
         margin-top: 250px;
         font-family: 'Sofia Sans Condensed', sans-serif;
         text-shadow:  0 0 20px var(--shadowTitle), 
@@ -3346,7 +3365,7 @@
         text-decoration: none;
     }
     .schema-footer{
-        background: var(--imageFooter);
+        background: var(--imageFooter-1);
         width: 100vw;
         height: 120px;
         background-size: cover;

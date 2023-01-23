@@ -1,89 +1,3 @@
-:root{
-
-  /* Couleur et Icones des Onglets */
-
-  --colorShadow-1: #3a3a3a79;
-  --colorShadow-2: #a7668277;
-  --colorShadow-3: #48869c80;
-  --colorShadow-4: #f36f6d81;
-  --colorShadow-5: #ef4c2386;
-  --colorShadow-6: #fcf06e8c;
-  --colorShadow-7: #41837679;
-  --colorShadow-8: #7c434385;
-
-  --colorTextOnglet: white;
-  --colorSeparationOnglet: white;
-  --shadowOnglet: black;
-  --soulignTextOnglet: white;
-
-  --boxShadow: rgba(255, 247, 247, 0.45);
-  --boxInnerShadow: rgb(204, 219, 232);
-
-  --iconeSpectacle: url(img/icon/Spectacle.svg);
-  --iconeTheatre: url(img/icon/Theatre.svg);
-  --iconeMagie: url(img/icon/Magie.svg);
-  --iconeChorale: url(img/icon/Chorale.svg);
-  --iconeCirque: url(img/icon/Cirque.svg);
-  --iconeComedie: url(img/icon/Comedie.svg);
-  --iconeAutre: url(img/icon/Autre.svg);
-  --iconeContact: url(img/icon/Contact.svg);
-
-  /* Ombre des Bouton */
-
-  --shadowBtnSpectacle: #68394d;
-  --shadowBtnTheatre: #265566;
-  --shadowBtnMagie: #af5150;
-  --shadowBtnChorale: #b63a1b;
-  --shadowBtnCirque: #d8ce60;
-  --shadowBtnComedie: #376d62;
-  --shadowBtnAutre: #5a3434;
-  --shadowBtnContact: #353969;
-
-  /* Couleur du Titre */
-
-  --colorTitle: #FCF16E;
-  --shadowTitle: black;
-
-  /* Couleur Primaire du site */
-
-  --colorPrimary: #44498f;
-  --colorShadowPrimary: #4747476c;
-  
-  /* Couleur du Texte Footer (Bas de Page) */
-
-  --colorTextFooter: white;
-
-  /* ********************************************* */
-  
-  /* Image Page d'Accueil */
-  
-  --imagePrimary: url(img/fond.jpg);
-  --imageLogoLuxeuil: url(img/logoLuxeuil.png);
-  --imageLogoPole: url(img/logoPole.png);
-
-  /* Image du Site */
-
-  --imageCircle: url(img/fondCircle.jpg);
-
-  /* Image Carte Passe */
-
-  --imageCardPass: url(img/cardPass.svg);
-  /* Image et Icone du Footer */
-
-  --imageFooter: url(img/footerContact.jpg);
-
-  --iconeAdress: url(img/icon/Adress.svg);
-  --iconePhone: url(img/icon/Phone.svg);
-  --iconeMail: url(img/icon/Mail.svg);
-  --iconeFacebook: url(img/icon/Facebook.svg);
-  --iconeVille: url(img/icon/Ville.svg);
-  --iconeOfficeTourism: url(img/icon/OfficeTourism.svg);
-
-}
-
-
-
-
 @media screen and (min-width: 1200px){
 
   body{
@@ -95,7 +9,7 @@
   /***************NavBar *****************/
 
   nav{
-    background: var(--colorPrimary);
+    background: var(--colorPrimary-9);
     width: 100vw;
     height: 20vh;
     display: flex;
@@ -242,7 +156,7 @@
   form{
     max-width:850px;
     margin:0 auto;
-    border-top:15px solid var(--colorPrimary);
+    border-top:15px solid var(--colorPrimary-9);
     background:#FFF;
     padding:0 20px 60px;
     text-align:center;
@@ -283,7 +197,7 @@
     top:-50px;
     width:100%;
     height:100%;
-    background-color:var(--colorPrimary);
+    background-color:var(--colorPrimary-9);
     position:relative;
     line-height:50px;
     font-size:18px;
@@ -306,10 +220,10 @@
   }
   .champs input:focus + label,.champs textarea:focus + label{
     background-color:white;
-    color:var(--colorPrimary);;
+    color:var(--colorPrimary-9);;
   }
   input[type=submit]{
-    background-color:var(--colorPrimary);;
+    background-color:var(--colorPrimary-9);;
     border:0;
     height:50px;
     padding:0 20px;
@@ -362,7 +276,7 @@
       footer{
         width: 100vw;
         height: 35vh;
-        background: var(--colorPrimary);
+        background: var(--colorPrimary-9);
         margin-top: 30vh;
         font-family: 'Sofia Sans Condensed', sans-serif;
         text-shadow:  0 0 20px var(--shadowTitle), 
