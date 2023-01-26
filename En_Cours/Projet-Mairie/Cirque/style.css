@@ -19,6 +19,9 @@
     a{
       color: white;
     }
+    .cross{
+      display: none;
+    }
     .logo-nav{
       background: var(--imageLogoPole);
       background-size: cover;

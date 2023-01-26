@@ -16,6 +16,9 @@
       color: white;
       padding: 10px;
     }
+    .cross{
+      display: none;
+    }
     .logo-nav{
       background: var(--imageLogoPole);
       background-size: cover;
