@@ -1,68 +1,50 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 
-* {
-	box-sizing: border-box;
+html, body {
+	text-align: center;
 	margin: 0;
-	padding: 0;
-	outline: none;
-	list-style: none;}
-
-body {
-	font-family: 'Pattaya', sans-serif;}
-
-
-
-.main-content {
-	padding: 1rem;}
-
-/* Nav Bar */
-
-.navbar{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding:5px;
-	color:white;
-	background:#4A4A4A;}
-
-.navbar-links {
-	display: flex;}
-
-.navbar-link {
-	padding:0 10px;}
-
-.navbar-link a {
-	text-decoration: none;
-	color:white;}
-
-
-/* Small Device */
-
-
-.navbar-link a{
-	font-size: 1,6rem;
-	transition: all .4s ease-in-out;}
-
-
-
-
-
-
-/* Medium Device */
-
-
-	.navbar-link > a::after{
-		display: block;
-		content: "";
-		width: 0;
-		height: 2px;
-		background:white;
-		transition:width .7s;}}
-		.gif {
-			display: block;
-			margin: 0px auto;
-			width: 100%;}
-.navbar-link:hover > a::after{
-	width: 100%;}
-
+	overflow: hidden;
+  }
+  img{
+	margin-top: -20vh;
+  }
+  ::selection {
+	background: #19f6e8;
+  }
+  .svg-wrapper {
+	position: absolute;
+	left: 40vw;
+	top: 80vh;
+	width: 500px;
+  }
+  .shape1,
+  .shape2 {
+	stroke-dasharray: 1120;
+	stroke-width: 5px;
+	fill: transparent;
+	stroke: #5c0202;
+	border-bottom: 5px solid black;
+	transition-timing-function: linear;
+	transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+  }
+  .shape1 {
+	stroke-dashoffset: 1120;
+  }
+  .shape2 {
+	stroke-dashoffset: -1120;
+  }
+  .text {
+	font-family: 'Roboto Condensed';
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: 8px;
+	color: rgb(34, 34, 34);
+	top: -48px;
+	position: relative;
+  }
+  .svg-wrapper:hover .shape1,
+  .svg-wrapper:hover .shape2 {
+	stroke-dashoffset: 0;
+	stroke-dasharray: 1120;
+  }
