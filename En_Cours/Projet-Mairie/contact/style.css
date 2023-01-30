@@ -293,7 +293,7 @@
         color: white;
     }
     .schema-footer{
-        background: var(--imageFooter);
+        background: var(--imageFooter-9);
         width: 100vw;
         height: 25vh;
         background-size: cover;

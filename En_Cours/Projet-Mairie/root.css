@@ -87,49 +87,49 @@
     
     /* Image Page d'Accueil */
     
-    --imagePrimary: url(/Projet-Mairie/img/fond.jpg);
-    --imageLogoLuxeuil: url(/Projet-Mairie/img/logoLuxeuil.png);
-    --imageLogoPole: url(/Projet-Mairie/img/logoPole.png);
-    --imageBurger: url(/Projet-Mairie/img/icon/Burger.svg);
-    --imageBurgerOther: url(/Projet-Mairie/img/icon/BurgerWhite.svg);
-    --imageCross: url(/Projet-Mairie/img/icon/Cross.svg);
+    --imagePrimary: url(img/fond.jpg);
+    --imageLogoLuxeuil: url(img/logoLuxeuil.png);
+    --imageLogoPole: url(img/logoPole.png);
+    --imageBurger: url(/img/icon/Burger.svg);
+    --imageBurgerOther: url(/img/icon/BurgerWhite.svg);
+    --imageCross: url(/img/icon/Cross.svg);
 
     /* Image du Site */
 
-    --imageCircle: url(/Projet-Mairie/img/fondCircle.jpg);
+    --imageCircle: url(/img/fondCircle.jpg);
 
     /* Image Carte Passe */
 
-    --imageCardPass: url(/Projet-Mairie/img/icon/cardPass.svg);
+    --imageCardPass: url(/img/icon/cardPass.svg);
 
     /* Image et Icone du Footer */
 
-    --imageFooter-1: url(/Projet-Mairie/img/footer-1.jpg);
-    --imageFooter-2: url(/Projet-Mairie/img/footer-2.jpg);
-    --imageFooter-3: url(/Projet-Mairie/img/footer-3.jpg);
-    --imageFooter-4: url(/Projet-Mairie/img/footer-4.jpg);
-    --imageFooter-5: url(/Projet-Mairie/img/footer-5.jpg);
-    --imageFooter-6: url(/Projet-Mairie/img/footer-6.jpg);
-    --imageFooter-7: url(/Projet-Mairie/img/footer-7.jpg);
-    --imageFooter-8: url(/Projet-Mairie/img/footer-8.jpg);
-    --imageFooter-9: url(/Projet-Mairie/img/footer-9.jpg);
+    --imageFooter-1: url(/img/footer-1.jpg);
+    --imageFooter-2: url(/img/footer-2.jpg);
+    --imageFooter-3: url(/img/footer-3.jpg);
+    --imageFooter-4: url(/img/footer-4.jpg);
+    --imageFooter-5: url(/img/footer-5.jpg);
+    --imageFooter-6: url(/img/footer-6.jpg);
+    --imageFooter-7: url(/img/footer-7.jpg);
+    --imageFooter-8: url(/img/footer-8.jpg);
+    --imageFooter-9: url(/img/footer-9.jpg);
 
-    --iconeAdress: url(/Projet-Mairie/img/icon/Adress.svg);
-    --iconePhone: url(/Projet-Mairie/img/icon/Phone.svg);
-    --iconeMail: url(/Projet-Mairie/img/icon/Mail.svg);
-    --iconeFacebook: url(/Projet-Mairie/img/icon/Facebook.svg);
-    --iconeVille: url(/Projet-Mairie/img/icon/Ville.svg);
-    --iconeOfficeTourism: url(/Projet-Mairie/img/icon/OfficeTourism.svg);
-    --iconeAdmin: url(/Projet-Mairie/img/icon/Admin.svg);
-    --iconeArrow: url(/Projet-Mairie/img/icon/Arrow.svg);
+    --iconeAdress: url(/img/icon/Adress.svg);
+    --iconePhone: url(/img/icon/Phone.svg);
+    --iconeMail: url(/img/icon/Mail.svg);
+    --iconeFacebook: url(/img/icon/Facebook.svg);
+    --iconeVille: url(/img/icon/Ville.svg);
+    --iconeOfficeTourism: url(/img/icon/OfficeTourism.svg);
+    --iconeAdmin: url(/img/icon/Admin.svg);
+    --iconeArrow: url(/img/icon/Arrow.svg);
 
-    --iconeAdressRed: url(/Projet-Mairie/img/icon/AdressRed.svg);
-    --iconePhoneRed: url(/Projet-Mairie/img/icon/PhoneRed.svg);
-    --iconeMailRed: url(/Projet-Mairie/img/icon/MailRed.svg);
-    --iconeFacebookRed: url(/Projet-Mairie/img/icon/FacebookRed.svg);
-    --iconeVilleRed: url(/Projet-Mairie/img/icon/VilleRed.svg);
-    --iconeOfficeTourismRed: url(/Projet-Mairie/img/icon/OfficeTourismRed.svg);
-    --iconeAdminRed: url(/Projet-Mairie/img/icon/AdminRed.svg);
-    --iconeArrowRed: url(/Projet-Mairie/img/icon/ArrowRed.svg);
+    --iconeAdressRed: url(/img/icon/AdressRed.svg);
+    --iconePhoneRed: url(/img/icon/PhoneRed.svg);
+    --iconeMailRed: url(/img/icon/MailRed.svg);
+    --iconeFacebookRed: url(/img/icon/FacebookRed.svg);
+    --iconeVilleRed: url(/img/icon/VilleRed.svg);
+    --iconeOfficeTourismRed: url(/img/icon/OfficeTourismRed.svg);
+    --iconeAdminRed: url(/img/icon/AdminRed.svg);
+    --iconeArrowRed: url(/img/icon/ArrowRed.svg);
 
 }
