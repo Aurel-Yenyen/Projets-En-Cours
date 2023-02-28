@@ -9,6 +9,7 @@ class Request{
 
     function __construct()
     {
-        $this->url = $_SERVER['PATH_INFO'];
+        // $this->url = $_SERVER['PATH_INFO'];
+        
     }
 }

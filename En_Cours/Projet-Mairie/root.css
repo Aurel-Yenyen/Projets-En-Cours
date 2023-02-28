@@ -89,7 +89,7 @@
     
     --imagePrimary: url(img/fond.jpg);
     --imageLogoLuxeuil: url(img/logoLuxeuil.png);
-    --imageLogoPole: url(img/logoPole.png);
+    --imageLogoPole: url(/img/logoPole.png);
     --imageBurger: url(/img/icon/Burger.svg);
     --imageBurgerOther: url(/img/icon/BurgerWhite.svg);
     --imageCross: url(/img/icon/Cross.svg);
