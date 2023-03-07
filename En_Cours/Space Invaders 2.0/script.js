@@ -52,6 +52,7 @@ let missileAlliee = {
 
 /******************************  Tir Vaisseaux  ********************************/
 
+
 let dy = -2
 
 function fire(x,y) {
@@ -63,6 +64,26 @@ function fire(x,y) {
         ctx.clearRect(x - 30, y, 21, 44);
         missileAlliee.image = ctx.drawImage(missileAllieeImg, x-30, y, missileAlliee.width, missileAlliee.height);
         y += dy;
+        
+        // Vérifier si le missile touche un ennemi
+        for (let i = 0; i < ennemis.length; i++) {
+          if (
+            x >= ennemis[i].x &&
+            x <= ennemis[i].x + ennemis[i].width &&
+            y >= ennemis[i].y &&
+            y <= ennemis[i].y + ennemis[i].height
+          ) {
+            ctx.clearRect(x - 30, y, 21, 44);
+            clearInterval(interval);
+            ennemis.splice(i, 1);
+          }
+        }
+        
+        // Vérifier si le missile est sorti du canvas
+        if (y < 0) {
+          clearInterval(interval);
+          ctx.clearRect(x - 30, y, 21, 44);
+        }
     }
 
 
@@ -103,3 +124,28 @@ function moveRight() {
   });
 
 
+/***********************  Initialisation des ennemis  *************************/
+
+let ennemis = [];
+
+// Créer 5 ennemis
+for (let i = 0; i < 5; i++) {
+    let ennemi = {
+        x: i * 150 + 50,
+        y: 50,
+        width: 50,
+        height: 49,
+        image: invaders,
+    };
+    ennemis.push(ennemi);
+}
+
+// Dessiner les ennemis sur le canvas
+function dessinerEnnemis() {
+    ennemis.forEach((ennemi) => {
+        ctx.drawImage(ennemi.image, ennemi.x, ennemi.y, ennemi.width, ennemi.height);
+    });
+}
+
+// Appeler la fonction pour dessiner les ennemis
+dessinerEnnemis();
