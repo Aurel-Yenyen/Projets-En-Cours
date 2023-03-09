@@ -7,9 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+
 </head>
 <body>
-    <canvas id="myCanvas" width="800" height="600"></canvas>
+    <div class="space">
+        <img src="img/commander.png" alt="" id="ship1" style="display: none;">
+        <img src="img/ennemi.png" alt="" id="ship2" style="display: none;">
+        <img src="img/Missile.gif" alt="" id="missileAlliee" style="display: none;">
+        <img src="img/Missile_Ennemi.gif" alt="" id="missileEnemi" style="display: none;">
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+        <canvas id="starCanvas" class="stars"></canvas>
+    </div>
+
+
+
+    <img id="game-over" src="img/game-over-blanc.jpeg" alt="">
+    <img id="fond" class="pres" src="img/pres.jpg" alt="" srcset="">
+    <script src="app.js"></script>
 </body>
 </html>
