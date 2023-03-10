@@ -93,3 +93,7 @@ newGameBtn.addEventListener('click', function() {
 const scoreDisplay = document.getElementById('score');
 scoreDisplay.textContent = score;
 
+
+
+
+

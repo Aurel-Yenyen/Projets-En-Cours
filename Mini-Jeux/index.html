@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <img src="img/arcade.png" alt="" class="logo" width="300px">
+
+
+    <img src="img/borne-sonic.png" alt="" width="800px" height="800px" class="borne-sonic">
+    <section class="memory">
+
+
+        <div class="result">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="sur">/8</div>
+          </div>
+        
+        
+          <div class="memory-game">
+            <div class="memory-cards">
+                <div class="memory-card" data-framework="1">
+                    <img class="front-face" src="img/recto1.png" alt="Carte 1">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="1">
+                    <img class="front-face" src="img/recto1.png" alt="Carte 1">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="2">
+                    <img class="front-face" src="img/recto2.jpg" alt="Carte 2">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="2">
+                    <img class="front-face" src="img/recto2.jpg" alt="Carte 2">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="3">
+                    <img class="front-face" src="img/recto3.jpg" alt="Carte 3">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="3">
+                    <img class="front-face" src="img/recto3.jpg" alt="Carte 3">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="4">
+                    <img class="front-face" src="img/recto4.webp" alt="Carte 4">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="4">
+                    <img class="front-face" src="img/recto4.webp" alt="Carte 4">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="5">
+                    <img class="front-face" src="img/recto5.png" alt="Carte 5">
+                    <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="5">
+                  <img class="front-face" src="img/recto5.png" alt="Carte 5">
+                  <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="6">
+                  <img class="front-face" src="img/recto6.jpg" alt="Carte 6">
+                  <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="6">
+                  <img class="front-face" src="img/recto6.jpg" alt="Carte 6">
+                  <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="7">
+                  <img class="front-face" src="img/recto7.webp" alt="Carte 7">
+                  <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="7">
+                  <img class="front-face" src="img/recto7.webp" alt="Carte 7">
+                  <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="8">
+                  <img class="front-face" src="img/recto8.png" alt="Carte 8">
+                  <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+                <div class="memory-card" data-framework="8">
+                  <img class="front-face" src="img/recto8.png" alt="Carte 8">
+                  <img class="back-face" src="img/verso.png" alt="Verso de carte">
+                </div>
+            </div>
+          </div>
+        
+                <button id="new-game">Nouvelle partie</button>
+    </section>
+
+    <img src="img/borne-space.png" alt="" width="800px" height="800px" class="borne-space">
+    
+    <section class="space-invaders">
+
+
+        <div class="space">
+            <img src="img/commander.png" alt="" id="ship1" style="display: none;">
+            <img src="img/ennemi.png" alt="" id="ship2" style="display: none;">
+            <img src="img/Missile_Alliee.png" alt="" id="missileAlliee" style="display: none;">
+            <img src="img/Missile_Ennemi.png" alt="" id="missileEnemi" style="display: none;">
+            <canvas id="myCanvas" width="800" height="600"></canvas>
+
+
+          
+          </div>
+    
+    
+    
+
+
+    </section>
+</body>
+</html>
